@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { papyrus } from "./fonts"
 import "./globals.css"
 import Navigation from "@/components/navigation"
 
@@ -8,16 +9,16 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "LionHeart Riding Academy",
-  description: "Where tradition meets excellence in equestrian education.",
+  description: "Experience the elegance of English riding with safety as our number one priority.",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.className} ${papyrus.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${inter.className} font-lexend`}>
+      <body className="min-h-screen bg-background font-sans antialiased">
         <Navigation />
         <main>{children}</main>
         <footer className="bg-lhra-blue text-white py-8">

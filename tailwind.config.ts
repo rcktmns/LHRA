@@ -1,13 +1,12 @@
 import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-    "*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   prefix: "",
   theme: {
@@ -20,6 +19,9 @@ const config: Config = {
     },
     extend: {
       colors: {
+        'lhra-blue': '#014bae',
+        'lhra-red': '#fe3233',
+        'lhra-yellow': '#f8b204',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -53,14 +55,10 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Updated LHRA colors with darker, more sophisticated tones
-        "lhra-red": "#6B0F1A", // Rich burgundy red
-        "lhra-blue": "#0A1128", // Deep navy blue
-        "lhra-yellow": "#B8860B", // Dark goldenrod
       },
       fontFamily: {
-        papyrus: ["Papyrus", "fantasy"],
-        lexend: ["Lexend", "sans-serif"],
+        papyrus: ['var(--font-papyrus)'],
+        lexend: ['Lexend', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +82,6 @@ const config: Config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+} satisfies Config
 
 export default config

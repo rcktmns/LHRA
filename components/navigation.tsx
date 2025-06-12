@@ -2,48 +2,54 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ChevronDown, Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Menu, X } from "lucide-react"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { ChevronDown } from "lucide-react"
+
+const navigationItems = [
+  { name: "HOME", href: "/" },
+  {
+    name: "LESSONS",
+    href: "/lessons",
+    dropdown: [
+      { name: "CLASSES", href: "/lessons/classes" },
+      { name: "SAFETY GUIDELINES", href: "/lessons/safety" },
+      { name: "PROPER ATTIRE", href: "/lessons/attire" },
+      { name: "CANCELLATION POLICY", href: "/lessons/cancellation" },
+      { name: "RISK AND LIABILITY", href: "/lessons/risk-liability" },
+    ],
+  },
+  {
+    name: "ACTIVITIES",
+    href: "/activities",
+    dropdown: [
+      { name: "HORSE SHOWS", href: "/activities/horse-shows" },
+      { name: "CAMPS", href: "/activities/camps" },
+      { name: "DRILL TEAM", href: "/activities/drill-team" },
+      { name: "PARTIES", href: "/activities/parties" },
+    ],
+  },
+  { name: "CALENDAR", href: "/calendar" },
+  {
+    name: "ABOUT US",
+    href: "/about",
+    dropdown: [
+      { name: "STAFF", href: "/about/staff" },
+      { name: "MEET THE HORSES", href: "/about/horses" },
+      { name: "CONTACT US", href: "/about/contact" },
+    ],
+  },
+]
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
-  const navigationItems = [
-    { name: "HOME", href: "/" },
-    {
-      name: "LESSONS",
-      href: "/lessons",
-      dropdown: [
-        { name: "CLASSES", href: "/lessons/classes" },
-        { name: "SAFETY GUIDELINES", href: "/lessons/safety" },
-        { name: "PROPER ATTIRE", href: "/lessons/attire" },
-        { name: "CANCELLATION POLICY", href: "/lessons/cancellation" },
-        { name: "RISK AND LIABILITY", href: "/lessons/risk-liability" },
-      ],
-    },
-    {
-      name: "ACTIVITIES",
-      href: "/activities",
-      dropdown: [
-        { name: "HORSE SHOWS", href: "/activities/horse-shows" },
-        { name: "CAMPS", href: "/activities/camps" },
-        { name: "DRILL TEAM", href: "/activities/drill-team" },
-        { name: "PARTIES", href: "/activities/parties" },
-      ],
-    },
-    { name: "CALENDAR", href: "/calendar" },
-    {
-      name: "ABOUT US",
-      href: "/about",
-      dropdown: [
-        { name: "STAFF", href: "/about/staff" },
-        { name: "MEET THE HORSES", href: "/about/horses" },
-        { name: "CONTACT US", href: "/about/contact" },
-      ],
-    },
-  ]
 
   return (
     <nav className="backdrop-blur bg-lhra-blue/90 shadow-xl sticky top-0 z-50 border-b-4 border-lhra-yellow">
@@ -122,40 +128,40 @@ export default function Navigation() {
             </Button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-lhra-blue/95">
-              {navigationItems.map((item) => (
-                <div key={item.name}>
-                  <Link
-                    href={item.href}
-                    className="text-white hover:text-lhra-yellow block px-3 py-2 rounded-md font-lexend font-medium"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                  {item.dropdown && (
-                    <div className="pl-6 space-y-1">
-                      {item.dropdown.map((dropdownItem) => (
-                        <Link
-                          key={dropdownItem.name}
-                          href={dropdownItem.href}
-                          className="text-white/80 hover:text-lhra-yellow block px-3 py-1 text-sm font-lexend"
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {dropdownItem.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Mobile Navigation */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-lhra-blue/95">
+            {navigationItems.map((item) => (
+              <div key={item.name}>
+                <Link
+                  href={item.href}
+                  className="text-white hover:text-lhra-yellow block px-3 py-2 rounded-md font-lexend font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+                {item.dropdown && (
+                  <div className="pl-6 space-y-1">
+                    {item.dropdown.map((dropdownItem) => (
+                      <Link
+                        key={dropdownItem.name}
+                        href={dropdownItem.href}
+                        className="text-white/80 hover:text-lhra-yellow block px-3 py-1 text-sm font-lexend"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {dropdownItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
