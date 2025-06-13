@@ -35,14 +35,6 @@ export default function ContactPage() {
                   <div className="bg-lhra-blue/10 p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-lhra-blue" />
                   </div>
-                  <div>
-                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1">Address</h3>
-                    <p className="font-lexend text-gray-600">
-                      123 Equestrian Way<br />
-                      Horsetown, ST 12345
-                    </p>
-                  </div>
-                </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-lhra-red/10 p-3 rounded-full">
