@@ -98,7 +98,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <form
-                    action="https://formsubmit.co/dirtydean561@gmail.com"
+                    action="https://formsubmit.co/lionheartridingacademy@gmail.com"
                     method="POST"
                     className="space-y-6"
                   >
