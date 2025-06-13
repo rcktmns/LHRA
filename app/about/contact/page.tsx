@@ -60,15 +60,7 @@ export default function ContactPage() {
                   <div className="bg-lhra-blue/10 p-3 rounded-full">
                     <Clock className="h-6 w-6 text-lhra-blue" />
                   </div>
-                  <div>
-                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1">Hours</h3>
-                    <div className="font-lexend text-gray-600">
-                      <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
-                      <p>Saturday: 8:00 AM - 6:00 PM</p>
-                      <p>Sunday: 9:00 AM - 5:00 PM</p>
-                    </div>
-                  </div>
-                </div>
+                 </div>
               </div>
 
               <div className="mt-8">
