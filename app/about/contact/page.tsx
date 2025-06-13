@@ -52,7 +52,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-lexend font-semibold text-lhra-blue mb-1">Email</h3>
-                    <p className="font-lexend text-gray-600">info@lionheartridingacademy.com</p>
+                    <p className="font-lexend text-gray-600">lionheartridingacademy@gmail.com</p>
                   </div>
                 </div>
 
