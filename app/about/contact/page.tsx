@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { Phone, Mail } from "lucide-react"
 
 export default function ContactPage() {
   return (
@@ -31,11 +31,7 @@ export default function ContactPage() {
             <div>
               <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-8">Get In Touch</h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-lhra-blue/10 p-3 rounded-full">
-                    <MapPin className="h-6 w-6 text-lhra-blue" />
-                  </div>
-
+                {/* Phone */}
                 <div className="flex items-start space-x-4">
                   <div className="bg-lhra-red/10 p-3 rounded-full">
                     <Phone className="h-6 w-6 text-lhra-red" />
@@ -46,6 +42,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
+                {/* Email */}
                 <div className="flex items-start space-x-4">
                   <div className="bg-lhra-yellow/20 p-3 rounded-full">
                     <Mail className="h-6 w-6 text-lhra-blue" />
@@ -55,12 +52,6 @@ export default function ContactPage() {
                     <p className="font-lexend text-gray-600">lionheartridingacademy@gmail.com</p>
                   </div>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-lhra-blue/10 p-3 rounded-full">
-                    <Clock className="h-6 w-6 text-lhra-blue" />
-                  </div>
-                 </div>
               </div>
 
               <div className="mt-8">
