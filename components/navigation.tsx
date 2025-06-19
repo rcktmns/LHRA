@@ -19,11 +19,10 @@ const navigationItems = [
     name: "LESSONS",
     href: "/lessons",
     dropdown: [
-      { name: "CLASSES", href: "/lessons/classes" },
+      { name: "RIDING LESSONS", href: "/lessons/classes" },
       { name: "SAFETY GUIDELINES", href: "/lessons/safety" },
       { name: "PROPER ATTIRE", href: "/lessons/attire" },
       { name: "CANCELLATION POLICY", href: "/lessons/cancellation" },
-      { name: "RISK AND LIABILITY", href: "/lessons/risk-liability" },
     ],
   },
   {
@@ -58,18 +57,10 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center group transition-transform duration-200 hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]">
-              <div className="mr-3">
-                <Image
-                  src="/images/logo.png"
-                  alt="Lionheart Riding Academy Logo"
-                  width={60}
-                  height={60}
-                  className="object-contain"
-                />
-              </div>
               <div>
-                <span className="font-papyrus text-2xl font-bold text-white tracking-wider group-hover:text-lhra-yellow transition-colors duration-200">LHRA</span>
-                <div className="h-0.5 bg-lhra-yellow w-full mt-1"></div>
+                <span className="font-papyrus text-2xl font-bold" style={{ color: 'white' }}>
+                  LionHeart Riding Academy
+                </span>
               </div>
             </Link>
           </div>
@@ -84,7 +75,7 @@ export default function Navigation() {
                       <DropdownMenuTrigger asChild>
                         <Button
                           variant="ghost"
-                          className="text-white hover:text-lhra-yellow hover:bg-lhra-blue/80 font-lexend font-medium flex items-center gap-1 tracking-wide transition-transform duration-200 hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]"
+                          className="text-white hover:text-lhra-yellow hover:bg-lhra-blue/80 font-florentia font-medium flex items-center gap-1 tracking-wide transition-transform duration-200 hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]"
                         >
                           {item.name}
                           <ChevronDown className="h-4 w-4" />
@@ -95,7 +86,7 @@ export default function Navigation() {
                           <DropdownMenuItem key={dropdownItem.name} asChild>
                             <Link
                               href={dropdownItem.href}
-                              className="font-lexend text-lhra-blue hover:text-lhra-red hover:bg-lhra-yellow/10 px-4 py-2 transition-colors rounded-lg"
+                              className="font-florentia text-lhra-blue hover:text-lhra-red hover:bg-lhra-yellow/10 px-4 py-2 transition-colors rounded-lg"
                             >
                               {dropdownItem.name}
                             </Link>
@@ -106,7 +97,7 @@ export default function Navigation() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="text-white hover:text-lhra-yellow font-lexend font-medium px-3 py-2 transition-colors duration-200 tracking-wide transition-transform hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]"
+                      className="text-white hover:text-lhra-yellow font-florentia font-medium px-3 py-2 transition-colors duration-200 tracking-wide transition-transform hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]"
                     >
                       {item.name}
                     </Link>
@@ -138,7 +129,7 @@ export default function Navigation() {
               <div key={item.name}>
                 <Link
                   href={item.href}
-                  className="text-white hover:text-lhra-yellow block px-3 py-2 rounded-md font-lexend font-medium"
+                  className="text-white hover:text-lhra-yellow block px-3 py-2 rounded-md font-florentia font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -149,7 +140,7 @@ export default function Navigation() {
                       <Link
                         key={dropdownItem.name}
                         href={dropdownItem.href}
-                        className="text-white/80 hover:text-lhra-yellow block px-3 py-1 text-sm font-lexend"
+                        className="text-white/80 hover:text-lhra-yellow block px-3 py-1 text-sm font-florentia"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {dropdownItem.name}

@@ -57,8 +57,8 @@ const config = {
         },
       },
       fontFamily: {
-        papyrus: ['var(--font-papyrus)'],
-        lexend: ['Lexend', 'sans-serif'],
+        papyrus: ['var(--font-papyrus)', 'Papyrus', 'fantasy'],
+        florentia: ['var(--font-florentia)', 'Florentia', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

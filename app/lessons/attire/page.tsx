@@ -15,7 +15,7 @@ export default function AttirePage() {
       {/* Hero Section */}
       <section className="elegant-gradient text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-5xl font-bold mb-6">Riding Attire Guidelines</h1>
+          <h1 className="elegant-heading text-5xl font-bold mb-6">Riding Attire</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             All riders are expected to wear proper riding attire. (Exceptions are made for religious accommodations as long as safety is not compromised.)
@@ -63,8 +63,22 @@ export default function AttirePage() {
             </ul>
 
             <p>
-              LionHeart also offers a <strong>hand-me-down closet</strong> where riders can try or purchase gently used jods and boots.
+              LionHeart offers a hand-me-down closet where used boots and jods can be purchased and later swapped out for another pair free of charge. Please clearly label your personal equipment.
             </p>
+          </div>
+        </div>
+        {/* Example Images Section */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+          <h3 className="font-florentia font-bold text-xl text-lhra-red mb-4 text-center">Examples of Proper Riding Attire</h3>
+          <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-col items-center">
+              <Image src="/images/horse-lesson.jpeg" alt="Example Attire 1" width={200} height={250} className="rounded-lg shadow-md object-cover mb-2" />
+              <span className="font-florentia text-black text-sm">Boots, jods, helmet</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image src="/images/competition.jpeg" alt="Example Attire 2" width={200} height={250} className="rounded-lg shadow-md object-cover mb-2" />
+              <span className="font-florentia text-black text-sm">Show attire</span>
+            </div>
           </div>
         </div>
       </section>

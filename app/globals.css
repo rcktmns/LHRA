@@ -10,6 +10,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Florentia";
+  src: local("Florentia"), url("/fonts/florentia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
@@ -31,6 +39,7 @@
   --input: 214.3 31.8% 91.4%;
   --ring: 221.2 83.2% 53.3%;
   --radius: 0.5rem;
+  --font-florentia: 'Florentia', serif;
 }
 
 .dark {
@@ -60,7 +69,9 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-lexend;
+    @apply bg-background text-foreground font-florentia;
+    font-family: var(--font-florentia), 'Florentia', serif;
+    color: #000;
   }
 }
 
@@ -87,4 +98,47 @@
 
 .elegant-gold-accent {
   @apply border-b-2 border-lhra-yellow;
+}
+
+.header {
+  font-family: var(--font-papyrus), Papyrus, fantasy;
+  color: #014bae;
+}
+
+.subheader {
+  font-family: var(--font-florentia), 'Florentia', serif;
+  font-weight: bold;
+  color: #fe3233;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+@keyframes bounce-cat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+.animate-bounce-cat {
+  animation: bounce-cat 1.5s infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+.animate-wiggle {
+  animation: wiggle 1s infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.8s cubic-bezier(0.4,0,0.2,1) both;
 }

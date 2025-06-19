@@ -1,76 +1,57 @@
 import React from "react";
+import Image from "next/image";
 
 export default function LessonsPage() {
   return (
-    <main className="min-h-screen bg-gray-50 py-16 px-6 sm:px-12 lg:px-24">
-      <section className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 text-lhra-blue">Riding Lessons at LionHeart</h1>
+    <main className="min-h-screen bg-gray-50">
+      {/* Blue Hero Section */}
+      <section className="bg-lhra-blue py-16 px-4 text-center">
+        <h1 className="font-papyrus text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">Courage. Strength. Confidence.</h1>
+        <p className="font-florentia text-lg sm:text-xl text-white max-w-2xl mx-auto">
+          At LionHeart, we teach Saddle Seat style riding on American Saddlebred horses and Hackney ponies. Saddle Seat is one form of English riding. American Saddlebreds are a beautiful, versatile breed of horse who tend to be smart, good-tempered, and excellent teachers.
+        </p>
+      </section>
 
-        <p className="mb-6 text-lg leading-relaxed text-gray-800">
-          Here at LionHeart, we teach a form of English horse-back riding called{" "}
-          <strong>Saddleseat</strong>, using <strong>American Saddlebred horses</strong> and{" "}
-          <strong>Hackney ponies</strong>. These horses tend to be smart, well-mannered, and great teachers for riders at any experience level.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-lhra-blue">Age Range —</h2>
-        <p className="mb-6 text-base leading-relaxed text-gray-800">
-          We do not teach anyone under the age of 4. For riders between ages 4-6, an instructor might sit behind the rider in what is called a <strong>double saddle</strong>. This helps young riders learn through feeling instead of just words! There is no bad time to start learning to ride horses, so no pressure to start your child as early as possible — and if you’re an adult, don’t be afraid to start now.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-lhra-blue">Duration and Frequency —</h2>
-        <p className="mb-4 text-base leading-relaxed text-gray-800">
-          Lessons are usually 30 minutes long, though sometimes they may extend longer. Riders are encouraged to come early to learn how to groom and tack their horse, and stay after lessons to untack and care for their horse. Spending extra time on the ground builds a partnership between rider and horse, and helps build confidence, especially for riders initially afraid of horses.
-        </p>
-        <p className="mb-6 text-base leading-relaxed text-gray-800">
-          We recommend riding at least once a week, preferably the same time and day, to build muscle memory. Riders who only come occasionally tend to progress slower. If a rider wants to show, they <strong>must</strong> ride at least twice a week for three months or more before showing.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-lhra-blue">Price —</h2>
-        <p className="mb-6 text-base leading-relaxed text-gray-800">
-          Lessons are sold in monthly packages, paid on the 1st of each month. You pay for all lesson days in that month (e.g., if your lesson is Saturdays and there are 5 Saturdays, you pay for 5 lessons). This includes holidays, which are eligible for make-ups. If you miss a lesson, make-ups can be done anytime within the same calendar month with proper cancellation notice. Unused lessons do not rollover. Individual lessons cost $50; monthly package lessons are $40 each. <strong>All lesson packages are non-refundable.</strong>
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-lhra-blue">Private vs Group —</h2>
-        <p className="mb-6 text-base leading-relaxed text-gray-800">
-          Private and group lessons cost the same and have the same duration. Instructors decide if/when to add another student to a lesson. Group lessons offer a unique learning experience we want riders to enjoy when ready.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-lhra-blue">Severe Weather —</h2>
-        <p className="mb-4 text-base leading-relaxed text-gray-800">
-          In severe weather, cancellations will be posted on LionHeart’s Facebook & Instagram and emailed. We try to give 2 hours’ notice, but Missouri weather can be unpredictable. Cancelled lessons can be made up.
-        </p>
-        <ul className="list-disc list-inside mb-6 text-base leading-relaxed text-gray-800">
-          <li>
-            <strong>Tornado Warning:</strong> Automatic cancellation.
-          </li>
-          <li>
-            <strong>Severe Storms:</strong> Possible cancellation due to horse behavior or safety concerns.
-          </li>
-          <li>
-            <strong>Excessive Heat:</strong> Lessons may be rescheduled; no lessons at 100°F or above.
-          </li>
-          <li>
-            <strong>Excessive Cold:</strong> No lessons if temps are 10°F or below.
-          </li>
-          <li>
-            <strong>Ice/Snow:</strong> Lessons rescheduled if travel is unsafe or roads closed.
-          </li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-lhra-blue">Expectations of Riders —</h2>
-        <p className="mb-6 text-base leading-relaxed text-gray-800">
-          Arrive a few minutes early, preferably in riding attire (to avoid losing lesson time changing). Come with a willing attitude and good sportsmanship. Disruptive or disobedient riders may be asked to dismount and leave. Please respect staff working hard in the barn. If helping, follow staff instructions and care for equipment properly.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-lhra-blue">Expectations of Parents/Family/Friends —</h2>
-        <p className="mb-6 text-base leading-relaxed text-gray-800">
-          Allow instructors to coach riders without distractions. Don’t interrupt lessons, as this can be a safety issue or hinder learning. Riding includes challenges — let riders work through these with their instructor. As riders bond with horses and grow, they gain confidence.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-lhra-blue">Equipment Usage and Storage —</h2>
-        <p className="mb-6 text-base leading-relaxed text-gray-800">
-          We provide all grooming equipment and tack; please return items to their place. If unsure, just ask. We keep the barn tidy and equipment in good condition for everyone’s safety and staff efficiency. Personal items are your responsibility. We keep one personal saddle and stirrups per rider; please maintain them clean and conditioned. Other personal items go to lost & found and may be redistributed after two weeks. Only staff may keep helmets at the barn.
-        </p>
+      {/* Lesson Program Section */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          {/* Text Left */}
+          <div className="flex-1">
+            <h2 className="font-papyrus text-3xl font-bold text-center text-lhra-blue mb-8">Our Lesson Program</h2>
+            <div className="mb-6">
+              <h3 className="font-florentia font-bold text-xl text-lhra-red mb-2">Age Range</h3>
+              <p className="font-florentia text-black mb-4">We teach riders ages 4 and up - it is never too late to begin your equestrian journey. Young riders may start in a double saddle, which allows the instructor to sit behind the child on the horse and allow them to learn through feeling.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="font-florentia font-bold text-xl text-lhra-red mb-2">Duration and Frequency</h3>
+              <p className="font-florentia text-black mb-4">Our lessons are 30 minutes long. It is required that riders ride at least once a week in order to build muscle memory. We also encourage riders to come early and stay later after their lesson so they learn how to tack up and groom their horse. Working with a horse on the ground helps create a bond that makes riding so special.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="font-florentia font-bold text-xl text-lhra-red mb-2">Private vs Group Lessons</h3>
+              <p className="font-florentia text-black mb-4">Private and group lessons are the same price and duration. Our instructors reserve the right to decide if/when to add another student to a lesson, so that all students are assured a learning experience.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="font-florentia font-bold text-xl text-lhra-red mb-2">Lesson Pricing</h3>
+              <ul className="font-florentia text-black mb-2 list-disc list-inside">
+                <li>Individual lessons are $50</li>
+                <li>Package lessons are $40 per lesson</li>
+              </ul>
+              <p className="font-florentia text-black mb-4">Packages are paid for on the 1st of each month. Lesson makeups can be done anytime within that month, but do not rollover into the next month's package.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="font-florentia font-bold text-xl text-lhra-red mb-2">Safety Guidelines</h3>
+              <p className="font-florentia text-black mb-4">Safety is our top priority at LionHeart (followed closely by fun!). Review our guidelines before visiting.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="font-florentia font-bold text-xl text-lhra-red mb-2">Riding Attire</h3>
+              <p className="font-florentia text-black mb-4">Riders will need proper attire in order to ride long-term, as this keeps their rides safe and comfortable.</p>
+            </div>
+          </div>
+          {/* Picture Right */}
+          <div className="flex-1 flex justify-center">
+            <Image src="/images/horse-lesson.jpeg" alt="Riding Lesson" width={400} height={400} className="rounded-lg shadow-lg object-cover" />
+          </div>
+        </div>
       </section>
     </main>
   );

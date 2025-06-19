@@ -6,15 +6,13 @@ import { Shield, AlertTriangle, CheckCircle } from "lucide-react"
 
 export default function SafetyPage() {
   const safetyRules = [
-    "No running in or around the barn.",
-    "No screaming or yelling anywhere on the LionHeart property, including in the barn, chicken coop, hay loft, and on the playground.",
-    "No chasing or otherwise bothering chickens or cats. We strive to create a peaceful home for all of our animals.",
-    "Children under 13 are not to be in stalls with horses without supervision from LionHeart staff.",
-
-"Visits to the chicken coop, the hay loft, and the donkey must be supervised by LionHeart staff.",
-"LionHeart staffers are to be obeyed at all times as if it is Kate giving the instruction.",
-"Keep in mind that all horses, so matter how kind, can nibble and bite. Please be careful if “playing with” a horse. No feeding fingers to the horses!"
-]
+    "No screaming or yelling on the property.",
+    "No chasing or otherwise bothering barn animals.",
+    "Visits to the paddocks must be supervised by LionHeart staff.",
+    "No running around horses or in the barn.",
+    "Helmets are required for riders under the age of 18 and strongly encouraged for all ages.",
+    "Always interact with horses in a calm, quiet manner so as not to spook them."
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -25,8 +23,7 @@ export default function SafetyPage() {
           <h1 className="elegant-heading text-5xl font-bold mb-6">Safety Guidelines</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
-            Safety is our top priority at LHRA. These guidelines ensure a secure and enjoyable experience for all
-            riders, horses, and staff.
+            Safety is our number one priority at LionHeart. These guidelines ensure a safe environment for riders, horses, and staff.
           </p>
         </div>
       </section>
@@ -59,44 +56,22 @@ export default function SafetyPage() {
         </div>
       </section>
 
-   
-      {/* Safety Equipment */}
+      {/* Severe Weather Section */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-4">Required Safety Equipment</h2>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-4">Severe Weather</h2>
             <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-6"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-lhra-blue/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🪖</span>
-              </div>
-              <h3 className="font-lexend text-lg font-semibold text-lhra-blue mb-2">Riding Helmet</h3>
-              <p className="font-lexend text-gray-600 text-sm">ASTM/SEI approved helmet required for all riders</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-lhra-red/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">👢</span>
-              </div>
-              <h3 className="font-lexend text-lg font-semibold text-lhra-red mb-2">Proper Footwear</h3>
-              <p className="font-lexend text-gray-600 text-sm">Boots with heel, no sneakers or sandals</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-lhra-yellow/20 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">👖</span>
-              </div>
-              <h3 className="font-lexend text-lg font-semibold text-lhra-blue mb-2">Long Pants</h3>
-              <p className="font-lexend text-gray-600 text-sm">Full-length pants to protect legs</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-lhra-blue/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🧤</span>
-              </div>
-              <h3 className="font-lexend text-lg font-semibold text-lhra-blue mb-2">Gloves (Optional)</h3>
-              <p className="font-lexend text-gray-600 text-sm">Recommended for better grip on reins</p>
-            </div>
+            <p className="font-lexend text-lg mb-6 text-gray-700">
+              In severe weather, cancellations will be posted on LionHeart's Facebook & Instagram and emailed. We try to give 2 hours' notice, but Missouri weather can be unpredictable. Cancelled lessons can be made up.
+            </p>
+            <ul className="font-lexend text-gray-700 text-left max-w-xl mx-auto list-disc list-inside">
+              <li><strong>Tornado Warning:</strong> Automatic cancellation.</li>
+              <li><strong>Severe Storms:</strong> Possible cancellation due to horse behavior or safety concerns.</li>
+              <li><strong>Excessive Heat:</strong> Lessons may be rescheduled; no lessons at 100°F or above.</li>
+              <li><strong>Excessive Cold:</strong> No lessons if temps are 10°F or below.</li>
+              <li><strong>Ice/Snow:</strong> Lessons rescheduled if travel is unsafe or roads closed.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -115,6 +90,15 @@ export default function SafetyPage() {
           >
             <Link href="/about/contact">Contact Us</Link>
           </Button>
+        </div>
+      </section>
+
+      {/* Liability Release Form Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-6">Liability Release Form</h2>
+          <p className="font-lexend text-lg mb-8 text-gray-700">All riders must complete and submit a signed liability release form before participating in any activities at LionHeart Riding Academy.</p>
+          <a href="http://www.lionheartridingacademy.com/wp-content/uploads/2012/07/LHRAFFRelease.pdf" target="_blank" rel="noopener noreferrer" className="inline-block bg-lhra-blue text-white font-lexend font-semibold px-8 py-4 rounded-lg shadow hover:bg-lhra-yellow hover:text-lhra-blue transition-colors">Download Liability Release Form</a>
         </div>
       </section>
     </div>

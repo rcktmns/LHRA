@@ -26,29 +26,18 @@ export default function HomePage() {
         {/* Hero Content */}
         <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <div className="mb-8 inline-block">
-            <h1 className="font-papyrus text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-2 drop-shadow-lg tracking-wider">
+            <h1 className="font-papyrus text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-2 drop-shadow-lg tracking-wider whitespace-nowrap">
               RIDE WITH THE PRIDE
             </h1>
-            <div className="h-1 bg-lhra-yellow w-1/3 mx-auto"></div>
+            <div className="h-1 bg-white w-1/3 mx-auto mb-2"></div>
           </div>
 
-          <p className="font-lexend text-xl sm:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            At LionHeart, we teach Saddle Seat style riding on American Saddlebred horses. Experience the elegance of
-            English riding with safety as our number one priority.
+          <p className="font-florentia text-xl sm:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+            At LionHeart Riding Academy, we strive to create a safe, fun environment for horse enthusiasts of all ages to reach their personal horsemanship goals. Along the way, our riders learn life lessons about responsibility, independence, persistence, generosity, and acceptance.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Button
-              asChild
-              size="lg"
-              className="bg-lhra-red text-white border-2 border-lhra-yellow hover:bg-lhra-blue hover:text-lhra-yellow hover:scale-105 hover:shadow-[0_0_12px_#B8860B] font-lexend font-bold px-8 py-6 text-lg rounded-full"
-            >
-              <Link href="/lessons" className="flex items-center gap-2">
-                Begin Your Journey <ChevronRight className="h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
+          {/* Removed 'Begin Your Journey' button */}
 
           {/* Social Media Links */}
           <div className="flex justify-center space-x-6">
@@ -78,25 +67,28 @@ export default function HomePage() {
       </section>
 
       {/* Services/Camps Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-lhra-red">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-papyrus text-4xl font-bold text-lhra-blue text-center mb-12">Our Services</h2>
+          <h2 className="font-papyrus text-4xl font-bold text-white text-center mb-12">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service Card 1 */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl">
-              <h3 className="font-lexend text-xl font-bold text-lhra-blue mb-2">Private Lessons</h3>
-              <p className="text-gray-600">Personalized instruction tailored to your skill level and goals.</p>
-            </div>
-            {/* Service Card 2 */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl">
-              <h3 className="font-lexend text-xl font-bold text-lhra-blue mb-2">Group Camps</h3>
-              <p className="text-gray-600">Join our summer camps for a fun, educational riding experience.</p>
-            </div>
-            {/* Service Card 3 */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl">
-              <h3 className="font-lexend text-xl font-bold text-lhra-blue mb-2">Horse Shows</h3>
-              <p className="text-gray-600">Compete in local and regional shows with our expert guidance.</p>
-            </div>
+            {/* Service Card 1: Riding Lessons */}
+            <Link href="/lessons/classes" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
+              <Image src="/images/horse-lesson.jpeg" alt="Riding Lessons" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
+              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Riding Lessons</h3>
+              <p className="font-florentia text-black">We teach Saddleseat riding on American Saddlebred horses and Hackney ponies.</p>
+            </Link>
+            {/* Service Card 2: Camps */}
+            <Link href="/activities/camps" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
+              <Image src="/images/competition.jpeg" alt="Camps" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
+              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Camps</h3>
+              <p className="font-florentia text-black">We offer riding camps for all riding levels where riders learn about horse care, horse show prep, and more.</p>
+            </Link>
+            {/* Service Card 3: Horse Shows */}
+            <Link href="/activities/horse-shows" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
+              <Image src="/images/drill-team.jpeg" alt="Horse Shows" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
+              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Horse Shows</h3>
+              <p className="font-florentia text-black">We have an Academy focused show program available for riders of all levels.</p>
+            </Link>
           </div>
         </div>
       </section>
@@ -104,14 +96,11 @@ export default function HomePage() {
       {/* The Mane Update Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="font-papyrus text-4xl font-bold text-lhra-blue mb-4">Courage. Strength. Confidence.</h2>
-              <p className="font-lexend text-gray-700 leading-relaxed">
-                Welcome to LionHeart Riding Academy! At LionHeart, we strive to create a safe, fun environment for horse enthusiasts of all ages to reach their personal horsemanship goals. We also work to create life experiences for our riders so that they learn not only about horses and riding, but so that they also learn independence, responsibility, persistence, generosity, and acceptance.
-              </p>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+            <div className="flex-shrink-0 flex justify-center">
+              <Image src="/images/logo.png" alt="LionHeart Logo" width={220} height={220} />
             </div>
-            <div>
+            <div className="w-full max-w-xl">
               <ManeUpdate />
             </div>
           </div>

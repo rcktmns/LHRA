@@ -5,7 +5,7 @@ export default function CalendarPage() {
       {/* Header */}
       <section className="elegant-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-5xl font-bold mb-6">Academy Calendar</h1>
+          <h1 className="elegant-heading text-5xl font-bold mb-6">Calendar</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             Stay informed about upcoming lessons, shows, events, and special activities at Lionheart Riding Academy.
@@ -18,7 +18,7 @@ export default function CalendarPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
             <div className="p-6 bg-lhra-blue/5 border-b border-gray-100">
-              <h2 className="font-lexend text-2xl font-semibold text-lhra-blue">LHRA Events Calendar</h2>
+              <h2 className="font-lexend text-2xl font-semibold text-lhra-blue">LionHeart Schedule</h2>
               <p className="text-gray-600 mt-1">View and plan for all upcoming academy activities</p>
             </div>
             <iframe
