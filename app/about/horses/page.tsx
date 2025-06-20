@@ -39,9 +39,9 @@ export default function HorsesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <section className="elegant-gradient text-white py-24">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-papyrus text-5xl font-bold text-white text-center mb-12">Meet the Horses</h1>
-          <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
+        <div className=" mx-auto px-5 sm:px-6 lg:px-8 text-center">
+        <h1 className="font-papyrus text-5xl font-bold text-white text-center mb-4">Meet the Horses</h1>
+        <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
 
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             We have an incredible roster of horses and ponies at LionHeart Riding Academy that all have something unique to offer our riders.

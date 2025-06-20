@@ -3,6 +3,7 @@ import "./globals.css"
 import Navigation from "@/components/navigation"
 import ClientLayout from "@/components/ClientLayout"
 import { papyrus, lexend } from "./fonts"
+import { PawPrint, Heart, Leaf, Feather } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "LionHeart Riding Academy",
@@ -13,11 +14,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${papyrus.variable} ${lexend.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/images/logo.png" type="image/png" sizes="32x32" />
+
+        
       </head>
       <body className="min-h-screen bg-background font-sans antialiased">
         <ClientLayout>{children}</ClientLayout>
         <footer className="bg-lhra-blue text-white py-8">
+          
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -39,6 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               © {new Date().getFullYear()} LionHeart Riding Academy. All rights reserved.
             </div>
           </div>
+          <div>
+  
+</div>
         </footer>
       </body>
     </html>
