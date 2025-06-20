@@ -59,27 +59,24 @@ export default function PartiesPage() {
                   <div className="relative overflow-hidden rounded-xl shadow-lg group h-80">
                     <Image 
                       src="/images/drill-team.jpeg" 
-                      alt="Drill team Halloween performance with costumed riders and horses" 
+                      alt="" 
                       width={600} 
                       height={400} 
                       className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                      Drill Team Halloween Performance
-                    </div>
+                    
                   </div>
                   <div className="relative overflow-hidden rounded-xl shadow-lg group h-64">
                     <Image 
                       src="/images/competition.jpeg" 
-                      alt="Halloween costume contest with decorated horses and riders" 
+                      alt="" 
                       width={600} 
                       height={300} 
                       className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                      Costume Contest Champions
                     </div>
                   </div>
                 </div>
@@ -149,27 +146,26 @@ export default function PartiesPage() {
                   <div className="relative overflow-hidden rounded-xl shadow-lg group h-64">
                     <Image 
                       src="/images/ rse-lesson.jpeg" 
-                      alt="Spring horse activities and lessons in sunny weather" 
+                      alt="" 
                       width={600} 
                       height={300} 
                       className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                      Spring Horse Activities
                     </div>
                   </div>
                   <div className="relative overflow-hidden rounded-xl shadow-lg group h-64">
                     <Image 
                       src="/images/bo.webp" 
-                      alt="Summer horse enjoying the warm weather at LionHeart" 
+                      alt="" 
                       width={600} 
                       height={300} 
                       className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                      Summer at LionHeart
+                      
                     </div>
                   </div>
                 </div>
@@ -207,7 +203,7 @@ export default function PartiesPage() {
     <div className="relative overflow-hidden rounded-xl shadow-lg group h-64">
       <Image
         src="/images/skylar.webp"
-        alt="Skylar's birthday party celebration at LionHeart"
+        alt=""
         width={500}
         height={300}
         className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
