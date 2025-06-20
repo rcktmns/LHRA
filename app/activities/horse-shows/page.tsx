@@ -9,7 +9,13 @@ export default function HorseShowsPage() {
       <section className="py-16 bg-lhra-blue">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-papyrus text-5xl font-bold text-white mb-6">Horse Shows</h1>
-          <p className="font-lexend text-xl text-white mb-8">Many of our students at LionHeart compete in horse shows. They are completely optional, but we encourage our riders to try showing.</p>
+          <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
+          <div className="max-w-3xl mx-auto">
+  <p className="font-lexend text-xl text-white mb-8">
+    Many of our students at LionHeart compete in horse shows. They are completely optional, but we encourage our riders to try showing.
+  </p>
+</div>
+
         </div>
       </section>
 
@@ -18,7 +24,7 @@ export default function HorseShowsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-papyrus text-4xl font-bold text-lhra-blue mb-4">Academy</h2>
-            <div className="h-2 bg-lhra-yellow w-1/3 mx-auto mb-6"></div>
+            <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
           </div>
           <p className="font-lexend text-lg text-black text-center mb-12">All of our riders begin showing in Academy classes. These classes showcase riders on lesson horses and are judged on the rider's performance–not the horse.</p>
           
@@ -103,16 +109,28 @@ export default function HorseShowsPage() {
       {/* CTA Section */}
       <section className="py-20 elegant-red-gradient text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="elegant-heading text-3xl font-bold mb-6">Interested in showing?</h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              size="lg"
-              className="bg-lhra-yellow text-lhra-blue hover:bg-lhra-yellow/90 font-lexend font-semibold px-8 py-6 text-lg elegant-button"
-            >
-              <Link href="https://docs.google.com/document/d/1DaFIJ-Ym4LcIrr8A9rfzr0jkgAaFF5f1/edit?fbclid=PAZXh0bgNhZW0CMTEAAaeOR8lhwHqvKfCe3IqIiFUKLgVu48aVkipAmkj3iuqPpHrwLC9G0i5775GvaQ_aem_72lwpl9HL3lG7joJ-P8ozQ&tab=t.0" target="_blank" rel="noopener noreferrer">View Show Schedule</Link>
-            </Button>
-          </div>
+        <h2 className="elegant-heading text-3xl font-bold mb-4">Interested in Showing?</h2>
+<p className="font-lexend text-lg mb-6">Come support Team LionHeart at a show or talk to us about starting your show career!</p>
+<div className="flex flex-col sm:flex-row gap-4 justify-center">
+  <Button
+    asChild
+    size="lg"
+    className="bg-lhra-yellow text-lhra-blue hover:bg-lhra-yellow/90 font-lexend font-semibold px-8 py-6 text-lg elegant-button"
+  >
+    <Link href="https://docs.google.com/document/d/1DaFIJ-Ym4LcIrr8A9rfzr0jkgAaFF5f1/edit?fbclid=PAZXh0bgNhZW0CMTEAAaeOR8lhwHqvKfCe3IqIiFUKLgVu48aVkipAmkj3iuqPpHrwLC9G0i5775GvaQ_aem_72lwpl9HL3lG7joJ-P8ozQ&tab=t.0" target="_blank" rel="noopener noreferrer">
+      View Show Schedule
+    </Link>
+  </Button>
+  <Button
+    asChild
+    variant="outline"
+    size="lg"
+    className="text-white border-white font-lexend font-semibold px-8 py-6 text-lg"
+  >
+    <Link href="/contact">Get More Info</Link>
+  </Button>
+</div>
+
         </div>
       </section>
     </div>

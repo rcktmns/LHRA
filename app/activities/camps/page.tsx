@@ -21,11 +21,25 @@ export default function CampsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Day Camps</h2>
-            <p className="font-lexend text-black mb-4">During spring break we offer themed day camps. Each day will focus on a different aspect of horse care, riding, or the horse industry. Sometimes we visit a vet clinic, other times we learn about training horses… It's different each year, so don't miss out! Our day camps are for curious riders of all levels.</p>
+            <p className="font-lexend text-black mb-4 text-lg sm:text-xl">
+              During spring break we offer themed day camps. Each day will focus on a different aspect of horse care, riding, or the horse industry. Sometimes we visit a vet clinic, other times we learn about training horses… It's different each year, so don't miss out! Our day camps are for curious riders of all levels.
+            </p>
           </div>
-          <div className="flex-1 flex flex-col space-y-4">
-            <Image src="/images/horse-lesson.jpeg" alt="Day Camps" width={500} height={350} className="w-full object-cover" />
-            <Image src="/images/competition.jpeg" alt="Day Camps 2" width={500} height={350} className="w-full object-cover" />
+          <div className="flex-1 flex flex-col space-y-4 max-w-[320px]">
+            <Image
+              src="/images/horse-lesson.jpeg"
+              alt="Day Camps"
+              width={320}
+              height={380}
+              className="w-full object-cover rounded"
+            />
+            <Image
+              src="/images/competition.jpeg"
+              alt="Day Camps 2"
+              width={320}
+              height={380}
+              className="w-full object-cover rounded"
+            />
           </div>
         </div>
       </section>
@@ -35,11 +49,25 @@ export default function CampsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row-reverse items-start gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Show Prep Camps</h2>
-            <p className="font-lexend text-black mb-4">We have multiple different show prep camps that pair with different shows throughout the year. Riders will spend the week learning how to prep for a show – clipping, packing, etc – and then help set up and work the show at the end of the week. This is an intense camp geared towards intermediate to advanced riders.</p>
+            <p className="font-lexend text-black mb-4 text-lg sm:text-xl">
+              We have multiple different show prep camps that pair with different shows throughout the year. Riders will spend the week learning how to prep for a show – clipping, packing, etc – and then help set up and work the show at the end of the week. This is an intense camp geared towards intermediate to advanced riders.
+            </p>
           </div>
-          <div className="flex-1 flex flex-col space-y-4">
-            <Image src="/images/competition.jpeg" alt="Show Prep Camps" width={500} height={350} className="w-full object-cover" />
-            <Image src="/images/drill-team.jpeg" alt="Show Prep Camps 2" width={500} height={350} className="w-full object-cover" />
+          <div className="flex-1 flex flex-col space-y-4 max-w-[320px]">
+            <Image
+              src="/images/competition.jpeg"
+              alt="Show Prep Camps"
+              width={320}
+              height={380}
+              className="w-full object-cover rounded"
+            />
+            <Image
+              src="/images/drill-team.jpeg"
+              alt="Show Prep Camps 2"
+              width={320}
+              height={380}
+              className="w-full object-cover rounded"
+            />
           </div>
         </div>
       </section>
@@ -49,11 +77,25 @@ export default function CampsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Cub Camp</h2>
-            <p className="font-lexend text-black mb-4">This camp is for our younger or less experienced riders. They will learn lots about parts of the horse, tack, colors, markings, grooming, etc. It is very fun and highly educational!</p>
+            <p className="font-lexend text-black mb-4 text-lg sm:text-xl">
+              This camp is for our younger or less experienced riders. They will learn lots about parts of the horse, tack, colors, markings, grooming, etc. It is very fun and highly educational!
+            </p>
           </div>
-          <div className="flex-1 flex flex-col space-y-4">
-            <Image src="/images/drill-team.jpeg" alt="Cub Camp" width={500} height={350} className="w-full object-cover" />
-            <Image src="/images/horse-lesson.jpeg" alt="Cub Camp 2" width={500} height={350} className="w-full object-cover" />
+          <div className="flex-1 flex flex-col space-y-4 max-w-[320px]">
+            <Image
+              src="/images/drill-team.jpeg"
+              alt="Cub Camp"
+              width={320}
+              height={380}
+              className="w-full object-cover rounded"
+            />
+            <Image
+              src="/images/horse-lesson.jpeg"
+              alt="Cub Camp 2"
+              width={320}
+              height={380}
+              className="w-full object-cover rounded"
+            />
           </div>
         </div>
       </section>
@@ -61,7 +103,10 @@ export default function CampsPage() {
       {/* CTA Section */}
       <section className="py-20 elegant-red-gradient text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="elegant-heading text-3xl font-bold mb-6">Interested in camps?</h2>
+          <h2 className="elegant-heading text-3xl font-bold mb-2">Interested in Camps?</h2>
+          <p className="font-lexend text-lg sm:text-xl mb-8 max-w-xl mx-auto">
+            Find the perfect camp for you and join today!
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild

@@ -19,7 +19,6 @@ export default function SafetyPage() {
       {/* Hero Section */}
       <section className="elegant-gradient text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Shield className="h-16 w-16 mx-auto mb-6 text-lhra-yellow" />
           <h1 className="elegant-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Safety Guidelines</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-lg sm:text-xl max-w-3xl mx-auto">
@@ -57,24 +56,24 @@ export default function SafetyPage() {
       </section>
 
       {/* Severe Weather Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-4">Severe Weather</h2>
-            <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-6"></div>
-            <p className="font-lexend text-lg mb-6 text-gray-700">
-              In severe weather, cancellations will be posted on LionHeart's Facebook & Instagram and emailed. We try to give 2 hours' notice, but Missouri weather can be unpredictable. Cancelled lessons can be made up.
-            </p>
-            <ul className="font-lexend text-lg text-gray-700 text-left max-w-xl mx-auto list-disc list-inside">
-              <li><strong>Tornado Warning:</strong> Automatic cancellation.</li>
-              <li><strong>Severe Storms:</strong> Possible cancellation due to horse behavior or safety concerns.</li>
-              <li><strong>Excessive Heat:</strong> Lessons may be rescheduled; no lessons at 100°F or above.</li>
-              <li><strong>Excessive Cold:</strong> No lessons if temps are 10°F or below.</li>
-              <li><strong>Ice/Snow:</strong> Lessons rescheduled if travel is unsafe or roads closed.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <section className="py-24 bg-gray-100">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-4">Severe Weather</h2>
+      <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-6"></div>
+      <p className="font-lexend text-lg mb-6 text-gray-700">
+        In severe weather, cancellations will be posted on LionHeart's Facebook & Instagram and emailed. We try to give 2 hours' notice, but Missouri weather can be unpredictable. Cancelled lessons can be made up.
+      </p>
+      <ul className="font-lexend text-lg text-gray-700 text-left mx-auto list-disc list-inside max-w-none">
+        <li className="whitespace-nowrap"><strong>Tornado Warning:</strong> Automatic cancellation.</li>
+        <li className="whitespace-nowrap"><strong>Severe Storms:</strong> Possible cancellation due to horse behavior or safety concerns.</li>
+        <li className="whitespace-nowrap"><strong>Excessive Heat:</strong> Lessons may be rescheduled; no lessons at 100°F or above.</li>
+        <li className="whitespace-nowrap"><strong>Excessive Cold:</strong> No lessons if temps are 10°F or below.</li>
+        <li className="whitespace-nowrap"><strong>Ice/Snow:</strong> Lessons rescheduled if travel is unsafe or roads closed.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
       {/* Liability Release Form Section */}
       <section className="py-20 bg-white">

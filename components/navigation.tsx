@@ -9,6 +9,10 @@ import { Menu, X } from "lucide-react"
 
 const navigationItems = [
   {
+    name: "Home",
+    href: "/"
+  },
+  {
     name: "About",
     href: "/about",
     dropdown: [

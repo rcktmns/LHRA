@@ -6,7 +6,7 @@ export default function StaffPage() {
       {/* Hero Section */}
       <section className="elegant-gradient text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-5xl font-bold mb-6">Meet Our Staff!</h1>
+          <h1 className="elegant-heading text-5xl font-bold mb-6">Our Staff!</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             Meet our incredible instructors and grooms here at LionHeart Riding Academy. These will be familiar faces in the barn and at horse shows to help riders through every aspect of their equestrian journey.
@@ -40,8 +40,7 @@ export default function StaffPage() {
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Nora Humfeld</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
               <div className="font-lexend text-lg text-gray-700 text-center mt-2">
-                <div>Phone: (555) 123-4567</div>
-                <div>Email: nora@lionheartridingacademy.com</div>
+               
               </div>
             </div>
             {/* Izzy Petsel */}
@@ -50,8 +49,7 @@ export default function StaffPage() {
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Izzy Petsel</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
               <div className="font-lexend text-lg text-gray-700 text-center mt-2">
-                <div>Phone: (555) 987-6543</div>
-                <div>Email: izzy@lionheartridingacademy.com</div>
+                
               </div>
             </div>
             {/* Charlotte Struckhoff */}
@@ -67,21 +65,15 @@ export default function StaffPage() {
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
             {/* Hailey Niles */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
+            {/* <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
               <Image src="/public/placeholder-user.jpg" alt="Hailey Niles" width={220} height={180} className="rounded-lg mb-4 object-cover" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Hailey Niles</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
-            </div>
+            </div> */}
             {/* Ava Gamble */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
               <Image src="/public/placeholder-user.jpg" alt="Ava Gamble" width={220} height={180} className="rounded-lg mb-4 object-cover" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Ava Gamble</h3>
-              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
-            </div>
-            {/* Caroline Bruns */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Caroline Bruns" width={220} height={180} className="rounded-lg mb-4 object-cover" />
-              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Caroline Bruns</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
             {/* Addie Stroessner */}
@@ -90,6 +82,13 @@ export default function StaffPage() {
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Addie Stroessner</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
+            {/* Caroline Bruns */}
+            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
+              <Image src="/public/placeholder-user.jpg" alt="Caroline Bruns" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Caroline Bruns</h3>
+              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
+            </div>
+            
           </div>
         </div>
       </section>

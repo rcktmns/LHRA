@@ -38,7 +38,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-lexend font-semibold text-lhra-red mb-1">Phone</h3>
-                    <p className="font-lexend text-gray-600">(555) 123-RIDE</p>
+                    <p className="font-lexend text-gray-600">(573) 823-2173</p>
                   </div>
                 </div>
 

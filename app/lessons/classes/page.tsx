@@ -8,38 +8,36 @@ import { Clock, Users, DollarSign, Shield, Shirt, Calendar, Star, Target } from 
 export default function LessonsPage() {
   const lessonCards = [
     {
+      icon: <Target className="h-8 w-8 text-lhra-yellow" />,
+      title: "Age Range",
+      content: "We teach riders ages 4 and up - it is never too late to begin your equestrian journey. Young riders may start in a double saddle, which allows the instructor to sit behind the child on the horse and allow them to learn through feeling.",
+      highlight: "Ages 4+"
+    },
+    {
       icon: <Clock className="h-8 w-8 text-lhra-yellow" />,
       title: "Duration & Frequency",
-      content: "Our lessons are 30 minutes long. Riders must ride at least once a week to build muscle memory. We encourage arriving early and staying late to learn tacking and grooming.",
+      content: "Our lessons are 30 minutes long. It is required that riders ride at least once a week in order to build muscle memory. We also encourage riders to come early and stay later after their lesson so they learn how to tack up and groom their horse. Working with a horse on the ground helps create a bond that makes riding so special.",
       highlight: "30 min lessons"
     },
     {
       icon: <Users className="h-8 w-8 text-lhra-yellow" />,
       title: "Private vs Group",
-      content: "Private and group lessons are the same price and duration. Instructors decide when to add students to ensure optimal learning experiences.",
-      highlight: "Same price"
-    },
-    {
-      icon: <Target className="h-8 w-8 text-lhra-yellow" />,
-      title: "Age Range",
-      content: "We teach riders ages 4 and up - it's never too late to begin your equestrian journey. Young riders may start in a double saddle for safety.",
-      highlight: "Ages 4+"
+      content: "Private and group lessons are the same price and duration. Our instructors reserve the right to decide if/when to add another student to a lesson, so that all students are assured a learning experience.",
+      highlight: "Same price & duration"
     }
   ];
 
   const pricingCards = [
     {
-      type: "Individual",
+      type: "Individual Lessons",
       price: "$50",
-      description: "Pay per lesson",
-      features: ["Flexible scheduling", "No commitment", "Perfect for beginners"],
+      description: "per lesson",
       popular: false
     },
     {
-      type: "Package",
+      type: "Package Lessons",
       price: "$40",
       description: "per lesson",
-      features: ["Paid monthly", "Better value", "Makeups within month"],
       popular: true
     }
   ];
@@ -71,111 +69,151 @@ export default function LessonsPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Blue Hero Section */}
-      <section className="bg-lhra-blue py-16 px-4 text-center">
-        <h1 className="font-papyrus text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">Courage. Strength. Confidence.</h1>
+      <section className="bg-lhra-blue py-24 px-7 text-center">
+        <h1 className="font-papyrus text-5xl   font-bold text-white mb-4 mx-auto">Courage. Strength. Confidence.</h1>
+        <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
+
         <p className="font-lexend text-lg sm:text-xl text-white max-w-2xl mx-auto">
           At LionHeart, we teach Saddle Seat style riding on American Saddlebred horses and Hackney ponies. Saddle Seat is one form of English riding. American Saddlebreds are a beautiful, versatile breed of horse who tend to be smart, good-tempered, and excellent teachers.
         </p>
       </section>
 
       {/* Lesson Program Overview */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-papyrus text-4xl font-bold text-lhra-blue mb-4">Our Lesson Program</h2>
-            <div className="h-2 bg-lhra-yellow w-1/3 mx-auto mb-6"></div>
-            <p className="font-lexend text-lg text-gray-600 max-w-3xl mx-auto">
-              Discover the perfect riding experience tailored to your needs and goals
+<section className="bg-white py-16 px-4">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-12">
+      <h2 className="font-papyrus text-4xl font-bold text-lhra-blue mb-4">Our Lesson Program</h2>
+      <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      {/* Lesson Cards stacked vertically */}
+      <div className="space-y-8">
+        {/* Age Range */}
+        <Card className="hover:shadow-lg transition-all duration-300 border-lhra-yellow/20 hover:border-lhra-yellow">
+          <CardHeader className="text-center pb-4">
+            <div className="flex justify-center mb-4">
+              <Target className="h-8 w-8 text-lhra-yellow" />
+            </div>
+            <CardTitle className="font-papyrus text-xl text-lhra-blue">Age Range</CardTitle>
+            <div className="bg-lhra-yellow/10 px-3 py-1 rounded-full inline-block">
+              <span className="font-lexend font-semibold text-lhra-blue text-sm">Ages 4+</span>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="font-lexend text-gray-700 text-center">
+              We teach riders ages 4 and up - it is never too late to begin your equestrian journey.
+              Young riders may start in a double saddle, which allows the instructor to sit behind
+              the child on the horse and allow them to learn through feeling.
             </p>
-          </div>
+          </CardContent>
+        </Card>
 
-          {/* Lesson Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {lessonCards.map((card, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300 border-lhra-yellow/20 hover:border-lhra-yellow">
-                <CardHeader className="text-center pb-4">
-                  <div className="flex justify-center mb-4">
-                    {card.icon}
-                  </div>
-                  <CardTitle className="font-papyrus text-xl text-lhra-blue">{card.title}</CardTitle>
-                  <div className="bg-lhra-yellow/10 px-3 py-1 rounded-full inline-block">
-                    <span className="font-lexend font-semibold text-lhra-blue text-sm">{card.highlight}</span>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-lexend text-gray-700 text-center">{card.content}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+        {/* Duration & Frequency */}
+        <Card className="hover:shadow-lg transition-all duration-300 border-lhra-yellow/20 hover:border-lhra-yellow">
+          <CardHeader className="text-center pb-4">
+            <div className="flex justify-center mb-4">
+              <Clock className="h-8 w-8 text-lhra-yellow" />
+            </div>
+            <CardTitle className="font-papyrus text-xl text-lhra-blue">Duration & Frequency</CardTitle>
+            <div className="bg-lhra-yellow/10 px-3 py-1 rounded-full inline-block">
+              <span className="font-lexend font-semibold text-lhra-blue text-sm">30 min lessons</span>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="font-lexend text-gray-700 text-center">
+              Our lessons are 30 minutes long. It is required that riders ride at least once a week
+              in order to build muscle memory. We also encourage riders to come early and stay later
+              after their lesson so they learn how to tack up and groom their horse. Working with a
+              horse on the ground helps create a bond that makes riding so special.
+            </p>
+          </CardContent>
+        </Card>
 
-          {/* Pricing Section */}
-          <div className="mb-16">
-            <div className="text-center mb-8">
-              <h3 className="font-papyrus text-3xl font-bold text-lhra-blue mb-4">Lesson Pricing</h3>
-              <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-6"></div>
+        {/* Private vs Group */}
+        <Card className="hover:shadow-lg transition-all duration-300 border-lhra-yellow/20 hover:border-lhra-yellow">
+          <CardHeader className="text-center pb-4">
+            <div className="flex justify-center mb-4">
+              <Users className="h-8 w-8 text-lhra-yellow" />
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {pricingCards.map((plan, index) => (
-                <Card key={index} className={`relative hover:shadow-xl transition-all duration-300 ${plan.popular ? 'border-lhra-yellow border-2' : 'border-gray-200'}`}>
-                  {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-lhra-yellow text-lhra-blue px-4 py-1 rounded-full text-sm font-lexend font-semibold">
-                        Most Popular
-                      </span>
-                    </div>
-                  )}
-                  <CardHeader className="text-center pt-8">
-                    <CardTitle className="font-papyrus text-2xl text-lhra-blue">{plan.type}</CardTitle>
-                    <div className="flex items-baseline justify-center gap-1">
-                      <span className="font-papyrus text-4xl font-bold text-lhra-red">{plan.price}</span>
-                      <span className="font-lexend text-gray-600">{plan.description}</span>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="text-center">
-                    <ul className="space-y-2 mb-6">
-                      {plan.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="font-lexend text-gray-700 flex items-center justify-center gap-2">
-                          <Star className="h-4 w-4 text-lhra-yellow" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button 
-                      className={`w-full ${plan.popular ? 'bg-lhra-yellow text-lhra-blue hover:bg-lhra-yellow/90' : 'bg-lhra-blue text-white hover:bg-lhra-blue/90'}`}
-                    >
-                      Choose {plan.type}
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+            <CardTitle className="font-papyrus text-xl text-lhra-blue">Private vs Group</CardTitle>
+            <div className="bg-lhra-yellow/10 px-3 py-1 rounded-full inline-block">
+              <span className="font-lexend font-semibold text-lhra-blue text-sm">Same price & duration</span>
             </div>
-            
-            <div className="text-center mt-8">
-              <p className="font-lexend text-gray-600">
-                <strong>Note:</strong> Packages are paid monthly on the 1st. Makeups must be completed within the same month.
-              </p>
-            </div>
-          </div>
+          </CardHeader>
+          <CardContent>
+            <p className="font-lexend text-gray-700 text-center">
+            Private and group lessons are the same price and duration. Our instructors reserve the right to decide if/when to add another student to a lesson, so that all students are assured a learning experience
+            </p>
+          </CardContent>
+        </Card>
+        
+      </div>
 
-          {/* Image and Additional Info */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <Image src="/images/horse-lesson.jpeg" alt="Riding Lesson" width={600} height={400} className="rounded-lg shadow-lg object-cover w-full" />
-            </div>
-            <div className="space-y-6">
-              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue">Why Choose LionHeart?</h3>
-              <div className="space-y-4 font-lexend text-gray-700">
-                <p>Our experienced instructors create a safe, supportive environment where riders of all levels can develop their skills and build confidence.</p>
-                <p>We emphasize not just riding technique, but also horse care, grooming, and the special bond that develops between rider and horse.</p>
-                <p>With our flexible scheduling and comprehensive lesson packages, we make it easy to start your equestrian journey.</p>
+      {/* Right-side image or gallery */}
+      <div className="flex flex-col gap-6">
+        <Image
+          src="/images/horse-lesson.jpeg"
+          alt="Child learning to ride in double saddle"
+          width={600}
+          height={400}
+          className="rounded-lg shadow-lg object-cover w-full"
+        />
+         <Image
+          src="/images/horse-lesson.jpeg"
+          alt="Child learning to ride in double saddle"
+          width={600}
+          height={400}
+          className="rounded-lg shadow-lg object-cover w-full"
+        />
+        
+        {/* Optional: Add more images below if desired */}
+        {/* <Image src="/images/another-image.jpg" ... /> */}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="max-w-5xl mx-auto px-4 py-12">
+      <h2 className="text-3xl font-papyrus font-bold text-lhra-blue mb-8 text-center">
+        Lesson Pricing
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {pricingCards.map((plan, idx) => (
+          <Card
+            key={idx}
+            className={`relative p-6 hover:shadow-xl transition-shadow duration-300 ${
+              plan.popular ? "border-2 border-lhra-yellow" : "border border-gray-200"
+            }`}
+          >
+            {/* Yellow "Recommended" badge for popular package */}
+            {plan.popular && (
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-lhra-yellow text-lhra-blue px-4 py-1 rounded-full text-sm font-lexend font-semibold select-none">
+                  Recommended
+                </span>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            )}
 
+            <CardHeader className="text-center pt-8">
+              <CardTitle className="text-2xl font-papyrus text-lhra-blue">
+                {plan.type}
+              </CardTitle>
+              <div className="flex justify-center items-baseline gap-2 mt-2">
+                <span className="text-4xl font-bold text-lhra-red">{plan.price}</span>
+                <span className="text-gray-600 font-lexend">{plan.description}</span>
+              </div>
+            </CardHeader>
+
+            <CardContent className="mt-6 text-center">
+              <ul className="space-y-3 mb-6">
+                
+              </ul>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
       {/* Additional Information Cards */}
       <section className="bg-gray-50 py-16 px-4">
         <div className="max-w-7xl mx-auto">
@@ -216,9 +254,7 @@ export default function LessonsPage() {
             <Button asChild size="lg" className="bg-lhra-yellow text-lhra-blue hover:bg-lhra-yellow/90 font-lexend font-semibold px-8 py-6 text-lg">
               <Link href="/about/contact">Contact Us</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 font-lexend font-semibold px-8 py-6 text-lg">
-              <Link href="/lessons/safety">Safety Guidelines</Link>
-            </Button>
+            
           </div>
         </div>
       </section>

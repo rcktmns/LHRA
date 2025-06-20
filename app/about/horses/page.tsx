@@ -25,16 +25,22 @@ const memoryImages = [
   { img: "/placeholder.jpg", caption: "In Loving Memory 2" },
 ]
 
+const kittyImages = [
+  "/images/smith1.webp",
+  "/images/smith2.webp",
+  "/images/smith3.webp",
+]
+
 export default function HorsesPage() {
   const [showKitty, setShowKitty] = useState(false)
   const [carouselIdx, setCarouselIdx] = useState(0)
+  const [kittyImgIndex, setKittyImgIndex] = useState(0)
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
       <section className="elegant-gradient text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-papyrus text-4xl font-bold text-white text-center mb-12">Meet the Horses</h1>
+          <h1 className="font-papyrus text-5xl font-bold text-white text-center mb-12">Meet the Horses</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             We have an incredible roster of horses and ponies at LionHeart Riding Academy that all have something unique to offer our riders.
@@ -42,7 +48,6 @@ export default function HorsesPage() {
         </div>
       </section>
 
-      {/* Mosette Feature */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 mb-20">
           <div className="flex-1 flex justify-center">
@@ -56,14 +61,13 @@ export default function HorsesPage() {
         </div>
       </section>
 
-      {/* Horse Grid */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {horses.map((horse, idx) => (
+            {horses.map((horse) => (
               <Card key={horse.name} className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl">
                 <Image src={horse.img} alt={horse.name} width={300} height={220} className="rounded-lg mb-4 object-cover" />
-                <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">{horse.name === 'Kitty' ? <button onClick={() => setShowKitty(true)} className="underline text-lhra-red">{horse.name}</button> : horse.name}</h3>
+                <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">{horse.name}</h3>
                 <p className="font-lexend text-gray-700 text-center text-base">{horse.desc}</p>
               </Card>
             ))}
@@ -71,7 +75,6 @@ export default function HorsesPage() {
         </div>
       </section>
 
-      {/* In Loving Memory Carousel */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">In Loving Memory</h2>
@@ -88,30 +91,22 @@ export default function HorsesPage() {
         </div>
       </section>
 
-      {/* Floating Cat Icon */}
-      <button
-        aria-label="Meet Smith Kitty!"
-        onClick={() => setShowKitty(true)}
-        className="fixed bottom-6 right-6 z-50 bg-white rounded-full shadow-lg p-2 border-2 border-lhra-yellow hover:bg-lhra-yellow transition-colors"
-        style={{ width: 48, height: 48 }}
-      >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8 text-lhra-blue">
-          <path d="M4 4l2 4 4-2 4 2 2-4" />
-          <ellipse cx="12" cy="14" rx="8" ry="6" />
-          <circle cx="9" cy="13" r="1" />
-          <circle cx="15" cy="13" r="1" />
-          <path d="M12 17c1.5 0 2.5-1 2.5-1" />
-        </svg>
-      </button>
+     
 
-      {/* Smith Kitty Modal */}
       {showKitty && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100]">
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full relative">
             <button onClick={() => setShowKitty(false)} className="absolute top-2 right-4 text-2xl">×</button>
-            <h3 className="font-florentia text-2xl font-bold text-lhra-red mb-2">Meet Smith Kitty!</h3>
+            <h3 className="font-florentia text-2xl font-bold text-lhra-blue mb-2">Meet Smith Kitty!</h3>
             <p className="font-florentia text-gray-700 mb-4">Smith (or, Smitty) is our very friendly barn cat. He loves laying in the middle of the arena or climbing into the hay loft. If you see him, feel free to pet him and give him some treats.</p>
-            <Image src="/placeholder.jpg" alt="Smith Kitty" width={220} height={180} className="rounded-lg object-cover mx-auto" />
+            <Image
+              src={kittyImages[kittyImgIndex]}
+              alt="Smith Kitty"
+              width={220}
+              height={180}
+              className="rounded-lg object-cover mx-auto cursor-pointer"
+              onClick={() => setKittyImgIndex((kittyImgIndex + 1) % kittyImages.length)}
+            />
           </div>
         </div>
       )}
