@@ -39,7 +39,7 @@
   --input: 214.3 31.8% 91.4%;
   --ring: 221.2 83.2% 53.3%;
   --radius: 0.5rem;
-  --font-florentia: 'Florentia', serif;
+  --font-lexend: 'Lexend', sans-serif;
 }
 
 .dark {
@@ -69,8 +69,8 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-florentia;
-    font-family: var(--font-florentia), 'Florentia', serif;
+    @apply bg-background text-foreground font-lexend;
+    font-family: var(--font-lexend), 'Lexend', sans-serif;
     color: #000;
   }
 }
@@ -106,7 +106,7 @@
 }
 
 .subheader {
-  font-family: var(--font-florentia), 'Florentia', serif;
+  font-family: var(--font-lexend), 'Lexend', sans-serif;
   font-weight: bold;
   color: #fe3233;
 }

@@ -25,9 +25,9 @@ export default function ManeUpdate() {
       <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">The Mane Update</h3>
       {updates.map((update, index) => (
         <div key={index}>
-          <h4 className="font-florentia text-lg font-semibold text-lhra-red">{update.title}</h4>
-          <p className="font-florentia text-sm text-gray-600">{update.subtitle}</p>
-          <p className="font-florentia text-gray-700 mt-1">{update.content}</p>
+          <h4 className="font-lexend text-lg font-semibold text-lhra-red">{update.title}</h4>
+          <p className="font-lexend text-sm text-gray-600">{update.subtitle}</p>
+          <p className="font-lexend text-gray-700 mt-1">{update.content}</p>
           {index < updates.length - 1 && <hr className="my-4 border-lhra-yellow" />}
         </div>
       ))}

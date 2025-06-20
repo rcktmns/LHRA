@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import Navigation from "@/components/navigation"
 import ClientLayout from "@/components/ClientLayout"
-import { papyrus, florentia } from "./fonts"
+import { papyrus, lexend } from "./fonts"
 
 export const metadata: Metadata = {
   title: "LionHeart Riding Academy",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${papyrus.variable} ${florentia.variable}`}>
+    <html lang="en" className={`${papyrus.variable} ${lexend.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
               </div>
             </div>
-            <div className="mt-6 pt-6 border-t border-lhra-yellow text-center font-florentia text-white/60">
+            <div className="mt-6 pt-6 border-t border-lhra-yellow text-center font-lexend text-white/60">
               © {new Date().getFullYear()} LionHeart Riding Academy. All rights reserved.
             </div>
           </div>

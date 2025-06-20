@@ -39,12 +39,20 @@ export default function StaffPage() {
               <Image src="/public/placeholder-user.jpg" alt="Nora Humfeld" width={220} height={180} className="rounded-lg mb-4 object-cover" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Nora Humfeld</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
+              <div className="font-lexend text-lg text-gray-700 text-center mt-2">
+                <div>Phone: (555) 123-4567</div>
+                <div>Email: nora@lionheartridingacademy.com</div>
+              </div>
             </div>
             {/* Izzy Petsel */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
               <Image src="/public/placeholder-user.jpg" alt="Izzy Petsel" width={220} height={180} className="rounded-lg mb-4 object-cover" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Izzy Petsel</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
+              <div className="font-lexend text-lg text-gray-700 text-center mt-2">
+                <div>Phone: (555) 987-6543</div>
+                <div>Email: izzy@lionheartridingacademy.com</div>
+              </div>
             </div>
             {/* Charlotte Struckhoff */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">

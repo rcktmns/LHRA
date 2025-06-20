@@ -1,50 +1,47 @@
 "use client"
 
-import { useState } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import Image from "next/image"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { ChevronDown } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 const navigationItems = [
-  { name: "HOME", href: "/" },
   {
-    name: "LESSONS",
-    href: "/lessons",
-    dropdown: [
-      { name: "RIDING LESSONS", href: "/lessons/classes" },
-      { name: "SAFETY GUIDELINES", href: "/lessons/safety" },
-      { name: "PROPER ATTIRE", href: "/lessons/attire" },
-      { name: "CANCELLATION POLICY", href: "/lessons/cancellation" },
-    ],
-  },
-  {
-    name: "ACTIVITIES",
-    href: "/activities",
-    dropdown: [
-      { name: "HORSE SHOWS", href: "/activities/horse-shows" },
-      { name: "CAMPS", href: "/activities/camps" },
-      { name: "DRILL TEAM", href: "/activities/drill-team" },
-      { name: "PARTIES", href: "/activities/parties" },
-    ],
-  },
-  { name: "CALENDAR", href: "/calendar" },
-  {
-    name: "ABOUT US",
+    name: "About",
     href: "/about",
     dropdown: [
-      { name: "STAFF", href: "/about/staff" },
-      { name: "MEET THE HORSES", href: "/about/horses" },
-      { name: "CONTACT US", href: "/about/contact" },
-    ],
+      { name: "About Us", href: "/about" },
+      { name: "Meet the Horses", href: "/about/horses" },
+      { name: "Our Staff", href: "/about/staff" },
+      { name: "Contact", href: "/about/contact" },
+    ]
   },
+  {
+    name: "Lessons",
+    href: "/lessons",
+    dropdown: [
+      { name: "Riding Lessons", href: "/lessons/classes" },
+      { name: "Safety Guidelines", href: "/lessons/safety" },
+      { name: "Riding Attire", href: "/lessons/attire" },
+      { name: "Cancellation Policy", href: "/lessons/cancellation" },
+    ]
+  },
+  {
+    name: "Activities",
+    href: "/activities",
+    dropdown: [
+      { name: "Camps", href: "/activities/camps" },
+      { name: "Horse Shows", href: "/activities/horse-shows" },
+      { name: "Drill Team", href: "/activities/drill-team" },
+      { name: "Parties", href: "/activities/parties" },
+    ]
+  },
+  {
+    name: "Calendar",
+    href: "/calendar"
+  }
 ]
 
 export default function Navigation() {

@@ -1,9 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ChevronRight, Instagram, Facebook } from "lucide-react"
 import ManeUpdate from "@/components/ManeUpdate"
-
 
 export default function HomePage() {
   return (
@@ -24,15 +21,15 @@ export default function HomePage() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="mb-8 inline-block">
-            <h1 className="font-papyrus text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-2 drop-shadow-lg tracking-wider whitespace-nowrap">
+            <h1 className="font-papyrus text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-2 drop-shadow-lg tracking-wider">
               RIDE WITH THE PRIDE
             </h1>
             <div className="h-1 bg-white w-1/3 mx-auto mb-2"></div>
           </div>
 
-          <p className="font-florentia text-xl sm:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-lexend text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
             At LionHeart Riding Academy, we strive to create a safe, fun environment for horse enthusiasts of all ages to reach their personal horsemanship goals. Along the way, our riders learn life lessons about responsibility, independence, persistence, generosity, and acceptance.
           </p>
 
@@ -41,24 +38,18 @@ export default function HomePage() {
 
           {/* Social Media Links */}
           <div className="flex justify-center space-x-6">
-            <Link
-              href="https://instagram.com/lionheartridingacademy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/10 hover:bg-lhra-yellow hover:text-lhra-blue text-white p-4 rounded-full transition-all duration-300 transform hover:scale-110 border border-white/20"
-            >
-              <Instagram className="h-6 w-6" />
-              <span className="sr-only">Follow us on Instagram</span>
-            </Link>
-            <Link
-              href="https://facebook.com/LionHeartRidingAcademy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/10 hover:bg-lhra-yellow hover:text-lhra-blue text-white p-4 rounded-full transition-all duration-300 transform hover:scale-110 border border-white/20"
-            >
-              <Facebook className="h-6 w-6" />
-              <span className="sr-only">Follow us on Facebook</span>
-            </Link>
+            <a href="https://instagram.com/LionHeartRidingAcademy/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-lhra-yellow transition-colors duration-300">
+              <span className="sr-only">Instagram</span>
+              <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/LionHeartRidingAcademy/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-lhra-yellow transition-colors duration-300">
+              <span className="sr-only">Facebook</span>
+              <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -75,33 +66,82 @@ export default function HomePage() {
             <Link href="/lessons/classes" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
               <Image src="/images/horse-lesson.jpeg" alt="Riding Lessons" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Riding Lessons</h3>
-              <p className="font-florentia text-black">We teach Saddleseat riding on American Saddlebred horses and Hackney ponies.</p>
+              <p className="font-lexend text-black">We teach Saddleseat riding on American Saddlebred horses and Hackney ponies.</p>
             </Link>
             {/* Service Card 2: Camps */}
             <Link href="/activities/camps" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
               <Image src="/images/competition.jpeg" alt="Camps" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Camps</h3>
-              <p className="font-florentia text-black">We offer riding camps for all riding levels where riders learn about horse care, horse show prep, and more.</p>
+              <p className="font-lexend text-black">We offer riding camps for all riding levels where riders learn about horse care, horse show prep, and more.</p>
             </Link>
             {/* Service Card 3: Horse Shows */}
             <Link href="/activities/horse-shows" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
               <Image src="/images/drill-team.jpeg" alt="Horse Shows" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Horse Shows</h3>
-              <p className="font-florentia text-black">We have an Academy focused show program available for riders of all levels.</p>
+              <p className="font-lexend text-black">We have an Academy focused show program available for riders of all levels.</p>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* The Mane Update Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Courage. Strength. Confidence. Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Yellow Icon */}
+          <div className="flex justify-center mb-6">
+            <svg className="w-16 h-16 text-lhra-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </div>
+          
+          <h2 className="font-papyrus text-4xl font-bold text-lhra-blue mb-8">Courage. Strength. Confidence.</h2>
+          
           <div className="flex flex-col md:flex-row items-center justify-center gap-12">
             <div className="flex-shrink-0 flex justify-center">
-              <Image src="/images/logo.png" alt="LionHeart Logo" width={220} height={220} />
+              <Image src="/images/logo.png" alt="LionHeart Logo" width={280} height={280} />
             </div>
             <div className="w-full max-w-xl">
               <ManeUpdate />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-papyrus text-4xl font-bold text-lhra-blue mb-4">Horsin' Around: Our Newsletter</h2>
+          <div className="h-2 bg-lhra-yellow w-1/3 mx-auto mb-8"></div>
+          <p className="font-lexend text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Stay updated with the latest news, events, and stories from LionHeart Riding Academy
+          </p>
+          <Link href="/newsletter" className="inline-block bg-lhra-blue text-white font-lexend font-semibold px-8 py-4 rounded-lg shadow hover:bg-lhra-yellow hover:text-lhra-blue transition-colors">
+            View Newsletter Archive
+          </Link>
+        </div>
+      </section>
+
+      {/* Our Lesson Program Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-papyrus text-5xl font-bold text-lhra-blue mb-4">Our Lesson Program</h2>
+            <div className="h-2 bg-lhra-yellow w-1/3 mx-auto"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">Lesson Details</h3>
+              <div className="space-y-4 font-lexend text-lg">
+                <p>We teach Saddleseat riding on American Saddlebred horses and Hackney ponies. Our lesson program is designed to build confidence and skill in riders of all ages and experience levels.</p>
+                <p>Each lesson includes proper grooming, tacking, riding instruction, and untacking. We emphasize safety, proper technique, and developing a strong bond between rider and horse.</p>
+                <p>Lessons are available for beginners through advanced riders, and we offer both private and group lesson options to suit your needs.</p>
+              </div>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <Image src="/images/horse-lesson.jpeg" alt="Riding Lesson" width={500} height={300} className="w-full object-cover" />
+              <Image src="/images/competition.jpeg" alt="Competition" width={500} height={300} className="w-full object-cover" />
+              <Image src="/images/drill-team.jpeg" alt="Drill Team" width={500} height={300} className="w-full object-cover" />
             </div>
           </div>
         </div>

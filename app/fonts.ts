@@ -1,4 +1,5 @@
 import localFont from 'next/font/local'
+import { Lexend } from 'next/font/google'
 
 export const papyrus = localFont({
   src: '../public/fonts/papyrus.ttf',
@@ -6,13 +7,8 @@ export const papyrus = localFont({
   display: 'swap',
 })
 
-export const florentia = localFont({
-  src: [
-    { path: '../public/fonts/Florentia-Regular-trial.ttf', weight: '400', style: 'normal' },
-    { path: '../public/fonts/Florentia-Bold-trial.ttf', weight: '700', style: 'normal' },
-    { path: '../public/fonts/Florentia-Bold-Italic-trial.ttf', weight: '700', style: 'italic' },
-    // Add more variants if needed
-  ],
-  variable: '--font-florentia',
+export const lexend = Lexend({
+  subsets: ['latin'],
+  variable: '--font-lexend',
   display: 'swap',
 }) 
