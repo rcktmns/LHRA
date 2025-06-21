@@ -53,18 +53,18 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-80">
+                  <div className="relative overflow-hidden shadow-lg group h-80 rounded-lg">
                     <Image 
                       src="/images/drill-team.jpeg" 
                       alt="" 
                       width={600} 
                       height={400} 
-                      className="w-full h-full object-cover object-center " 
+                      className="w-full h-full object-cover object-center" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-64">
+                  <div className="relative overflow-hidden shadow-lg group h-64 rounded-lg">
                     <Image 
                       src="/images/competition.jpeg" 
                       alt="" 
@@ -93,7 +93,7 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden  shadow-lg group h-80">
+                  <div className="relative overflow-hidden shadow-lg group h-80 rounded-lg">
                     <Image 
                       src="/images/IMG_1933.webp" 
                       alt="Winter extravaganza drill team performance with dramatic lighting" 
@@ -105,13 +105,13 @@ export default function PartiesPage() {
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
                     </div>
                   </div>
-                  <div className="relative overflow-hidden  shadow-lg group h-64">
+                  <div className="relative overflow-hidden shadow-lg group h-64 rounded-lg">
                     <Image 
                       src="/images/IMG_1944.webp" 
                       alt="Winter party performance with costumed horses and riders" 
                       width={600} 
                       height={300} 
-                      className="w-full h-full object-cover object-center " 
+                      className="w-full h-full object-cover object-center" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
@@ -134,19 +134,19 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden  shadow-lg group h-64">
+                  <div className="relative overflow-hidden shadow-lg group h-64 rounded-lg">
                     <Image 
                       src="/images/ rse-lesson.jpeg" 
                       alt="" 
                       width={600} 
                       height={300} 
-                      className="w-full h-full object-cover object-center " 
+                      className="w-full h-full object-cover object-center" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
                     </div>
                   </div>
-                  <div className="relative overflow-hidden  shadow-lg group h-64">
+                  <div className="relative overflow-hidden shadow-lg group h-64 rounded-lg">
                     <Image 
                       src="/images/bo.webp" 
                       alt="" 
@@ -177,33 +177,26 @@ export default function PartiesPage() {
             </p>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    <div className="relative overflow-hidden  shadow-lg group h-64">
-      <Image
-        src="/images/ralf.webp"
-        alt="Birthday celebration with decorated horse and happy children"
-        width={500}
-        height={300}
-        className="w-full h-full object-cover object-center"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-      <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold"></div>
-    </div>
-    <div className="relative overflow-hidden rounded-xl shadow-lg group h-64">
-      <Image
-        src="/images/skylar.webp"
-        alt=""
-        width={500}
-        height={300}
-        className="w-full h-full object-cover object-center "
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-      <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold"></div>
-    </div>
-  </div>
-</div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="h-64 rounded-lg">
+              <Image
+                src="/images/ralf.webp"
+                alt="Birthday celebration with decorated horse and happy children"
+                width={500}
+                height={300}
+                className="w-full h-full object-cover object-center rounded-lg"
+              />
+            </div>
+            <div className="h-64 rounded-lg">
+              <Image
+                src="/images/skylar.webp"
+                alt=""
+                width={500}
+                height={300}
+                className="w-full h-full object-cover object-center rounded-lg"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

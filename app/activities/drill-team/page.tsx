@@ -71,8 +71,14 @@ export default function DrillTeamPage() {
             </div>
           </div>
           <div className="flex-1 flex flex-col space-y-4">
-            <Image src="/images/drill-team.jpeg" alt="Drill Team" width={500} height={350} className="w-full object-cover" />
-            <Image src="/images/competition.jpeg" alt="Drill Team Performance" width={500} height={350} className="w-full object-cover" />
+            <div className="relative overflow-hidden shadow-lg group rounded-lg">
+              <Image src="/images/drill-team.jpeg" alt="Drill Team" width={500} height={350} className="w-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div className="relative overflow-hidden shadow-lg group rounded-lg">
+              <Image src="/images/competition.jpeg" alt="Drill Team Performance" width={500} height={350} className="w-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
           </div>
         </div>
       </section>
