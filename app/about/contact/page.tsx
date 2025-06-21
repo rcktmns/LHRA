@@ -24,42 +24,42 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Info & Form */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Info */}
             <div>
-              <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-8">Get In Touch</h2>
-              <div className="space-y-6">
+              <h2 className="elegant-heading text-2xl font-bold text-lhra-blue mb-6">Get In Touch</h2>
+              <div className="space-y-4">
                 {/* Phone */}
-                <div className="flex items-start space-x-4">
-                  <div className="bg-lhra-red/10 p-3 rounded-full">
-                    <Phone className="h-6 w-6 text-lhra-red" />
+                <div className="flex items-start space-x-3">
+                  <div className="bg-lhra-red/10 p-2 rounded-full">
+                    <Phone className="h-5 w-5 text-lhra-red" />
                   </div>
                   <div>
-                    <h3 className="font-lexend font-semibold text-lhra-red mb-1">Phone</h3>
-                    <p className="font-lexend text-gray-600">(573) 823-2173</p>
+                    <h3 className="font-lexend font-semibold text-lhra-red mb-1 text-sm">Phone</h3>
+                    <p className="font-lexend text-gray-600 text-sm">(573) 823-2173</p>
                   </div>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start space-x-4">
-                  <div className="bg-lhra-yellow/20 p-3 rounded-full">
-                    <Mail className="h-6 w-6 text-lhra-blue" />
+                <div className="flex items-start space-x-3">
+                  <div className="bg-lhra-yellow/20 p-2 rounded-full">
+                    <Mail className="h-5 w-5 text-lhra-blue" />
                   </div>
                   <div>
-                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1">Email</h3>
-                    <p className="font-lexend text-gray-600">lionheartridingacademy@gmail.com</p>
+                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1 text-sm">Email</h3>
+                    <p className="font-lexend text-gray-600 text-sm">lionheartridingacademy@gmail.com</p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-8">
+              <div className="mt-6">
                 <Image
                   src="/images/horse-lesson.jpeg"
                   alt="LHRA Facility"
-                  width={500}
-                  height={300}
+                  width={400}
+                  height={250}
                   className="rounded-lg shadow-lg"
                 />
               </div>
