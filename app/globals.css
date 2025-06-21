@@ -72,42 +72,51 @@
     @apply bg-background text-foreground font-lexend;
     font-family: var(--font-lexend), 'Lexend', sans-serif;
     color: #000;
-    /* Global scaling - make everything smaller */
-    font-size: 0.85rem;
-    line-height: 1.4;
+    /* Global scaling - make everything even larger */
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
   
-  /* Scale down headings */
+  /* Scale up headings even more */
   h1 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     line-height: 1.2;
   }
   
   h2 {
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     line-height: 1.3;
   }
   
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     line-height: 1.4;
   }
   
-  /* Scale down paragraphs */
+  /* Scale up paragraphs even more */
   p {
-    font-size: 0.85rem;
-    line-height: 1.4;
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
   
-  /* Scale down buttons */
+  /* Scale up buttons even more */
   button, .btn {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
   }
   
-  /* Scale down cards and containers */
+  /* Scale up cards and containers even more */
   .card, .container {
-    padding: 0.6rem;
+    padding: 0.9rem;
+  }
+  
+  /* Keep header navigation text size unchanged */
+  nav {
+    font-size: 0.85rem;
+  }
+  
+  nav h1, nav h2, nav h3, nav p {
+    font-size: inherit;
   }
 }
 
