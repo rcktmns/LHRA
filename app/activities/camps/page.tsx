@@ -6,9 +6,9 @@ export default function CampsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="elegant-gradient text-white py-24">
+      <section className="elegant-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-papyrus text-5xl font-bold mb-6">Camps</h1>
+          <h1 className="font-papyrus text-4xl font-bold mb-6">Camps</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             We offer a variety of camps for all riding levels! Learn about horse care, show prep, and more.
@@ -20,25 +20,18 @@ export default function CampsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start gap-12">
           <div className="flex-1">
-            <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Day Camps</h2>
-            <p className="font-lexend text-black mb-4 text-lg sm:text-xl">
+            <h2 className="font-lexend font-bold text-xl text-lhra-red mb-3">Day Camps</h2>
+            <p className="font-lexend text-black mb-4 text-sm">
               During spring break we offer themed day camps. Each day will focus on a different aspect of horse care, riding, or the horse industry. Sometimes we visit a vet clinic, other times we learn about training horses… It's different each year, so don't miss out! Our day camps are for curious riders of all levels.
             </p>
           </div>
-          <div className="flex-1 flex flex-col space-y-4 max-w-[320px]">
+          <div className="flex-1 flex justify-center">
             <Image
               src="/images/horse-lesson.jpeg"
               alt="Day Camps"
-              width={320}
-              height={380}
-              className="w-full object-cover rounded"
-            />
-            <Image
-              src="/images/competition.jpeg"
-              alt="Day Camps 2"
-              width={320}
-              height={380}
-              className="w-full object-cover rounded"
+              width={400}
+              height={500}
+              className="w-full max-w-md object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -48,25 +41,18 @@ export default function CampsPage() {
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row-reverse items-start gap-12">
           <div className="flex-1">
-            <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Show Prep Camps</h2>
-            <p className="font-lexend text-black mb-4 text-lg sm:text-xl">
+            <h2 className="font-lexend font-bold text-xl text-lhra-red mb-3">Show Prep Camps</h2>
+            <p className="font-lexend text-black mb-4 text-sm">
               We have multiple different show prep camps that pair with different shows throughout the year. Riders will spend the week learning how to prep for a show – clipping, packing, etc – and then help set up and work the show at the end of the week. This is an intense camp geared towards intermediate to advanced riders.
             </p>
           </div>
-          <div className="flex-1 flex flex-col space-y-4 max-w-[320px]">
+          <div className="flex-1 flex justify-center">
             <Image
               src="/images/competition.jpeg"
               alt="Show Prep Camps"
-              width={320}
-              height={380}
-              className="w-full object-cover rounded"
-            />
-            <Image
-              src="/images/drill-team.jpeg"
-              alt="Show Prep Camps 2"
-              width={320}
-              height={380}
-              className="w-full object-cover rounded"
+              width={400}
+              height={500}
+              className="w-full max-w-md object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -76,25 +62,18 @@ export default function CampsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start gap-12">
           <div className="flex-1">
-            <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Cub Camp</h2>
-            <p className="font-lexend text-black mb-4 text-lg sm:text-xl">
+            <h2 className="font-lexend font-bold text-xl text-lhra-red mb-3">Cub Camp</h2>
+            <p className="font-lexend text-black mb-4 text-sm">
               This camp is for our younger or less experienced riders. They will learn lots about parts of the horse, tack, colors, markings, grooming, etc. It is very fun and highly educational!
             </p>
           </div>
-          <div className="flex-1 flex flex-col space-y-4 max-w-[320px]">
+          <div className="flex-1 flex justify-center">
             <Image
               src="/images/drill-team.jpeg"
               alt="Cub Camp"
-              width={320}
-              height={380}
-              className="w-full object-cover rounded"
-            />
-            <Image
-              src="/images/horse-lesson.jpeg"
-              alt="Cub Camp 2"
-              width={320}
-              height={380}
-              className="w-full object-cover rounded"
+              width={400}
+              height={500}
+              className="w-full max-w-md object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>

@@ -12,9 +12,9 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="elegant-gradient text-white py-24">
+      <section className="elegant-gradient text-white py-24 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-5xl font-bold mb-6">Contact Us</h1>
+          <h1 className="elegant-heading text-4xl font-bold mb-6">Contact Us</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             Ready to start your equestrian journey? Get in touch with us to schedule a visit, ask questions, or learn

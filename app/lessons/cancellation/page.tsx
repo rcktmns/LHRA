@@ -5,9 +5,9 @@ export default function CancellationPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="elegant-gradient text-white py-20">
+      <section className="elegant-gradient text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+          <h1 className="elegant-heading text-4xl font-bold mb-4">
             Cancellation Policy
           </h1>
           <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-6"></div>

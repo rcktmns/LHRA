@@ -4,23 +4,23 @@ export default function NewsletterPage() {
   const newsletters = [
     {
       month: "June 2025",
-      url: "https://mail.google.com/mail/u/0?ui=2&ik=5dfacd2a68&attid=0.1&permmsgid=msg-f:1834479571296094285&th=197561735ad0884d&view=att&disp=inline&realattid=f_mbpgqr590&zw"
+      url: "/newsletters/june-2025.pdf"
     },
     {
       month: "May 2025",
-      url: "https://mail.google.com/mail/u/0?ui=2&ik=5dfacd2a68&attid=0.1&permmsgid=msg-f:1831307283215802525&th=196a1c457aa9e09d&view=att&disp=inline&realattid=f_mabflq9i0&zw"
+      url: "/newsletters/may-2025.pdf"
     },
     {
       month: "December 2024",
-      url: "https://mail.google.com/mail/u/0?ui=2&ik=5dfacd2a68&attid=0.2&permmsgid=msg-f:1818352589744988538&th=193c160bdc29617a&view=att&disp=inline&realattid=f_m4n3xajg0&zw"
+      url: "/newsletters/december-2024.pdf"
     },
     {
       month: "November 2024",
-      url: "https://mail.google.com/mail/u/0?ui=2&ik=5dfacd2a68&attid=0.1&permmsgid=msg-f:1815813587213403368&th=193310d6442ec4e8&view=att&disp=inline&realattid=f_m3j2bnqp0&zw"
+      url: "/newsletters/november-2024.pdf"
     },
     {
       month: "October 2024",
-      url: "https://mail.google.com/mail/u/0?ui=2&ik=5dfacd2a68&attid=0.1&permmsgid=msg-f:1813012976009191172&th=19291db228339f04&view=att&disp=inline&realattid=f_m2aw6ce40&zw"
+      url: "/newsletters/october-2024.pdf"
     }
   ];
 
@@ -65,7 +65,7 @@ export default function NewsletterPage() {
                       <h3 className="font-papyrus text-xl font-bold text-lhra-blue group-hover:text-lhra-red transition-colors">
                         {newsletter.month}
                       </h3>
-                      <p className="font-lexend text-lg text-gray-600">Click to read newsletter</p>
+                      <p className="font-lexend text-lg text-gray-600">Click to download newsletter</p>
                     </div>
                   </div>
                   <div className="text-lhra-yellow group-hover:text-lhra-red transition-colors">

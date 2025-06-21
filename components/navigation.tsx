@@ -54,12 +54,12 @@ export default function Navigation() {
   return (
     <nav className="backdrop-blur bg-lhra-blue/90 shadow-xl sticky top-0 z-50 border-b-4 border-lhra-yellow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-14">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center group transition-transform duration-200 hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]">
               <div>
-                <span className="font-papyrus text-2xl font-bold" style={{ color: 'white' }}>
+                <span className="font-papyrus text-lg font-bold" style={{ color: 'white' }}>
                   LionHeart Riding Academy
                 </span>
               </div>
@@ -68,7 +68,7 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-6 flex items-baseline space-x-4">
               {navigationItems.map((item) => (
                 <div key={item.name} className="relative">
                   {item.dropdown ? (

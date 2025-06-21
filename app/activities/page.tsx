@@ -13,7 +13,7 @@ export default function ActivitiesPage() {
         <div className="absolute inset-0 bg-[url('/images/horse-pattern.png')] opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <HorseIcon className="h-16 w-16 sm:h-20 sm:w-20 mx-auto mb-4 sm:mb-6 text-lhra-yellow" />
-          <h1 className="font-papyrus text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">Activities & Events</h1>
+          <h1 className="font-papyrus text-4xl font-bold text-white mb-3 sm:mb-4">Activities & Events</h1>
           <div className="h-1 bg-lhra-yellow w-24 sm:w-32 mx-auto mb-6 sm:mb-8"></div>
           <p className="font-lexend text-lg sm:text-xl text-white/90 max-w-3xl mx-auto px-4">
             From summer camps to horse shows and special events, discover all the exciting activities at LionHeart Riding Academy.

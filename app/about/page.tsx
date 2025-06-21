@@ -4,20 +4,12 @@ import { Button } from "@/components/ui/button"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 ">
       {/* Hero Section */}
-      <section className="elegant-gradient text-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-8">
-            <Image
-              src="/images/logo.png"
-              alt="Lionheart Riding Academy Logo"
-              width={120}
-              height={120}
-              className="mx-auto mb-6"
-            />
-          </div>
-          <h1 className="elegant-heading text-5xl font-bold mb-6">About Lionheart Riding Academy</h1>
+      <section className="elegant-gradient text-white py-20">
+        <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-6 text-center">
+         
+          <h1 className="elegant-heading text-4xl font-bold mb-6">About Lionheart Riding Academy</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
         </div>
       </section>
@@ -28,7 +20,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="font-lexend text-gray-700 mb-8 text-lg">
-                LionHeart Riding Academy began in June, 2007 with one instructor, one lesson horse, and two students. Today, we are proud to have a dedicated team and a growing herd of horses. We believe that learning to ride isn’t just about learning how to be able to control a horse, but will teach a rider many valuable lessons that can be utilized in all areas of life. Our riders learn to value safety, hard work, sportsmanship, persistence, teamwork - and most of all, FUN!
+                LionHeart Riding Academy began in June, 2007 with one instructor, one lesson horse, and two students. Today, we are proud to have a dedicated team and a growing herd of horses. We believe that learning to ride isn't just about learning how to be able to control a horse, but will teach a rider many valuable lessons that can be utilized in all areas of life. Our riders learn to value safety, hard work, sportsmanship, persistence, teamwork - and most of all, FUN!
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild className="bg-lhra-blue hover:bg-lhra-blue/90 font-lexend elegant-button">

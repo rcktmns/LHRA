@@ -39,10 +39,10 @@ export default function DrillTeamPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="elegant-gradient text-white py-24">
+      <section className="elegant-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           
-          <h1 className="font-papyrus text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Drill Team</h1>
+          <h1 className="font-papyrus text-4xl font-bold mb-6">Drill Team</h1>
           <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
           <p className="font-lexend text-lg sm:text-xl max-w-3xl mx-auto">
             Drill Team offers unique opportunities for growth, both as a rider and as an individual.
@@ -118,16 +118,16 @@ export default function DrillTeamPage() {
             
             <Button
               asChild
-              variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white/10 font-lexend font-semibold px-8 py-6 text-lg elegant-button"
+              className="bg-lhra-yellow text-lhra-blue hover:bg-lhra-yellow/90 font-lexend font-semibold px-8 py-6 text-lg elegant-button"
             >
               <Link href="https://docs.google.com/document/d/1DaFIJ-Ym4LcIrr8A9rfzr0jkgAaFF5f1/edit?fbclid=PAZXh0bgNhZW0CMTEAAaeOR8lhwHqvKfCe3IqIiFUKLgVu48aVkipAmkj3iuqPpHrwLC9G0i5775GvaQ_aem_72lwpl9HL3lG7joJ-P8ozQ&tab=t.0" target="_blank" rel="noopener noreferrer">View Performances</Link>
             </Button>
             <Button
               asChild
+              variant="outline"
               size="lg"
-              className="bg-lhra-yellow text-lhra-blue hover:bg-lhra-yellow/90 font-lexend font-semibold px-8 py-6 text-lg elegant-button"
+              className="border-white text-white hover:bg-white/10 font-lexend font-semibold px-8 py-6 text-lg elegant-button"
             >
               <Link href="/about/contact">Contact Us</Link>
             </Button>

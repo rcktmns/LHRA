@@ -13,9 +13,9 @@ export default function AttirePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="elegant-gradient text-white py-24">
+      <section className="elegant-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-5xl font-bold mb-6">Riding Attire</h1>
+          <h1 className="elegant-heading text-4xl font-bold mb-6">Riding Attire</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             All riders are expected to wear proper riding attire. (Exceptions are made for religious accommodations as long as safety is not compromised.)

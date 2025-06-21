@@ -8,7 +8,7 @@ export default function HorseShowsPage() {
       {/* Intro Section */}
       <section className="py-16 bg-lhra-blue">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-papyrus text-5xl font-bold text-white mb-6">Horse Shows</h1>
+          <h1 className="font-papyrus text-4xl font-bold text-white mb-6">Horse Shows</h1>
           <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
           <div className="max-w-3xl mx-auto">
   <p className="font-lexend text-xl text-white mb-8">

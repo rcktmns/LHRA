@@ -3,9 +3,9 @@ export default function CalendarPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="elegant-gradient text-white py-20">
+      <section className="elegant-gradient text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-5xl font-bold mb-6">Calendar</h1>
+          <h1 className="elegant-heading text-4xl font-bold mb-6">Calendar</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             Stay informed about upcoming lessons, shows, events, and special activities at Lionheart Riding Academy.
