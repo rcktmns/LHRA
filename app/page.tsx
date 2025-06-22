@@ -38,7 +38,7 @@ export default function HomePage() {
             <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
           </div>
 
-          <p className="font-lexend text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-lexend text-xl sm:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
             At LionHeart Riding Academy, we strive to create a safe, fun environment for horse enthusiasts of all ages to reach their personal horsemanship goals. Along the way, our riders learn life lessons about responsibility, independence, persistence, generosity, and acceptance.
           </p>
 
