@@ -32,10 +32,10 @@ export default function HomePage() {
               className="mx-auto mb-6"
             />
           
-            <h1 className="font-papyrus text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 drop-shadow-lg tracking-wider">
+            <h1 className="font-papyrus text-l sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 drop-shadow-lg tracking-wider">
               RIDE WITH THE PRIDE
             </h1>
-            <div className="h-2 bg-yellow-500 w-1/3 mx-auto mb-4"></div>
+            <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-3"></div>
           </div>
 
           <p className="font-lexend text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
