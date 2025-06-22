@@ -59,7 +59,7 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center group transition-transform duration-200 hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]">
               <div>
-                <span className="font-papyrus text-2x1 font-bold" style={{ color: 'white' }}>
+                <span className="font-papyrus text-xl font-bold" style={{ color: 'white' }}>
                   LionHeart Riding Academy
                 </span>
               </div>
