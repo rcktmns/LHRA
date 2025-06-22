@@ -24,13 +24,13 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
         aria-label="Meet Smith Kitty!"
         onClick={() => setShowKitty(true)}
         className="fixed bottom-6 right-6 z-50 animate-bounce-cat"
-        style={{ width: 64, height: 64 }}
+        style={{ width: 96, height: 96 }}
       >
         <Image 
           src="/images/cat.svg" 
           alt="Smith Kitty Icon" 
-          width={64} 
-          height={64}
+          width={96} 
+          height={96}
         />
       </button>
       {/* Smith Kitty Modal */}

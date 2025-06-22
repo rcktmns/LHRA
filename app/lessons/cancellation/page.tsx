@@ -22,7 +22,7 @@ export default function CancellationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Official Policy Overview Card */}
-            <Card className="elegant-card p-6">
+            <Card className="elegant-card p-4">
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <div className="bg-lhra-blue/10 p-1.5 rounded-full text-lhra-blue">
@@ -34,7 +34,10 @@ export default function CancellationPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-3 text-sm text-gray-800 font-lexend font-medium">
+                <p className="font-lexend text-sm text-gray-800 mb-3">
+                  Cancellations must be given 24-hour notice to be eligible for a make-up lesson.
+                </p>
+                <ul className="space-y-2 text-xs text-gray-800 font-lexend font-medium">
                   
                   <li>
                     <span className="text-lhra-yellow mr-2">•</span>
@@ -57,26 +60,26 @@ export default function CancellationPage() {
                     Any lesson cancelled by LionHeart is eligible for make-ups
                   </li>
                 </ul>
-                <p className="font-lexend text-lhra-red font-semibold mt-4 text-sm">
+                <p className="font-lexend text-lhra-red font-semibold mt-3 text-xs">
                   Note: Make-up lessons must be completed within the month scheduled. They do not rollover into the next month.
                 </p>
               </CardContent>
             </Card>
 
             {/* Instructor Contact Info Card */}
-            <Card className="elegant-card p-6">
+            <Card className="elegant-card p-4">
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <div className="bg-lhra-red/10 p-1.5 rounded-full text-lhra-red">
                     <Phone className="h-5 w-5" />
                   </div>
-                  <CardTitle className="font-lexend text-sm sm:text-base text-lhra-red">
+                  <CardTitle className="font-lexend text-xs sm:text-sm text-lhra-red">
                     Instructor Contact Info
                   </CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-1.5 text-sm text-gray-800 font-lexend">
+                <ul className="space-y-1 text-xs text-gray-800 font-lexend">
                   <li>
                     <span className="font-bold">LHRA Phone:</span> 573-823-2173
                   </li>

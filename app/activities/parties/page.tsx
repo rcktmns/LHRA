@@ -53,7 +53,7 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-80 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
                     <Image 
                       src="/images/drill-team.jpeg" 
                       alt="Drill team performance at Halloween party" 
@@ -64,7 +64,7 @@ export default function PartiesPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-80 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
                     <Image 
                       src="/images/competition.jpeg" 
                       alt="Halloween party competition" 
@@ -93,7 +93,7 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-80 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
                     <Image 
                       src="/images/IMG_1933.webp" 
                       alt="Winter extravaganza drill team performance with dramatic lighting" 
@@ -105,7 +105,7 @@ export default function PartiesPage() {
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
                     </div>
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-80 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
                     <Image 
                       src="/images/IMG_1944.webp" 
                       alt="Winter party performance with costumed horses and riders" 
@@ -134,7 +134,7 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-80 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
                     <Image 
                       src="/images/ rse-lesson.jpeg" 
                       alt="Spring/summer party activities" 
@@ -146,7 +146,7 @@ export default function PartiesPage() {
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
                     </div>
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-80 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
                     <Image 
                       src="/images/bo.webp" 
                       alt="Spring/summer party with horses" 
@@ -178,7 +178,7 @@ export default function PartiesPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="h-80 rounded-lg">
+            <div className="h-72 rounded-lg">
               <Image
                 src="/images/ralf.webp"
                 alt="Birthday celebration with decorated horse and happy children"
@@ -187,7 +187,7 @@ export default function PartiesPage() {
                 className="w-full h-full object-cover object-center rounded-lg"
               />
             </div>
-            <div className="h-80 rounded-lg">
+            <div className="h-72 rounded-lg">
               <Image
                 src="/images/skylar.webp"
                 alt="Birthday party celebration at LionHeart"

@@ -37,8 +37,8 @@ export default function ContactPage() {
                     <Phone className="h-5 w-5 text-lhra-red" />
                   </div>
                   <div>
-                    <h3 className="font-lexend font-semibold text-lhra-red mb-1 text-sm">Phone</h3>
-                    <p className="font-lexend text-gray-600 text-sm">(573) 823-2173</p>
+                    <h3 className="font-lexend font-semibold text-lhra-red mb-1 text-xs">Phone</h3>
+                    <p className="font-lexend text-gray-600 text-xs">(573) 823-2173</p>
                   </div>
                 </div>
 
@@ -48,8 +48,8 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-lhra-blue" />
                   </div>
                   <div>
-                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1 text-sm">Email</h3>
-                    <p className="font-lexend text-gray-600 text-sm">lionheartridingacademy@gmail.com</p>
+                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1 text-xs">Email</h3>
+                    <p className="font-lexend text-gray-600 text-xs">lionheartridingacademy@gmail.com</p>
                   </div>
                 </div>
               </div>

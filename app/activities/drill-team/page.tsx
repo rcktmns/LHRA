@@ -105,7 +105,7 @@ export default function DrillTeamPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-lexend text-gray-700 text-center">{benefit.description}</p>
+                  <p className="font-lexend text-gray-700 text-center text-base">{benefit.description}</p>
                 </CardContent>
               </Card>
             ))}
