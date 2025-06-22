@@ -7,7 +7,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-lhra-blue/95 z-10" />
+        <div className="absolute inset-0 bg-lhra-blue min-h-screen" />
 
         {/* Background Image */}
         <div className="absolute inset-0">
