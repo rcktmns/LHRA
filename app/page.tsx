@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-lhra-blue/90 z-10" />
 
         {/* Background Image */}
@@ -29,7 +29,7 @@ export default function HomePage() {
               alt="Lionheart Riding Academy Logo"
               width={120}
               height={120}
-              className="mx-auto mb-4"
+              className="mx-auto mb-6"
             />
           
             <h1 className="font-papyrus text-l sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 drop-shadow-lg tracking-wider">
