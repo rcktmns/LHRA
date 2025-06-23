@@ -135,9 +135,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <h3 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">Lesson Details</h3>
-              <div className="space-y-4 font-lexend text-sm">
+              <div className="space-y-4 font-lexend text-base">
                 <p>We teach Saddleseat riding on American Saddlebred horses and Hackney ponies. Our lesson program is designed to build confidence and skill in riders of all ages and experience levels.</p>
-                <Link href="/lessons/classes" className="inline-block bg-lhra-blue text-white font-lexend  px-8 py-4 rounded-lg shadow hover:bg-lhra-yellow hover:text-lhra-blue transition-colors">
+                <Link href="/lessons/classes" className="inline-block bg-lhra-blue text-white text-base font-lexend px-8 py-4 rounded-lg shadow hover:bg-lhra-yellow hover:text-lhra-blue transition-colors">
                   Learn More
             </Link>
                </div>
@@ -146,8 +146,8 @@ export default function HomePage() {
   <Image
     src="/images/horse-lesson.jpeg"
     alt="Riding Lesson"
-    width={300}
-    height={180}
+    width={275}
+    height={165}
     className="w-full object-cover rounded-lg"
   />
 
