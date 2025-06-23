@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="elegant-gradient text-white py-20">
         <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-6 text-center">
          
-          <h1 className="elegant-heading text-4xl font-bold mb-6">About Lionheart Riding Academy</h1>
+          <h1 className="elegant-heading text-4xl font-bold mb-4">About Lionheart Riding Academy</h1>
           <div className="h-1 bg-lhra-yellow w-32 mx-auto"></div>
         </div>
       </section>
