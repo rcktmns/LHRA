@@ -8,8 +8,8 @@ export default function CampsPage() {
       {/* Hero Section */}
       <section className="elegant-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-papyrus text-4xl font-bold mb-6">Camps</h1>
-          <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
+          <h1 className="font-papyrus text-4xl font-bold mb-4">Camps</h1>
+          <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-2"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             We offer a variety of camps for all riding levels! Learn about horse care, show prep, and more.
           </p>
@@ -18,7 +18,7 @@ export default function CampsPage() {
 
       {/* Day Camps Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start items-center gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Day Camps</h2>
             <p className="font-lexend text-black mb-4 text-base">
@@ -39,7 +39,7 @@ export default function CampsPage() {
 
       {/* Show Prep Camps Section */}
       <section className="py-16 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row-reverse items-start gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row-reverse items-start items-center gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Show Prep Camps</h2>
             <p className="font-lexend text-black mb-4 text-base">
@@ -60,7 +60,7 @@ export default function CampsPage() {
 
       {/* Cub Camp Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start items-center gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Cub Camp</h2>
             <p className="font-lexend text-black mb-4 text-base">
