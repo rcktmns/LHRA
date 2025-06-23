@@ -142,7 +142,7 @@ export default function HomePage() {
             </Link>
                </div>
             </div>
-            <div className="flex flex-col space-y-1">
+            <div className="flex flex-col space-y-1 max-w-md mx-auto">
   <Image
     src="/images/horse-lesson.jpeg"
     alt="Riding Lesson"
