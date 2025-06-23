@@ -125,8 +125,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Lesson Program Section */}
-     <section className="py-12 bg-white">
+{/* Our Lesson Program Section */}
+<section className="py-12 bg-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center mb-12">
       {/* Optional title or header here */}
@@ -167,15 +167,4 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-  />
-
- 
-</div>
-
-
-          </div>
-        </div>
-      </section>
-    </div>
-  )
 }
