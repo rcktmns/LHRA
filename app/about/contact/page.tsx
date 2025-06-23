@@ -14,8 +14,8 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="elegant-gradient text-white py-24 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-4xl font-bold mb-6">Contact Us</h1>
-          <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
+          <h1 className="elegant-heading text-4xl font-bold mb-4">Contact Us</h1>
+          <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-2"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             Ready to start your equestrian journey? Get in touch with us to schedule a visit, ask questions, or learn
             more about our programs.
@@ -29,7 +29,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Info */}
             <div>
-              <h2 className="elegant-heading text-2xl font-bold text-lhra-blue mb-6">Get In Touch</h2>
+              <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-6">Get In Touch</h2>
               <div className="space-y-4">
                 {/* Phone */}
                 <div className="flex items-start space-x-3">
@@ -37,8 +37,8 @@ export default function ContactPage() {
                     <Phone className="h-5 w-5 text-lhra-red" />
                   </div>
                   <div>
-                    <h3 className="font-lexend font-semibold text-lhra-red mb-1 text-xs">Phone</h3>
-                    <p className="font-lexend text-gray-600 text-xs">(573) 823-2173</p>
+                    <h3 className="font-lexend font-semibold text-lhra-red mb-1 text-base">Phone</h3>
+                    <p className="font-lexend text-gray-600 text-base">(573) 823-2173</p>
                   </div>
                 </div>
 
@@ -48,8 +48,8 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-lhra-blue" />
                   </div>
                   <div>
-                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1 text-xs">Email</h3>
-                    <p className="font-lexend text-gray-600 text-xs">lionheartridingacademy@gmail.com</p>
+                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1 text-base">Email</h3>
+                    <p className="font-lexend text-gray-600 text-base">lionheartridingacademy@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -58,8 +58,8 @@ export default function ContactPage() {
                 <Image
                   src="/images/horse-lesson.jpeg"
                   alt="LHRA Facility"
-                  width={400}
-                  height={250}
+                  width={480}
+                  height={300}
                   className="rounded-lg shadow-lg"
                 />
               </div>
