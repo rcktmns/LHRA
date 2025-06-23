@@ -9,8 +9,8 @@ export default function PartiesPage() {
       {/* Hero Section */}
       <section className="elegant-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-4xl font-bold mb-6">Parties at LionHeart</h1>
-          <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-6"></div>
+          <h1 className="elegant-heading text-4xl font-bold mb-4">Parties at LionHeart</h1>
+          <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-2"></div>
           <p className="font-lexend text-base max-w-3xl mx-auto leading-relaxed">
             Join us for unforgettable celebrations! From seasonal barn gatherings to magical birthday parties, 
             LionHeart has been creating cherished memories for riders and their families.
@@ -35,10 +35,10 @@ export default function PartiesPage() {
             <div className="flex flex-col lg:flex-row items-center gap-12">
               <div className="flex-1 space-y-4">
                 <h3 className="font-lexend font-bold text-2xl text-lhra-red mb-3">Halloween Party</h3>
-                <p className="font-lexend text-gray-700 text-base leading-relaxed">
+                <p className="font-lexend text-gray-700 text-lg leading-relaxed">
                 Every year we throw a Halloween Party. The biggest event of the night is our costume contest - riders dress themselves and a horse of their choosing up, then everyone bids on who has the best costume and a winner is crowned!. Oftentimes we will have a Drill Team performance and a potluck. Other festivities change from year to year.
                 </p>
-                <p className="font-lexend text-gray-700 text-base leading-relaxed">
+                <p className="font-lexend text-gray-700 text-lg leading-relaxed">
                  
                  Check out{" "}
                   <a 
@@ -53,7 +53,7 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-60 w-80 rounded-lg">
                     <Image 
                       src="/images/drill-team.jpeg" 
                       alt="Drill team performance at Halloween party" 
@@ -64,7 +64,7 @@ export default function PartiesPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-60 w-80 rounded-lg">
                     <Image 
                       src="/images/competition.jpeg" 
                       alt="Halloween party competition" 
@@ -86,14 +86,14 @@ export default function PartiesPage() {
             <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
               <div className="flex-1 space-y-4">
                 <h3 className="font-lexend font-bold text-2xl text-lhra-red mb-3">Winter Extravaganza</h3>
-                <p className="font-lexend text-gray-700 text-base leading-relaxed">
+                <p className="font-lexend text-gray-700 text-lg leading-relaxed">
                 The biggest barn event of the year. Each of our Drill Teams put on a massive performance filled with costumes, lighting, props, etc. It is incredible to watch and best of all, it is open to the public - stay tuned for the annual announcement, we hope you'll make it.
                 </p>
                 
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-80 w-60 rounded-lg">
                     <Image 
                       src="/images/IMG_1933.webp" 
                       alt="Winter extravaganza drill team performance with dramatic lighting" 
@@ -105,7 +105,7 @@ export default function PartiesPage() {
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
                     </div>
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-60 w-80 rounded-lg">
                     <Image 
                       src="/images/IMG_1944.webp" 
                       alt="Winter party performance with costumed horses and riders" 
@@ -127,14 +127,14 @@ export default function PartiesPage() {
             <div className="flex flex-col lg:flex-row items-center gap-12">
               <div className="flex-1 space-y-4">
                 <h3 className="font-lexend font-bold text-2xl text-lhra-red mb-3">Spring/Summer Parties</h3>
-                <p className="font-lexend text-gray-700 text-base leading-relaxed">
+                <p className="font-lexend text-gray-700 text-lg leading-relaxed">
                 We don't always have one of these, but sometimes we have a spring/summer party to celebrate the warming weather and enjoy some time around horses. Usually would be paired with a Drill Team performance.
                 </p>
               
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-60 w-80 rounded-lg">
                     <Image 
                       src="/images/ rse-lesson.jpeg" 
                       alt="Spring/summer party activities" 
@@ -146,7 +146,7 @@ export default function PartiesPage() {
                     <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
                     </div>
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-72 rounded-lg">
+                  <div className="relative overflow-hidden shadow-lg group h-60 w-80 rounded-lg">
                     <Image 
                       src="/images/bo.webp" 
                       alt="Spring/summer party with horses" 
@@ -171,14 +171,14 @@ export default function PartiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-papyrus text-3xl font-bold text-lhra-blue mb-4">Birthday Parties</h2>
-            <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-6"></div>
+            <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-2"></div>
             <p className="font-lexend text-base text-gray-700 max-w-4xl mx-auto leading-relaxed">
             Many of our riders enjoy having their birthday party at LionHeart! It is the perfect place to spend time with friends. We allow our riders to dress up / decorate some of the horses using pet-safe dyes/glitter, or simply with a costume. Pony rides may be given. Horse enthusiast or not, all are welcome at a LionHeart birthday party, and who knows, if you get invited you might even get hooked and become a horse enthusiast yourself!
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="h-72 rounded-lg">
+            <div className="h-60 w-80 rounded-lg">
               <Image
                 src="/images/ralf.webp"
                 alt="Birthday celebration with decorated horse and happy children"
@@ -187,7 +187,7 @@ export default function PartiesPage() {
                 className="w-full h-full object-cover object-center rounded-lg"
               />
             </div>
-            <div className="h-72 rounded-lg">
+            <div className="h-60 w-80 rounded-lg">
               <Image
                 src="/images/skylar.webp"
                 alt="Birthday party celebration at LionHeart"
