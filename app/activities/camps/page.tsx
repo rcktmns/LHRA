@@ -21,7 +21,7 @@ export default function CampsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start items-center gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Day Camps</h2>
-            <p className="font-lexend text-black mb-4 text-base">
+            <p className="font-lexend text-black mb-4 text-lg">
               During spring break we offer themed day camps. Each day will focus on a different aspect of horse care, riding, or the horse industry. Sometimes we visit a vet clinic, other times we learn about training horses… It's different each year, so don't miss out! Our day camps are for curious riders of all levels.
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function CampsPage() {
             <Image
               src="/images/horse-lesson.jpeg"
               alt="Day Camps"
-              width={400}
+              width={420}
               height={500}
               className="w-full max-w-md object-cover rounded-lg shadow-lg"
             />
@@ -42,7 +42,7 @@ export default function CampsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row-reverse items-start items-center gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Show Prep Camps</h2>
-            <p className="font-lexend text-black mb-4 text-base">
+            <p className="font-lexend text-black mb-4 text-lg">
               We have multiple different show prep camps that pair with different shows throughout the year. Riders will spend the week learning how to prep for a show – clipping, packing, etc – and then help set up and work the show at the end of the week. This is an intense camp geared towards intermediate to advanced riders.
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function CampsPage() {
             <Image
               src="/images/competition.jpeg"
               alt="Show Prep Camps"
-              width={400}
+              width={420}
               height={500}
               className="w-full max-w-md object-cover rounded-lg shadow-lg"
             />
@@ -63,7 +63,7 @@ export default function CampsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start items-center gap-12">
           <div className="flex-1">
             <h2 className="font-lexend font-bold text-2xl text-lhra-red mb-4">Cub Camp</h2>
-            <p className="font-lexend text-black mb-4 text-base">
+            <p className="font-lexend text-black mb-4 text-lg">
               This camp is for our younger or less experienced riders. They will learn lots about parts of the horse, tack, colors, markings, grooming, etc. It is very fun and highly educational!
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function CampsPage() {
             <Image
               src="/images/drill-team.jpeg"
               alt="Cub Camp"
-              width={400}
+              width={420}
               height={500}
               className="w-full max-w-md object-cover rounded-lg shadow-lg"
             />
