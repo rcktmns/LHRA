@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto pt-16">
+        <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto pt-12">
           <div className="mb-6 inline-block">
         
             <Image
