@@ -74,19 +74,19 @@ export default function HomePage() {
             {/* Service Card 1: Riding Lessons */}
             <Link href="/lessons/classes" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
               <Image src="/images/horse-lesson.jpeg" alt="Riding Lessons" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
-              <h3 className="font-papyrus text-x1 font-bold text-lhra-blue mb-2">Riding Lessons</h3>
+              <h3 className="font-papyrus text-xl font-bold text-lhra-blue mb-2">Riding Lessons</h3>
               <p className="font-lexend text-black text-base">We teach Saddleseat riding on American Saddlebred horses and Hackney ponies.</p>
             </Link>
             {/* Service Card 2: Camps */}
-            <Link href="/activities/camps" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-4 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
+            <Link href="/activities/camps" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
               <Image src="/images/competition.jpeg" alt="Camps" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
-              <h3 className="font-papyrus text-x1 font-bold text-lhra-blue mb-2">Camps</h3>
+              <h3 className="font-papyrus text-xl font-bold text-lhra-blue mb-2">Camps</h3>
               <p className="font-lexend text-black text-base">We offer riding camps for all riding levels where riders learn about horse care, horse show prep, and more.</p>
             </Link>
             {/* Service Card 3: Horse Shows */}
-            <Link href="/activities/horse-shows" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-4 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
+            <Link href="/activities/horse-shows" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
               <Image src="/images/drill-team.jpeg" alt="Horse Shows" width={300} height={180} className="rounded-lg mb-4 object-cover w-full h-40" />
-              <h3 className="font-papyrus text-x1 font-bold text-lhra-blue mb-2">Horse Shows</h3>
+              <h3 className="font-papyrus text-xl font-bold text-lhra-blue mb-2">Horse Shows</h3>
               <p className="font-lexend text-black text-base">We have an Academy focused show program available for riders of all levels.</p>
             </Link>
           </div>
@@ -134,7 +134,7 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h3 className="font-papyrus text-xl font-bold text-lhra-blue mb-6">Lesson Details</h3>
+              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-6">Lesson Details</h3>
               <div className="space-y-4 font-lexend text-sm">
                 <p>We teach Saddleseat riding on American Saddlebred horses and Hackney ponies. Our lesson program is designed to build confidence and skill in riders of all ages and experience levels.</p>
                 <Link href="/lessons/classes" className="inline-block bg-lhra-blue text-white font-lexend  px-8 py-4 rounded-lg shadow hover:bg-lhra-yellow hover:text-lhra-blue transition-colors">
