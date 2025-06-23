@@ -19,8 +19,8 @@ export default function SafetyPage() {
       {/* Hero Section */}
       <section className="elegant-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-4xl font-bold mb-6">Safety Guidelines</h1>
-          <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
+          <h1 className="elegant-heading text-4xl font-bold mb-4">Safety Guidelines</h1>
+          <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-2"></div>
           <p className="font-lexend text-lg sm:text-xl max-w-3xl mx-auto">
             Safety is our number one priority at LionHeart. These guidelines ensure a safe environment for riders, horses, and staff.
           </p>
