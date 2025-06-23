@@ -38,7 +38,7 @@ export default function HorseShowsPage() {
               </ul>
             </div>
             <div className="flex-1 flex justify-center">
-              <div className="relative overflow-hidden shadow-lg group h-80 w-full max-w-md rounded-lg">
+              <div className="relative overflow-hidden shadow-lg group h-80 w-full max-w-xl rounded-lg">
                 <Image src="/images/competition.jpeg" alt="Academy Class" width={520} height={350} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -53,7 +53,7 @@ export default function HorseShowsPage() {
           {/* READY */}
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1 flex justify-center">
-              <div className="relative overflow-hidden shadow-lg group h-80 w-full max-w-md rounded-lg">
+              <div className="relative overflow-hidden shadow-lg group h-80 w-full max-w-xl rounded-lg">
                 <Image src="/images/horse-lesson.jpeg" alt="Ready" width={500} height={300} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -66,7 +66,7 @@ export default function HorseShowsPage() {
           {/* SET */}
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <div className="flex-1 flex justify-center">
-              <div className="relative overflow-hidden shadow-lg group h-80 w-full max-w-md rounded-lg">
+              <div className="relative overflow-hidden shadow-lg group h-80 w-full max-w-xl rounded-lg">
                 <Image src="/images/competition.jpeg" alt="Set" width={500} height={300} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -79,7 +79,7 @@ export default function HorseShowsPage() {
           {/* RIDE */}
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1 flex justify-center">
-              <div className="relative overflow-hidden shadow-lg group h-80 w-full max-w-md rounded-lg">
+              <div className="relative overflow-hidden shadow-lg group h-80 w-full max-w-xl rounded-lg">
                 <Image src="/images/drill-team.jpeg" alt="Ride" width={500} height={300} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -96,17 +96,17 @@ export default function HorseShowsPage() {
       <section className="py-16 bg-lhra-blue">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-papyrus text-3xl font-bold text-white mb-6">ACADEMY NATIONALS</h2>
-          <p className="font-lexend text-white text-sm mb-8">For many of our riders, the culmination of their show season is Academy Nationals in Murfreesboro, Tennessee. This show takes place in late October / early November, usually beginning the day before Halloween. It is a large show in a large arena with a lot of competition - a one of a kind experience.</p>
+          <p className="font-lexend text-white text-base mb-8">For many of our riders, the culmination of their show season is Academy Nationals in Murfreesboro, Tennessee. This show takes place in late October / early November, usually beginning the day before Halloween. It is a large show in a large arena with a lot of competition - a one of a kind experience.</p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <div className="relative overflow-hidden shadow-lg group h-48 w-72 rounded-lg">
+            <div className="relative overflow-hidden shadow-lg group h-52 w-78 rounded-lg">
               <Image src="/images/competition.jpeg" alt="Academy Nationals 1" width={450} height={300} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
-            <div className="relative overflow-hidden shadow-lg group h-48 w-72 rounded-lg">
+            <div className="relative overflow-hidden shadow-lg group h-52 w-78 rounded-lg">
               <Image src="/images/horse-lesson.jpeg" alt="Academy Nationals 2" width={450} height={300} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
-            <div className="relative overflow-hidden shadow-lg group h-48 w-72 rounded-lg">
+            <div className="relative overflow-hidden shadow-lg group h-52 w-78 rounded-lg">
               <Image src="/images/drill-team.jpeg" alt="Academy Nationals 3" width={450} height={300} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
@@ -118,17 +118,17 @@ export default function HorseShowsPage() {
       <section className="py-16 bg-lhra-blue">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-papyrus text-3xl font-bold text-white mb-6">PERFORMANCE CLASSES</h2>
-          <p className="font-lexend text-white text-sm mb-8">Some of our riders have gone on to compete in higher level classes, called performance classes. These classes have fancier horses and higher competition. A purchase of a suit will be required, and possibly the purchase or lease of a show horse if the rider/guardian so chooses. We will inform riders/guardians when we believe they are ready for performance classes.</p>
+          <p className="font-lexend text-white text-base mb-8">Some of our riders have gone on to compete in higher level classes, called performance classes. These classes have fancier horses and higher competition. A purchase of a suit will be required, and possibly the purchase or lease of a show horse if the rider/guardian so chooses. We will inform riders/guardians when we believe they are ready for performance classes.</p>
           <div className="flex flex-wrap justify-center gap-6">
-            <div className="relative overflow-hidden shadow-lg group h-48 w-72 rounded-lg">
+            <div className="relative overflow-hidden shadow-lg group h-52 w-78 rounded-lg">
               <Image src="/images/horse-lesson.jpeg" alt="Performance Classes 1" width={450} height={300} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
-            <div className="relative overflow-hidden shadow-lg group h-48 w-72 rounded-lg">
+            <div className="relative overflow-hidden shadow-lg group h-52 w-78 rounded-lg">
               <Image src="/images/competition.jpeg" alt="Performance Classes 2" width={450} height={300} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
-            <div className="relative overflow-hidden shadow-lg group h-48 w-72 rounded-lg">
+            <div className="relative overflow-hidden shadow-lg group h-52 w-78 rounded-lg">
               <Image src="/images/drill-team.jpeg" alt="Performance Classes 3" width={450} height={300} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
