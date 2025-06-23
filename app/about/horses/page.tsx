@@ -5,19 +5,19 @@ import { useState } from "react"
 import { Card } from "@/components/ui/card"
 
 const horses = [
-  { name: "Diva", img: "/placeholder.jpg", desc: "Diva's bio coming soon." },
-  { name: "Molly", img: "/images/IMG_1933.webp", desc: "Molly is another of our five-gaited horses. Charlotte Struckhoff (long-time student & current Monday instructor) owns her. She was trained here at LionHeart by Kate & Charlotte! Like Mose, she is shown in performance classes because she is super fancy. If you see her in the barn bring snacks to share; she will want a bite." },
-  { name: "Austin", img: "/images/austin.webp", desc: "Austin is our certified weirdo. He's always got a weird look in his eye and is trying to have food in his mouth. Austin is one of our most advanced horses, but once a rider figures out all his quirks he is wonderful. Slowly but surely he is making his way to Academy superstar ranks, but isn't going to leave behind his Country Pleasure beginnings. Austin is the biggest cuddle bug of all, so don't be afraid to come give him a hug if you see him in the barn." },
-  { name: "Stella", img: "/placeholder.jpg", desc: "Stella's bio coming soon." },
-  { name: "Jake", img: "/images/jake.webp", desc: "Jake is our most perfect, most handsome old guy. He is wonderful for beginners, but when he gets outside he becomes an advanced horse. So he has something to offer for everyone! Jake is mostly American Saddlebred, but actually is 1/4th Arabian (if you know what to look for you can see it in his nose). Don't let his good looks fool you, though, because he will steal some hay if you're not looking." },
-  { name: "Ralf", img: "/images/ralf.webp", desc: "Ralf is a very silly guy. He likes to nibble on shoulders, stick his tongue out, & eat hay. Ralf is a fun challenge for everyone that rides him. He's blind in his left eye, starts his lessons as slow as a snail, & can get revved up without any warning; so he has a lot to offer those that are up for it! Fun fact about Ralf: he has a few favorite songs (one of them being *Applause* by Lady Gaga) that get him HYPED." },
-  { name: "Tyler", img: "/placeholder.jpg", desc: "Tyler's bio coming soon." },
-  { name: "Cash", img: "/images/cash.webp", desc: "Cash is our newest addition to the LionHeart family! We got him from another barn in Mid-Missouri: High Spirits. Cash is our 3rd five-gaited horse, but unlike Mosette & Molly, he is best suited for Academy. He has a little bit for everybody since he listens so well, making him perfect for beginners to advanced riders. Cash is also great for riders first learning to slow-gait & rack." },
-  { name: "Gwen", img: "/images/gwen.webp", desc: "Gwen is an anomaly here at LionHeart. She is not an American Saddlebred, instead she is part Arabian, part Paint, & she used to be ridden Dressage instead of Saddleseat. Her head carriage & the way she moves is very different compared to what riders here are used to, so she is a fun project for intermediate riders seeking something outside of the norm." },
-  { name: "Kitty", img: "/placeholder.jpg", desc: "Kitty's bio coming soon." },
-  { name: "Fitz", img: "/images/fitz.webp", desc: "Fitz is the best with baby beginners. He is really sweet & loves being given treats- he will take really nicely from a little kid's hand. Fitz is our WT Academy superstar; he's a great tiny step up from someone who previously showed Jake." },
-  { name: "Frida", img: "/images/frida.webp", desc: "Frida is a nice challenge for intermediate riders. She is very particular about a lot of things, including who she does & doesn't like. Once riders figure out all her quirks she can be wonderful, but until then she teaches people a lot." },
-  { name: "Misty", img: "/images/misty.webp", desc: "Misty is great for beginners, especially those who might be scared of a big horse, since she is so small. Most of the time she is unbothered, making her the perfect candidate for little kids to learn how to catch a horse, groom, etc. Misty isn't without her quirks, though. Her favorite thing is food, but she doesn't quite know what is and isn't food, so she ends up going after whatever is closest. Fun fact about Misty: despite her short stature and lack of iconic saddleseat motion, she has won some classes!" },
+  { name: "Sak's on Fifth, aka Diva", img: "/placeholder.jpg", desc: "Diva's bio coming soon." },
+  { name: "Ridgewood's Lookin' for Blue, aka Molly", img: "/images/IMG_1933.webp", desc: "Molly's bio coming soon." },
+  { name: "Desert Highway, aka Austin", img: "/images/austin.webp", desc: "Austin's bio coming soon." },
+  { name: "I'm Tantalyzing, aka Stella", img: "/placeholder.jpg", desc: "Stella's bio coming soon." },
+  { name: "Legerdemain, aka Jake", img: "/images/jake.webp", desc: "Jake's bio coming soon." },
+  { name: "A Lucky Town, aka Ralf", img: "/images/ralf.webp", desc: "Ralf's boi coming soon." },
+  { name: "Mid's Nash Hart, aka Tyler", img: "/placeholder.jpg", desc: "Tyler's bio coming soon." },
+  { name: "Mr. Johnny Cash, akak Cash", img: "/images/cash.webp", desc: "Cash's bio coming soon." },
+  { name: "Gwen", img: "/images/gwen.webp", desc: "Gwen's bio coming soon." },
+  { name: "Hello Kitty, aka Kitty", img: "/placeholder.jpg", desc: "Kitty's bio coming soon." },
+  { name: "Another Hot Summer Night, aka Fitz", img: "/images/fitz.webp", desc: "Fitz's bio coming soon." },
+  { name: "The Persistence of Memory, aka Frida", img: "/images/frida.webp", desc: "Frida's bio coming soon." },
+  { name: "The Painted Potato, aka Misty", img: "/images/misty.webp", desc: "Misty's bio coming soon." },
 ]
 
 const memoryImages = [
@@ -68,7 +68,7 @@ export default function HorsesPage() {
             {horses.map((horse) => (
               <Card key={horse.name} className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl">
                 <Image src={horse.img} alt={horse.name} width={300} height={220} className="rounded-lg mb-4 object-cover" />
-                <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">{horse.name}</h3>
+                <h3 className="font-papyrus text-xl font-bold text-lhra-blue mb-1">{horse.name}</h3>
                 <p className="font-lexend text-gray-700 text-center text-base">{horse.desc}</p>
               </Card>
             ))}
