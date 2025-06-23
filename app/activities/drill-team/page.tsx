@@ -42,7 +42,7 @@ export default function DrillTeamPage() {
       <section className="elegant-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           
-          <h1 className="font-papyrus text-4xl font-bold mb-6">Drill Team</h1>
+          <h1 className="font-papyrus text-4xl font-bold mb-4">Drill Team</h1>
           <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
           <p className="font-lexend text-lg sm:text-xl max-w-3xl mx-auto">
             Drill Team offers unique opportunities for growth, both as a rider and as an individual.
@@ -71,12 +71,12 @@ export default function DrillTeamPage() {
             </div>
           </div>
           <div className="flex-1 flex flex-col space-y-4">
-            <div className="relative overflow-hidden shadow-lg group rounded-lg">
-              <Image src="/images/drill-team.jpeg" alt="Drill Team" width={500} height={350} className="w-full object-cover" />
+            <div className="relative h-60 overflow-hidden shadow-lg group rounded-lg">
+              <Image src="/images/drill-team.jpeg" alt="Drill Team" width={500} height={350} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
-            <div className="relative overflow-hidden shadow-lg group rounded-lg">
-              <Image src="/images/competition.jpeg" alt="Drill Team Performance" width={500} height={350} className="w-full object-cover" />
+            <div className="relative h-60 overflow-hidden shadow-lg group rounded-lg">
+              <Image src="/images/competition.jpeg" alt="Drill Team Performance" width={500} height={350} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
           </div>
