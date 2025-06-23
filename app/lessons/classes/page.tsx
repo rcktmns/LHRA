@@ -101,7 +101,7 @@ export default function LessonsPage() {
             </div>
           </CardHeader>
           <CardContent>
-            <p className="font-lexend text-gray-700 text-center">
+            <p className="font-lexend text-gray-700 text-center text-base">
               We teach riders ages 4 and up - it is never too late to begin your equestrian journey.
               Young riders may start in a double saddle, which allows the instructor to sit behind
               the child on the horse and allow them to learn through feeling.
@@ -121,7 +121,7 @@ export default function LessonsPage() {
             </div>
           </CardHeader>
           <CardContent>
-            <p className="font-lexend text-gray-700 text-center">
+            <p className="font-lexend text-gray-700 text-center text-base">
               Our lessons are 30 minutes long. It is required that riders ride at least once a week
               in order to build muscle memory. We also encourage riders to come early and stay later
               after their lesson so they learn how to tack up and groom their horse. Working with a
@@ -142,7 +142,7 @@ export default function LessonsPage() {
             </div>
           </CardHeader>
           <CardContent>
-            <p className="font-lexend text-gray-700 text-center">
+            <p className="font-lexend text-gray-700 text-center text-base">
             Private and group lessons are the same price and duration. Our instructors reserve the right to decide if/when to add another student to a lesson, so that all students are assured a learning experience
             </p>
           </CardContent>
@@ -182,7 +182,7 @@ export default function LessonsPage() {
         {pricingCards.map((plan, idx) => (
           <Card
             key={idx}
-            className={`relative p-6 hover:shadow-xl transition-shadow duration-300 ${
+            className={`relative p-6${
               plan.popular ? "border-2 border-lhra-yellow" : "border border-gray-200"
             }`}
           >
