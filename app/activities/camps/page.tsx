@@ -31,7 +31,7 @@ export default function CampsPage() {
               alt="Day Camps"
               width={420}
               height={500}
-              className="w-full max-w-md object-cover rounded-lg shadow-lg"
+              className="w-full max-w-lg object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function CampsPage() {
               alt="Show Prep Camps"
               width={420}
               height={500}
-              className="w-full max-w-md object-cover rounded-lg shadow-lg"
+              className="w-full max-w-lg object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function CampsPage() {
               alt="Cub Camp"
               width={420}
               height={500}
-              className="w-full max-w-md object-cover rounded-lg shadow-lg"
+              className="w-full max-w-lg object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
