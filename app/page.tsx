@@ -126,12 +126,12 @@ export default function HomePage() {
       </section>
 
 {/* Our Lesson Program Section */}
-     <section className="py-12 bg-white">Add commentMore actions
+     <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
        
           </div>
-          
+          <div className="flex justify-end">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <h3 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">Lesson Details</h3>
@@ -153,8 +153,7 @@ export default function HomePage() {
 
 
               </div>
-
-
+            </div>
           </div>
         </div>
       </section>
