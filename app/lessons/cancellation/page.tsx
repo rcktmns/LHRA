@@ -10,7 +10,7 @@ export default function CancellationPage() {
           <h1 className="elegant-heading text-4xl font-bold mb-4">
             Cancellation Policy
           </h1>
-          <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-6"></div>
+          <div className="h-1 bg-lhra-yellow w-24 mx-auto mb-2"></div>
           <p className="font-lexend text-base sm:text-lg max-w-3xl mx-auto">
             We understand schedules change. Review our policy to understand when and how to cancel/reschedule your lesson.
           </p>
@@ -28,19 +28,19 @@ export default function CancellationPage() {
                   <div className="bg-lhra-blue/10 p-1.5 rounded-full text-lhra-blue">
                     <Info className="h-5 w-5" />
                   </div>
-                  <CardTitle className="font-lexend text-xs sm:text-sm text-lhra-blue">
+                  <CardTitle className="font-lexend text-lg sm:text-base text-lhra-blue">
                     Official Policy Overview
                   </CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="font-lexend text-sm text-gray-800 mb-3">
+                <p className="font-lexend text-base text-gray-800 mb-3">
                   Cancellations must be given 24-hour notice to be eligible for a make-up lesson.
                 </p>
                 <ul className="space-y-2 text-xs text-gray-800 font-lexend font-medium">
                   
                   <li>
-                    <span className="text-lhra-yellow mr-2">•</span>
+                    <span className="text-lhra-yellow text-base mr-2">•</span>
                     All cancellations and make-up requests must be recorded in the{" "}
                     <a
                       href="https://docs.google.com/document/d/1-24KY-W0Lxnm1QY_NV3Qg6DDe8LAiEXAIQw6i07soZo/edit?usp=sharing"
@@ -52,15 +52,15 @@ export default function CancellationPage() {
                     </a>
                   </li>
                   <li>
-                    <span className="text-lhra-yellow mr-2">•</span>
+                    <span className="text-lhra-yellow text-base mr-2">•</span>
                     Riders must attend at least ¾ of their lesson to keep their reserved lesson spot
                   </li>
                   <li>
-                    <span className="text-lhra-yellow mr-2">•</span>
+                    <span className="text-lhra-yellow text-base mr-2">•</span>
                     Any lesson cancelled by LionHeart is eligible for make-ups
                   </li>
                 </ul>
-                <p className="font-lexend text-lhra-red font-semibold mt-3 text-xs">
+                <p className="font-lexend text-lhra-red font-semibold mt-3 text-base">
                   Note: Make-up lessons must be completed within the month scheduled. They do not rollover into the next month.
                 </p>
               </CardContent>
@@ -73,13 +73,13 @@ export default function CancellationPage() {
                   <div className="bg-lhra-red/10 p-1.5 rounded-full text-lhra-red">
                     <Phone className="h-5 w-5" />
                   </div>
-                  <CardTitle className="font-lexend text-xs sm:text-sm text-lhra-red">
+                  <CardTitle className="font-lexend text-lg sm:text-base text-lhra-red">
                     Instructor Contact Info
                   </CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-1 text-xs text-gray-800 font-lexend">
+                <ul className="space-y-1 text-base text-gray-800 font-lexend">
                   <li>
                     <span className="font-bold">LHRA Phone:</span> 573-823-2173
                   </li>
