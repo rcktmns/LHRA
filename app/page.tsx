@@ -146,8 +146,8 @@ export default function HomePage() {
   <Image
     src="/images/horse-lesson.jpeg"
     alt="Riding Lesson"
-    width={275}
-    height={165}
+    width={200}
+    height={120}
     className="w-full object-cover rounded-lg"
   />
 
