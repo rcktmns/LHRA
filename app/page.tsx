@@ -132,7 +132,7 @@ export default function HomePage() {
        
           </div>
           <div className="flex justify-end">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-4xl ml-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-2xl ml-auto">
             <div>
               <h3 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">Lesson Details</h3>
               <div className="space-y-4 font-lexend text-base">
