@@ -37,7 +37,7 @@ export default function CancellationPage() {
                 <p className="font-lexend text-base text-gray-800 mb-3">
                   Cancellations must be given 24-hour notice to be eligible for a make-up lesson.
                 </p>
-                <ul className="space-y-2 text-xs text-gray-800 font-lexend font-medium">
+                <ul className="space-y-2 text-base text-gray-800 font-lexend font-medium">
                   
                   <li>
                     <span className="text-lhra-yellow text-base mr-2">•</span>
