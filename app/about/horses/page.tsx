@@ -68,7 +68,7 @@ export default function HorsesPage() {
             {horses.map((horse) => (
               <Card key={horse.name} className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl">
                 <Image src={horse.img} alt={horse.name} width={300} height={220} className="rounded-lg mb-4 object-cover" />
-                <h3 className="font-papyrus text-xl font-bold text-lhra-blue mb-1">{horse.name}</h3>
+                <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">{horse.name}</h3>
                 <p className="font-lexend text-gray-700 text-center text-base">{horse.desc}</p>
               </Card>
             ))}
