@@ -98,7 +98,7 @@ export default function Navigation() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="text-white hover:text-lhra-yellow font-florentia font-medium px-3 py-2 transition-colors duration-200 tracking-wide transition-transform hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]"
+                      className="text-white hover:text-lhra-yellow font-florentia font-large px-3 py-2 transition-colors duration-200 tracking-wide transition-transform hover:scale-105 hover:drop-shadow-[0_0_8px_#B8860B]"
                     >
                       {item.name}
                     </Link>
