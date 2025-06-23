@@ -10,7 +10,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-6 text-center">
          
           <h1 className="elegant-heading text-4xl font-bold mb-6">About Lionheart Riding Academy</h1>
-          <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-8"></div>
+          <div className="h-1 bg-lhra-yellow w-32 mx-auto"></div>
         </div>
       </section>
 
@@ -23,10 +23,10 @@ export default function AboutPage() {
                 LionHeart Riding Academy began in June, 2007 with one instructor, one lesson horse, and two students. Today, we are proud to have a dedicated team and a growing herd of horses. We believe that learning to ride isn't just about learning how to be able to control a horse, but will teach a rider many valuable lessons that can be utilized in all areas of life. Our riders learn to value safety, hard work, sportsmanship, persistence, teamwork - and most of all, FUN!
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button asChild className="bg-lhra-blue hover:bg-lhra-blue/90 font-lexend elegant-button">
+                <Button asChild className="bg-lhra-blue hover:bg-lhra-blue/90 font-lexend text-base px-3 py-1 elegant-button">
                   <Link href="/about/staff">Meet Our Staff</Link>
                 </Button>
-                <Button asChild className="bg-lhra-red hover:bg-lhra-red/90 font-lexend elegant-button">
+                <Button asChild className="bg-lhra-red hover:bg-lhra-red/90 font-lexend text-base px-3 py-1 elegant-button">
                   <Link href="/about/horses">Meet Our Horses</Link>
                 </Button>
               </div>
