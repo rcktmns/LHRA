@@ -178,7 +178,7 @@ export default function PartiesPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="h-60 max-w-md rounded-lg">
+            <div className="h-60 rounded-lg">
               <Image
                 src="/images/ralf.webp"
                 alt="Birthday celebration with decorated horse and happy children"
@@ -187,7 +187,7 @@ export default function PartiesPage() {
                 className="w-full h-full object-cover object-center rounded-lg"
               />
             </div>
-            <div className="h-60 max-w-md rounded-lg">
+            <div className="h-60 ounded-lg">
               <Image
                 src="/images/skylar.webp"
                 alt="Birthday party celebration at LionHeart"
