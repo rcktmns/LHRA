@@ -6,18 +6,18 @@ import { Card } from "@/components/ui/card"
 
 const horses = [
   { name: "Sak's on Fifth, aka Diva", img: "/placeholder.jpg", desc: "Diva's bio coming soon." },
-  { name: "Ridgewood's Lookin' for Blue, aka Molly", img: "/images/IMG_1933.webp", desc: "Molly's bio coming soon." },
-  { name: "Desert Highway, aka Austin", img: "/images/austin.webp", desc: "Austin's bio coming soon." },
+  { name: "Ridgewood's Lookin' for Blue, aka Molly", img: "/placeholder.jpg", desc: "Molly's bio coming soon." },
+  { name: "Desert Highway, aka Austin", img: "/placeholder.jpg", desc: "Austin's bio coming soon." },
   { name: "I'm Tantalyzing, aka Stella", img: "/placeholder.jpg", desc: "Stella's bio coming soon." },
   { name: "Legerdemain, aka Jake", img: "/images/jake.webp", desc: "Jake's bio coming soon." },
   { name: "A Lucky Town, aka Ralf", img: "/images/ralf.webp", desc: "Ralf's boi coming soon." },
   { name: "Mid's Nash Hart, aka Tyler", img: "/placeholder.jpg", desc: "Tyler's bio coming soon." },
   { name: "Mr. Johnny Cash, akak Cash", img: "/images/cash.webp", desc: "Cash's bio coming soon." },
-  { name: "Gwen", img: "/images/gwen.webp", desc: "Gwen's bio coming soon." },
+  { name: "Jinacio, aka Gwen", img: "/placeholder.jpg", desc: "Gwen's bio coming soon." },
   { name: "Hello Kitty, aka Kitty", img: "/placeholder.jpg", desc: "Kitty's bio coming soon." },
-  { name: "Another Hot Summer Night, aka Fitz", img: "/images/fitz.webp", desc: "Fitz's bio coming soon." },
+  { name: "Another Hot Summer Night, aka Fitz", img: "/placeholder.jpg", desc: "Fitz's bio coming soon." },
   { name: "The Persistence of Memory, aka Frida", img: "/images/frida.webp", desc: "Frida's bio coming soon." },
-  { name: "The Painted Potato, aka Misty", img: "/images/misty.webp", desc: "Misty's bio coming soon." },
+  { name: "The Painted Potato, aka Misty", img: "/placeholder.jpg", desc: "Misty's bio coming soon." },
 ]
 
 const memoryImages = [
