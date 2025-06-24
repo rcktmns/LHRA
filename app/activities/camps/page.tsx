@@ -27,11 +27,11 @@ export default function CampsPage() {
           </div>
           <div className="flex-1 flex justify-center">
             <Image
-              src="/images/horse-lesson.jpeg"
+              src="/images/Website Pics/Website Pics/Camps Page/DayCamps.jpg"
               alt="Day Camps"
               width={420}
               height={500}
-              className="w-full max-w-lg object-cover rounded-lg shadow-lg"
+              className="w-full max-w-lg object-contain rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -48,11 +48,11 @@ export default function CampsPage() {
           </div>
           <div className="flex-1 flex justify-center">
             <Image
-              src="/images/competition.jpeg"
+              src="/images/Website Pics/Website Pics/Camps Page/ShowPrepCamps.jpg"
               alt="Show Prep Camps"
               width={420}
               height={500}
-              className="w-full max-w-lg object-cover rounded-lg shadow-lg"
+              className="w-full max-w-lg object-contain rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -69,11 +69,11 @@ export default function CampsPage() {
           </div>
           <div className="flex-1 flex justify-center">
             <Image
-              src="/images/drill-team.jpeg"
+              src="/images/Website Pics/Website Pics/Camps Page/CubCamps.jpg"
               alt="Cub Camp"
               width={420}
               height={500}
-              className="w-full max-w-lg object-cover rounded-lg shadow-lg"
+              className="w-full max-w-lg object-contain rounded-lg shadow-lg"
             />
           </div>
         </div>

@@ -53,28 +53,23 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-60 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
                     <Image 
-                      src="/images/drill-team.jpeg" 
+                      src="/images/Website Pics/Website Pics/Parties Page/CostumeHalloween.jpg" 
                       alt="Drill team performance at Halloween party" 
                       width={600} 
                       height={400} 
-                      className="w-full h-full object-cover object-center" 
+                      className="w-full h-full object-contain object-center" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-60 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
                     <Image 
-                      src="/images/competition.jpeg" 
+                      src="/images/Website Pics/Website Pics/Parties Page/PerformanceHalloween.jpg" 
                       alt="Halloween party competition" 
                       width={600} 
                       height={400} 
-                      className="w-full h-full object-cover object-center" 
+                      className="w-full h-full object-contain object-center" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                    </div>
                   </div>
                 </div>
               </div>
@@ -93,29 +88,23 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-60 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
                     <Image 
-                      src="/images/IMG_1933.webp" 
+                      src="/images/Website Pics/Website Pics/Parties Page/CostumeWinter.jpg" 
                       alt="Winter extravaganza drill team performance with dramatic lighting" 
                       width={600} 
                       height={400} 
-                      className="w-full h-full object-cover object-center" 
+                      className="w-full h-full object-contain object-center" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                    </div>
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-60 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
                     <Image 
-                      src="/images/IMG_1944.webp" 
+                      src="/images/Website Pics/Website Pics/Parties Page/PerformanceWinter.jpg" 
                       alt="Winter party performance with costumed horses and riders" 
                       width={600} 
                       height={400} 
-                      className="w-full h-full object-cover object-center" 
+                      className="w-full h-full object-contain object-center" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                    </div>
                   </div>
                 </div>
               </div>
@@ -134,30 +123,23 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden shadow-lg group h-60 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
                     <Image 
-                      src="/images/ rse-lesson.jpeg" 
+                      src="/images/Website Pics/Website Pics/Parties Page/RidingSummer.jpg" 
                       alt="Spring/summer party activities" 
                       width={600} 
                       height={400} 
-                      className="w-full h-full object-cover object-center" 
+                      className="w-full h-full object-contain object-center" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                    </div>
                   </div>
-                  <div className="relative overflow-hidden shadow-lg group h-60 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
                     <Image 
-                      src="/images/bo.webp" 
+                      src="/images/Website Pics/Website Pics/Parties Page/SummerParty.jpg" 
                       alt="Spring/summer party with horses" 
                       width={600} 
                       height={400} 
-                      className="w-full h-full object-cover object-center" 
+                      className="w-full h-full object-contain object-center" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white font-lexend font-semibold">
-                      
-                    </div>
                   </div>
                 </div>
               </div>
@@ -180,20 +162,20 @@ export default function PartiesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="h-80 rounded-lg">
               <Image
-                src="/images/ralf.webp"
+                src="/images/Website Pics/Website Pics/Parties Page/BirthdayParty.jpg"
                 alt="Birthday celebration with decorated horse and happy children"
                 width={600}
                 height={400}
-                className="w-full h-full object-cover object-center rounded-lg"
+                className="w-full h-full object-contain object-center rounded-lg"
               />
             </div>
-            <div className="h-80 ounded-lg">
+            <div className="h-80 rounded-lg">
               <Image
-                src="/images/skylar.webp"
+                src="/images/Website Pics/Website Pics/Parties Page/BirthdayParty2.jpg"
                 alt="Birthday party celebration at LionHeart"
                 width={600}
                 height={400}
-                className="w-full h-full object-cover object-center rounded-lg"
+                className="w-full h-full object-contain object-center rounded-lg"
               />
             </div>
           </div>

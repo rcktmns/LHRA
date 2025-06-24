@@ -67,11 +67,11 @@ export default function AttirePage() {
             </div>
             <div className="flex flex-col space-y-6">
               <div className="relative overflow-hidden shadow-lg group rounded-lg">
-                <Image src="/images/horse-lesson.jpeg" alt="Example Attire 1" width={600} height={400} className="w-full object-cover" />
+                <Image src="/images/Website Pics/Website Pics/Riding Attire Page/HelmetsRidingAttire.jpg" alt="Example Attire 1" width={600} height={400} className="w-full object-contain" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
               <div className="relative overflow-hidden shadow-lg group rounded-lg">
-                <Image src="/images/competition.jpeg" alt="Example Attire 2" width={600} height={400} className="w-full object-cover" />
+                <Image src="/images/Website Pics/Website Pics/Riding Attire Page/JodsBootsRidingAttire.jpg" alt="Example Attire 2" width={600} height={400} className="w-full object-contain" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
             </div>

@@ -59,7 +59,7 @@ export default function LessonsPage() {
             </div>
             <div>
               <Image
-                src="/images/horse-lesson.jpeg"
+                src="/images/Website Pics/Website Pics/Riding Lessons Page/JakeAddieLesson.jpg"
                 alt="Saddle Seat lesson at LionHeart"
                 width={600}
                 height={400}

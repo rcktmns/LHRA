@@ -33,7 +33,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/images/horse-lesson.jpeg"
+                src="/images/Website Pics/Website Pics/About Us Page/About Us.jpeg"
                 alt="LHRA Indoor Arena"
                 width={600}
                 height={400}

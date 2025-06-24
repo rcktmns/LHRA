@@ -153,18 +153,18 @@ export default function LessonsPage() {
       {/* Right-side image or gallery */}
       <div className="flex flex-col gap-6">
         <Image
-          src="/images/horse-lesson.jpeg"
+          src="/images/Website Pics/Website Pics/Riding Lessons Page/JakeAddieLesson.jpg"
           alt="Child learning to ride in double saddle"
           width={600}
           height={400}
-          className="rounded-lg shadow-lg object-cover w-full"
+          className="rounded-lg shadow-lg object-contain w-full"
         />
          <Image
-          src="/images/horse-lesson.jpeg"
+          src="/images/Website Pics/Website Pics/Riding Lessons Page/EstelleAustinLesson.jpg"
           alt="Child learning to ride in double saddle"
           width={600}
           height={400}
-          className="rounded-lg shadow-lg object-cover w-full"
+          className="rounded-lg shadow-lg object-contain w-full"
         />
         
         {/* Optional: Add more images below if desired */}

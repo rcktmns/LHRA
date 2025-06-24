@@ -40,7 +40,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
             <button onClick={() => setShowKitty(false)} className="absolute top-2 right-4 text-2xl">×</button>
             <h3 className="font-florentia text-2xl font-bold text-lhra-red mb-2">Meet Smith Kitty!</h3>
             <p className="font-florentia text-gray-700 mb-4">Smith (or, Smitty) is our very friendly barn cat. He loves laying in the middle of the arena or climbing into the hay loft. If you see him, feel free to pet him and give him some treats.</p>
-            <Image src={kittyImg} alt="Smith Kitty" width={220} height={180} className="rounded-lg object-cover mx-auto" />
+            <Image src={kittyImg} alt="Smith Kitty" width={220} height={180} className="rounded-lg object-contain mx-auto" />
           </div>
         </div>
       )}

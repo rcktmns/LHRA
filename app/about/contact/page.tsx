@@ -56,7 +56,7 @@ export default function ContactPage() {
 
               <div className="mt-6">
                 <Image
-                  src="/images/horse-lesson.jpeg"
+                  src="/images/Website Pics/Website Pics/About Us Page/About Us.jpeg"
                   alt="LHRA Facility"
                   width={480}
                   height={300}

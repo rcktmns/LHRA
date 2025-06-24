@@ -18,7 +18,7 @@ export default function StaffPage() {
       <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 mb-20">
           <div className="flex-1 flex justify-center">
-            <Image src="/public/placeholder-user.jpg" alt="Kate Coup" width={350} height={400} className="rounded-xl shadow-lg object-cover" />
+            <Image src="/public/placeholder-user.jpg" alt="Kate Coup" width={350} height={400} className="rounded-xl shadow-lg object-contain" />
           </div>
           <div className="flex-1">
             <h2 className="font-papyrus text-3xl font-bold text-lhra-blue mb-2">Kate Coup</h2>
@@ -36,7 +36,7 @@ export default function StaffPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Nora Humfeld */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Nora Humfeld" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+              <Image src="/public/placeholder-user.jpg" alt="Nora Humfeld" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Nora Humfeld</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
               <div className="font-lexend text-lg text-gray-700 text-center mt-2">
@@ -45,7 +45,7 @@ export default function StaffPage() {
             </div>
             {/* Izzy Petsel */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Izzy Petsel" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+              <Image src="/public/placeholder-user.jpg" alt="Izzy Petsel" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Izzy Petsel</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
               <div className="font-lexend text-lg text-gray-700 text-center mt-2">
@@ -54,37 +54,37 @@ export default function StaffPage() {
             </div>
             {/* Charlotte Struckhoff */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Charlotte Struckhoff" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+              <Image src="/public/placeholder-user.jpg" alt="Charlotte Struckhoff" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Charlotte Struckhoff</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
             </div>
             {/* Ahna Grant */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Ahna Grant" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+              <Image src="/public/placeholder-user.jpg" alt="Ahna Grant" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Ahna Grant</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
             {/* Hailey Niles */}
-            {/* <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Hailey Niles" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
+              <Image src="/public/placeholder-user.jpg" alt="Hailey Niles" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Hailey Niles</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
-            </div> */}
+            </div>
             {/* Ava Gamble */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Ava Gamble" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+              <Image src="/public/placeholder-user.jpg" alt="Ava Gamble" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Ava Gamble</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
             {/* Addie Stroessner */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Addie Stroessner" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+              <Image src="/public/placeholder-user.jpg" alt="Addie Stroessner" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Addie Stroessner</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
             {/* Caroline Bruns */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Caroline Bruns" width={220} height={180} className="rounded-lg mb-4 object-cover" />
+              <Image src="/public/placeholder-user.jpg" alt="Caroline Bruns" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Caroline Bruns</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>

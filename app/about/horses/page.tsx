@@ -5,19 +5,19 @@ import { useState } from "react"
 import { Card } from "@/components/ui/card"
 
 const horses = [
-  { name: "Sak's on Fifth, aka Diva", img: "/placeholder.jpg", desc: "Diva's bio coming soon." },
-  { name: "Ridgewood's Lookin' for Blue, aka Molly", img: "/placeholder.jpg", desc: "Molly's bio coming soon." },
-  { name: "Desert Highway, aka Austin", img: "/placeholder.jpg", desc: "Austin's bio coming soon." },
+  { name: "Sak's on Fifth, aka Diva", img: "/images/Website Pics/Website Pics/Meet the Horses/Diva.jpg", desc: "Diva's bio coming soon." },
+  { name: "Ridgewood's Lookin' for Blue, aka Molly", img: "/images/Website Pics/Website Pics/Meet the Horses/Molly.jpg", desc: "Molly's bio coming soon." },
+  { name: "Desert Highway, aka Austin", img: "/images/austin.webp", desc: "Austin's bio coming soon." },
   { name: "I'm Tantalyzing, aka Stella", img: "/placeholder.jpg", desc: "Stella's bio coming soon." },
-  { name: "Legerdemain, aka Jake", img: "/images/jake.webp", desc: "Jake's bio coming soon." },
-  { name: "A Lucky Town, aka Ralf", img: "/images/ralf.webp", desc: "Ralf's boi coming soon." },
+  { name: "Legerdemain, aka Jake", img: "/images/jake.webg", desc: "Jake's bio coming soon." },
+  { name: "A Lucky Town, aka Ralf", img: "/images/Website Pics/Website Pics/Meet the Horses/Ralf.jpg", desc: "Ralf's boi coming soon." },
   { name: "Mid's Nash Hart, aka Tyler", img: "/placeholder.jpg", desc: "Tyler's bio coming soon." },
-  { name: "Mr. Johnny Cash, akak Cash", img: "/images/cash.webp", desc: "Cash's bio coming soon." },
-  { name: "Jinacio, aka Gwen", img: "/placeholder.jpg", desc: "Gwen's bio coming soon." },
+  { name: "Mr. Johnny Cash, akak Cash", img: "/images/Website Pics/Website Pics/Meet the Horses/Cash.jpg", desc: "Cash's bio coming soon." },
+  { name: "Jinacio, aka Gwen", img: "/images/gwen.webp", desc: "Gwen's bio coming soon." },
   { name: "Hello Kitty, aka Kitty", img: "/placeholder.jpg", desc: "Kitty's bio coming soon." },
-  { name: "Another Hot Summer Night, aka Fitz", img: "/placeholder.jpg", desc: "Fitz's bio coming soon." },
-  { name: "The Persistence of Memory, aka Frida", img: "/images/frida.webp", desc: "Frida's bio coming soon." },
-  { name: "The Painted Potato, aka Misty", img: "/placeholder.jpg", desc: "Misty's bio coming soon." },
+  { name: "Another Hot Summer Night, aka Fitz", img: "/images/fitz.webp", desc: "Fitz's bio coming soon." },
+  { name: "The Persistence of Memory, aka Frida", img: "/images/Website Pics/Website Pics/Meet the Horses/Frida.jpg", desc: "Frida's bio coming soon." },
+  { name: "The Painted Potato, aka Misty", img: "/images/misty.webp", desc: "Misty's bio coming soon." },
 ]
 
 const memoryImages = [
@@ -26,9 +26,9 @@ const memoryImages = [
 ]
 
 const kittyImages = [
-  "/images/smith1.webp",
-  "/images/smith2.webp",
-  "/images/smith3.webp",
+  "/images/smitty1.jpeg",
+  "/images/smitty2.jpeg",
+  "/images/smittypng.png",
 ]
 
 export default function HorsesPage() {
@@ -52,7 +52,7 @@ export default function HorsesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 mb-20">
           <div className="flex-1 flex justify-center">
-            <Image src="/images/IMG_1944.webp" alt="Mosette" width={400} height={350} className="rounded-xl shadow-lg object-cover" />
+            <Image src="/images/Website Pics/Website Pics/Meet the Horses/Mose.jpg" alt="Mosette" width={400} height={350} className="rounded-xl shadow-lg object-contain" />
           </div>
           <div className="flex-1">
             <h2 className="font-papyrus text-3xl font-bold text-lhra-blue mb-2">Meet Mosette!</h2>
@@ -67,7 +67,7 @@ export default function HorsesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {horses.map((horse) => (
               <Card key={horse.name} className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl">
-                <Image src={horse.img} alt={horse.name} width={300} height={220} className="rounded-lg mb-4 object-cover" />
+                <Image src={horse.img} alt={horse.name} width={300} height={220} className="rounded-lg mb-4 object-contain" />
                 <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">{horse.name}</h3>
                 <p className="font-lexend text-gray-700 text-center text-base">{horse.desc}</p>
               </Card>
@@ -81,7 +81,7 @@ export default function HorsesPage() {
           <h2 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">In Loving Memory</h2>
           <div className="flex flex-col items-center">
             <div className="relative w-[300px] h-[220px] mx-auto mb-4">
-              <Image src={memoryImages[carouselIdx].img} alt={memoryImages[carouselIdx].caption} fill className="rounded-lg object-cover" />
+              <Image src={memoryImages[carouselIdx].img} alt={memoryImages[carouselIdx].caption} fill className="rounded-lg object-contain" />
             </div>
             <p className="font-florentia text-gray-700 mb-4">{memoryImages[carouselIdx].caption}</p>
             <div className="flex gap-4 justify-center">
@@ -105,7 +105,7 @@ export default function HorsesPage() {
               alt="Smith Kitty"
               width={220}
               height={180}
-              className="rounded-lg object-cover mx-auto cursor-pointer"
+              className="rounded-lg object-contain mx-auto cursor-pointer"
               onClick={() => setKittyImgIndex((kittyImgIndex + 1) % kittyImages.length)}
             />
           </div>

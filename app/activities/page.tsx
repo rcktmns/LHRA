@@ -10,7 +10,7 @@ export default function ActivitiesPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative py-16 sm:py-24 bg-lhra-blue">
-        <div className="absolute inset-0 bg-[url('/images/horse-pattern.png')] opacity-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-lhra-blue/20 to-lhra-yellow/10 opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <HorseIcon className="h-16 w-16 sm:h-20 sm:w-20 mx-auto mb-4 sm:mb-6 text-lhra-yellow" />
           <h1 className="font-papyrus text-4xl font-bold text-white mb-3 sm:mb-4">Activities & Events</h1>
@@ -41,10 +41,10 @@ export default function ActivitiesPage() {
             </div>
             <div className="relative h-[250px] sm:h-[300px] rounded-lg overflow-hidden shadow-xl border-2 border-lhra-yellow">
               <Image
-                src="/images/camp-activities.jpg"
+                src="/images/Website Pics/Website Pics/Camps Page/DayCamps.jpg"
                 alt="Camp Activities"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
@@ -123,10 +123,10 @@ export default function ActivitiesPage() {
             </div>
             <div className="relative h-[250px] sm:h-[300px] rounded-lg overflow-hidden shadow-xl border-2 border-lhra-yellow">
               <Image
-                src="/images/horse-show.jpg"
+                src="/images/Website Pics/Website Pics/Horse Shows Page/CharlottePerformance.jpg"
                 alt="Horse Show"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>

@@ -44,7 +44,7 @@ export default function SafetyPage() {
             </div>
             <div>
               <Image
-                src="/images/horse-lesson.jpeg"
+                src="/images/Website Pics/Website Pics/Safety Guidelines Page/IMG_3055.jpeg"
                 alt="Safe riding practices at LHRA"
                 width={600}
                 height={400}
