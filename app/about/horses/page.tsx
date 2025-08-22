@@ -50,7 +50,7 @@ export default function HorsesPage() {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 mb-5">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 mb-0">
           <div className="flex-1 flex justify-center">
             <Image src="/images/Website Pics/Website Pics/Meet the Horses/Mose.jpg" alt="Mosette" width={500} height={350} className="rounded-xl shadow-lg" />
           </div>
