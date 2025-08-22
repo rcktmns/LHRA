@@ -71,11 +71,11 @@ export default function DrillTeamPage() {
             </div>
           </div>
           <div className="flex-1 flex flex-col space-y-4">
-            <div className="relative h-80 overflow-hidden shadow-lg group rounded-lg">
-              <Image src="/images/Website Pics/Website Pics/Drill Team Page/PiratesDrillTeam.jpg" alt="Drill Team" width={500} height={350} className="w-full h-full object-contain" />
+            <div className="relative h-80 overflow-hidden group rounded-lg">
+              <Image src="/images/drill-team.jpeg" alt="Drill Team" width={500} height={350} className="w-full h-full object-cover" />
             </div>
-            <div className="relative h-80 overflow-hidden shadow-lg group rounded-lg">
-              <Image src="/images/Website Pics/Website Pics/Drill Team Page/PiratesDrillTeam.jpg" alt="Drill Team Performance" width={500} height={350} className="w-full h-full object-contain" />
+            <div className="relative h-80 overflow-hidden group rounded-lg">
+              <Image src="/images/Website Pics/Website Pics/Drill Team Page/PiratesDrillTeam.jpg" alt="Drill Team Performance" width={500} height={350} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
