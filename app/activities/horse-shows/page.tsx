@@ -39,7 +39,7 @@ export default function HorseShowsPage() {
             </div>
             <div className="flex-1 flex justify-center">
               <div className="relative overflow-hidden h-80 w-full max-w-xl rounded-lg">
-                <Image src="/images/Website Pics/Website Pics/Horse Shows Page/CharlottePerformance.jpg" alt="Academy Class" width={520} height={350} className="w-full h-full object-contain" />
+                <Image src="/images/competition.jpeg" alt="Academy Class" width={520} height={350} className="w-full h-full object-contain" />
               </div>
             </div>
           </div>
