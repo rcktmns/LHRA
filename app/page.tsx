@@ -27,8 +27,8 @@ export default function HomePage() {
             <Image
               src="/images/logo.png"
               alt="Lionheart Riding Academy Logo"
-              width={100}
-              height={100}
+              width={120}
+              height={120}
               className="mx-auto mb-8 mt-0"
             />
           
@@ -73,19 +73,19 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service Card 1: Riding Lessons */}
             <Link href="/lessons/classes" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
-              <Image src="/images/Website Pics/Website Pics/Home Page/RidingLessonsTab.jpg" alt="Riding Lessons" width={360} height={216} className="rounded-lg overflow-hidden mb-4 object-contain w-full h-40" />
+              <Image src="/images/Website Pics/Website Pics/Home Page/RidingLessonsTab.jpg" alt="Riding Lessons" width={360} height={216} className="rounded-lg overflow-hidden mb-4 object-contain w-full h-60" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Riding Lessons</h3>
               <p className="font-lexend text-black text-base">We teach Saddleseat riding on American Saddlebred horses and Hackney ponies.</p>
             </Link>
             {/* Service Card 2: Camps */}
             <Link href="/activities/camps" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
-              <Image src="/images/Website Pics/Website Pics/Home Page/CampsTab.jpg" alt="Camps" width={360} height={216} className="rounded-lg overflow-hidden mb-4 object-contain w-full h-40" />
+              <Image src="/images/Website Pics/Website Pics/Home Page/CampsTab.jpg" alt="Camps" width={360} height={216} className="rounded-lg overflow-hidden mb-4 object-contain w-full h-60" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Camps</h3>
               <p className="font-lexend text-black text-base">We offer riding camps for all riding levels where riders learn about horse care, horse show prep, and more.</p>
             </Link>
             {/* Service Card 3: Horse Shows */}
             <Link href="/activities/horse-shows" className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 transition-all duration-200 hover:scale-105 hover:shadow-xl flex flex-col items-center text-center">
-              <Image src="/images/Website Pics/Website Pics/Home Page/HorseShowsTab.jpg" alt="Horse Shows" width={360} height={216} className="rounded-lg overflow-hidden mb-4 object-contain w-full h-40" />
+              <Image src="/images/Website Pics/Website Pics/Home Page/HorseShowsTab.jpg" alt="Horse Shows" width={360} height={216} className="rounded-lg overflow-hidden mb-4 object-contain w-full h-60" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-2">Horse Shows</h3>
               <p className="font-lexend text-black text-base">We have an Academy focused show program available for riders of all levels.</p>
             </Link>
@@ -148,7 +148,7 @@ export default function HomePage() {
     alt="Riding Lesson"
     width={240}
     height={144}
-    className="w-full object-contain rounded-lg"
+    className="w-full rounded-lg"
           />
 
 
