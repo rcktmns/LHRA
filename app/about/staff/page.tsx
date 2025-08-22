@@ -34,30 +34,6 @@ export default function StaffPage() {
         {/* Staff Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {/* Nora Humfeld */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Nora Humfeld" width={220} height={180} className="rounded-lg mb-4 object-contain" />
-              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Nora Humfeld</h3>
-              <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
-              <div className="font-lexend text-lg text-gray-700 text-center mt-2">
-               
-              </div>
-            </div>
-            {/* Izzy Petsel */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Izzy Petsel" width={220} height={180} className="rounded-lg mb-4 object-contain" />
-              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Izzy Petsel</h3>
-              <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
-              <div className="font-lexend text-lg text-gray-700 text-center mt-2">
-                
-              </div>
-            </div>
-            {/* Charlotte Struckhoff */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Charlotte Struckhoff" width={220} height={180} className="rounded-lg mb-4 object-contain" />
-              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Charlotte Struckhoff</h3>
-              <p className="font-florentia text-lhra-red font-semibold mb-2">Assistant Instructor & Groom</p>
-            </div>
             {/* Ahna Grant */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
               <Image src="/public/placeholder-user.jpg" alt="Ahna Grant" width={220} height={180} className="rounded-lg mb-4 object-contain" />
