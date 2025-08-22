@@ -53,7 +53,7 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-70 w-90 rounded-lg">
                     <Image 
                       src="/images/Website Pics/Website Pics/Parties Page/CostumeHalloween.jpg" 
                       alt="Drill team performance at Halloween party" 
@@ -62,7 +62,7 @@ export default function PartiesPage() {
                       className="w-full h-full object-contain object-center" 
                     />
                   </div>
-                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-70 w-90 rounded-lg">
                     <Image 
                       src="/images/Website Pics/Website Pics/Parties Page/PerformanceHalloween.jpg" 
                       alt="Halloween party competition" 
@@ -88,7 +88,7 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-70 w-90 rounded-lg">
                     <Image 
                       src="/images/Website Pics/Website Pics/Parties Page/CostumeWinter.jpg" 
                       alt="Winter extravaganza drill team performance with dramatic lighting" 
@@ -97,7 +97,7 @@ export default function PartiesPage() {
                       className="w-full h-full object-contain object-center" 
                     />
                   </div>
-                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-70 w-90 rounded-lg">
                     <Image 
                       src="/images/Website Pics/Website Pics/Parties Page/PerformanceWinter.jpg" 
                       alt="Winter party performance with costumed horses and riders" 
@@ -123,7 +123,7 @@ export default function PartiesPage() {
               </div>
               <div className="flex-1">
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-70 w-90 rounded-lg">
                     <Image 
                       src="/images/Website Pics/Website Pics/Parties Page/RidingSummer.jpg" 
                       alt="Spring/summer party activities" 
@@ -132,7 +132,7 @@ export default function PartiesPage() {
                       className="w-full h-full object-contain object-center" 
                     />
                   </div>
-                  <div className="relative overflow-hidden h-80 w-90 rounded-lg">
+                  <div className="relative overflow-hidden h-70 w-90 rounded-lg">
                     <Image 
                       src="/images/Website Pics/Website Pics/Parties Page/SummerParty.jpg" 
                       alt="Spring/summer party with horses" 
