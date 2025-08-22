@@ -7,13 +7,13 @@ import { Card } from "@/components/ui/card"
 const horses = [
   { name: "Sak's on Fifth, aka Diva", img: "/images/Website Pics/Website Pics/Meet the Horses/Diva.jpg", desc: "Diva's bio coming soon." },
   { name: "Ridgewood's Lookin' for Blue, aka Molly", img: "/images/Website Pics/Website Pics/Meet the Horses/Molly.jpg", desc: "Molly's bio coming soon." },
-  { name: "Desert Highway, aka Austin", img: "/images/austin.webp", desc: "Austin's bio coming soon." },
+  { name: "Desert Highway, aka Austin", img: "/placeholder.jpg" desc: "Austin's bio coming soon." },
   { name: "I'm Tantalyzing, aka Stella", img: "/placeholder.jpg", desc: "Stella's bio coming soon." },
+  { name: "Jane", img: "/placeholder.jpg", desc: "Jane's bio coming soon." },
   { name: "Legerdemain, aka Jake", img: "/images/jake.webg", desc: "Jake's bio coming soon." },
-  { name: "A Lucky Town, aka Ralf", img: "/images/Website Pics/Website Pics/Meet the Horses/Ralf.jpg", desc: "Ralf's boi coming soon." },
-  { name: "Mid's Nash Hart, aka Tyler", img: "/placeholder.jpg", desc: "Tyler's bio coming soon." },
-  { name: "Mr. Johnny Cash, akak Cash", img: "/images/Website Pics/Website Pics/Meet the Horses/Cash.jpg", desc: "Cash's bio coming soon." },
-  { name: "Jinacio, aka Gwen", img: "/images/gwen.webp", desc: "Gwen's bio coming soon." },
+  { name: "Perfect Pink, aka Bella", img: "/placeholder.jpg", desc: "Bella's bio coming soon." },
+  { name: "Mr. Johnny Cash, aka Cash", img: "/images/Website Pics/Website Pics/Meet the Horses/Cash.jpg", desc: "Cash's bio coming soon." },
+  { name: "Jinacio, aka Gwen", img: "/placeholder.jpg", desc: "Gwen's bio coming soon." },
   { name: "Hello Kitty, aka Kitty", img: "/placeholder.jpg", desc: "Kitty's bio coming soon." },
   { name: "Another Hot Summer Night, aka Fitz", img: "/images/fitz.webp", desc: "Fitz's bio coming soon." },
   { name: "The Persistence of Memory, aka Frida", img: "/images/Website Pics/Website Pics/Meet the Horses/Frida.jpg", desc: "Frida's bio coming soon." },
@@ -50,14 +50,13 @@ export default function HorsesPage() {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 mb-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 mb-8">
           <div className="flex-1 flex justify-center">
             <Image src="/images/Website Pics/Website Pics/Meet the Horses/Mose.jpg" alt="Mosette" width={400} height={350} className="rounded-xl shadow-lg object-contain" />
           </div>
           <div className="flex-1">
             <h2 className="font-papyrus text-3xl font-bold text-lhra-blue mb-2">Meet Mosette!</h2>
-            <p className="font-florentia text-lg text-gray-700 mb-2">Mosette is a five-gaited horse, originally Kate's show horse until she retired from showing and became a lesson horse. Now she is retired from riding completely, but is always excited to meet new people and get some scratches.</p>
-            <p className="font-florentia text-lhra-red font-semibold">Birthday: April 27, 2004</p>
+            <p className="font-florentia text-lg text-gray-700 mb-2">Mosette's bio coming soon.</p>
           </div>
         </div>
       </section>
