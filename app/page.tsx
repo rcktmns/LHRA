@@ -148,7 +148,7 @@ export default function HomePage() {
     alt="Riding Lesson"
     width={288}
     height={172}
-    className="w-full rounded-lg"
+    className="rounded-lg"
           />
 
 
