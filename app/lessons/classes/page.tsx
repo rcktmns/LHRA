@@ -151,7 +151,7 @@ export default function LessonsPage() {
       </div>
 
       {/* Right-side image or gallery */}
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 mt-4">
         <Image
           src="/images/Website Pics/Website Pics/Riding Lessons Page/JakeAddieLesson.jpg"
           alt="Child learning to ride in double saddle"
