@@ -4,23 +4,28 @@ export default function NewsletterPage() {
   const newsletters = [
     {
       month: "June 2025",
-      url: "/newsletters/june-2025.pdf"
+      url: "/newsletters/Horsin' Around-June 24.pdf"
+      subtitle: "Show season update, lesson reminders, & a tribute to Scarlet Sky."
     },
     {
       month: "May 2025",
-      url: "/newsletters/may-2025.pdf"
+      url: "/newsletters/Horsin' Around-May 24.pdf"
+      subtitle: "Camp announcements, summer schedule, & a tribute to Karen Coup."
     },
     {
       month: "December 2024",
-      url: "/newsletters/december-2024.pdf"
+      url: "/newsletters/Horsin' Around-Dec 24.pdf"
+      subtitle: "Christmas Spectacular announcement, moving update, & our cancellation policy."
     },
     {
       month: "November 2024",
-      url: "/newsletters/november-2024.pdf"
+      url: "/newsletters/Horsin' Around-Nov 24.pdf"
+      subtitle: "Academy Nationals update, & moving announcement."
     },
     {
       month: "October 2024",
-      url: "/newsletters/october-2024.pdf"
+      url: "/newsletters/Horsin' Around-Oct 24.pdf"
+      subtitle: "Academy Nationals Team announcement, & Halloween Party date."
     }
   ];
 
@@ -65,7 +70,7 @@ export default function NewsletterPage() {
                       <h3 className="font-papyrus text-xl font-bold text-lhra-blue group-hover:text-lhra-red transition-colors">
                         {newsletter.month}
                       </h3>
-                      <p className="font-lexend text-lg text-gray-600">Click to download newsletter</p>
+                      <p className="font-lexend text-md text-gray-600">{newsletter.subtitle}</p>
                     </div>
                   </div>
                   <div className="text-lhra-yellow group-hover:text-lhra-red transition-colors">
