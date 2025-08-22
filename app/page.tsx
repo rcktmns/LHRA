@@ -27,8 +27,8 @@ export default function HomePage() {
             <Image
               src="/images/logo.png"
               alt="Lionheart Riding Academy Logo"
-              width={120}
-              height={120}
+              width={110}
+              height={110}
               className="mx-auto mb-8 mt-0"
             />
           
