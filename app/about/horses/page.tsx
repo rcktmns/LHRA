@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card"
 const horses = [
   { name: "Sak's on Fifth, aka Diva", img: "/images/Website Pics/Website Pics/Meet the Horses/Diva.jpg", desc: "Diva's bio coming soon." },
   { name: "Ridgewood's Lookin' for Blue, aka Molly", img: "/images/Website Pics/Website Pics/Meet the Horses/Molly.jpg", desc: "Molly's bio coming soon." },
-  { name: "Desert Highway, aka Austin", img: "/placeholder.jpg" desc: "Austin's bio coming soon." },
+  { name: "Desert Highway, aka Austin", img: "/placeholder.jpg", desc: "Austin's bio coming soon." },
   { name: "I'm Tantalyzing, aka Stella", img: "/placeholder.jpg", desc: "Stella's bio coming soon." },
   { name: "Jane", img: "/placeholder.jpg", desc: "Jane's bio coming soon." },
   { name: "Legerdemain, aka Jake", img: "/images/jake.webg", desc: "Jake's bio coming soon." },
