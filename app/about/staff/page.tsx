@@ -36,13 +36,13 @@ export default function StaffPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Ahna Grant */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Ahna Grant" width={220} height={180} className="rounded-lg mb-4 object-contain" />
+              <Image src="/images/Ahna.jpg" alt="Ahna Grant" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Ahna Grant</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
             {/* Hailey Niles */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Hailey Niles" width={220} height={180} className="rounded-lg mb-4 object-contain" />
+              <Image src="/images/Hailey.jpg" alt="Hailey Niles" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Hailey Niles</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
@@ -54,13 +54,13 @@ export default function StaffPage() {
             </div>
             {/* Addie Stroessner */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Addie Stroessner" width={220} height={180} className="rounded-lg mb-4 object-contain" />
+              <Image src="/images/Addie.jpg" alt="Addie Stroessner" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Addie Stroessner</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
             {/* Caroline Bruns */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Caroline Bruns" width={220} height={180} className="rounded-lg mb-4 object-contain" />
+              <Image src="/images/Caroline B.jpg" alt="Caroline Bruns" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Caroline Bruns</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
