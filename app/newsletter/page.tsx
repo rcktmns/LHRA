@@ -4,7 +4,7 @@ export default function NewsletterPage() {
   const newsletters = [
     {
       month: "June 2025",
-      url: "/newsletters/Horsin' Around-June 25.pdf",
+      url: "/newsletters/horsin-around-june25.pdf",
       subtitle: "Show season update, lesson reminders, & a tribute to Scarlet Sky."
     },
     {
@@ -19,12 +19,12 @@ export default function NewsletterPage() {
     },
     {
       month: "November 2024",
-      url: "/newsletters/Horsin' Around-Nov 24.pdf",
+      url: "/newsletters/horsin-around-nov24.pdf",
       subtitle: "Academy Nationals update, & moving announcement."
     },
     {
       month: "October 2024",
-      url: "/newsletters/Horsin' Around-Oct 24.pdf",
+      url: "/newsletters/horsin-around-oct24.pdf",
       subtitle: "Academy Nationals Team announcement, & Halloween Party date."
     }
   ];
