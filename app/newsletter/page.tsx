@@ -4,7 +4,7 @@ export default function NewsletterPage() {
   const newsletters = [
     {
       month: "June 2025",
-      url: "/newsletters/Horsin' Around-June 24.pdf",
+      url: "/newsletters/Horsin' Around-June 25.pdf",
       subtitle: "Show season update, lesson reminders, & a tribute to Scarlet Sky."
     },
     {
@@ -14,7 +14,7 @@ export default function NewsletterPage() {
     },
     {
       month: "December 2024",
-      url: "/newsletters/Horsin' Around-Dec 24.pdf",
+      url: "/newsletters/Horsin' Around - Dec 24.pdf",
       subtitle: "Christmas Spectacular announcement, moving update, & our cancellation policy."
     },
     {
