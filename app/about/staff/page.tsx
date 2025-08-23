@@ -48,7 +48,7 @@ export default function StaffPage() {
             </div>
             {/* Ava Gamble */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
-              <Image src="/public/placeholder-user.jpg" alt="Ava Gamble" width={220} height={180} className="rounded-lg mb-4 object-contain" />
+              <Image src="/public/Ava.jpg" alt="Ava Gamble" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Ava Gamble</h3>
               <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
             </div>
