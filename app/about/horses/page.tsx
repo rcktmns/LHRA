@@ -28,7 +28,6 @@ const memoryImages = [
 const kittyImages = [
   "/images/smitty1.jpeg",
   "/images/smitty2.jpeg",
-  "/images/smittypng.png",
 ]
 
 export default function HorsesPage() {
@@ -66,7 +65,7 @@ export default function HorsesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {horses.map((horse) => (
               <Card key={horse.name} className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl">
-                <Image src={horse.img} alt={horse.name} width={300} height={220} className="rounded-lg mb-4 object-contain" />
+                <Image src={horse.img} alt={horse.name} width={250} height={183} className="rounded-lg mb-4 object-contain" />
                 <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">{horse.name}</h3>
                 <p className="font-lexend text-gray-700 text-center text-base">{horse.desc}</p>
               </Card>
