@@ -124,11 +124,6 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+      
   )
 }
