@@ -9,7 +9,7 @@ export default function NewsletterPage() {
     },
     {
       month: "May 2025",
-      url: "/newsletters/Horsin' Around-May 24.pdf",
+      url: "/newsletters/HA-may25.pdf",
       subtitle: "Camp announcements, summer schedule, & a tribute to Karen Coup."
     },
     {
