@@ -21,8 +21,17 @@ const horses = [
 ]
 
 const memoryImages = [
-  { img: "/placeholder.jpg", caption: "In Loving Memory 1" },
-  { img: "/placeholder.jpg", caption: "In Loving Memory 2" },
+  { img: "/images/RalfILM", caption: "A Lucky Town; Ralf" },
+  { img: "/images/SkyILM", caption: "Scarlet Sky" },
+  { img: "/images/BoILM", caption: "Heartland's Double Trouble; Bo" },
+  { img: "/images/MojoILM", caption: "CH Mojo" },
+  { img: "/images/PeepersILM", caption: "Hot for Blue; Peepers" },
+  { img: "/images/DoraILM", caption: "Dora" },
+  { img: "/images/ArchieILM", caption: "Archie" },
+  { img: "/images/MarissaILM", caption: "Magikal Marissa" },
+  { img: "/images/AdamILM", caption: "Callaway's Adam" },
+  { img: "/images/JackILM", caption: "CH Redann's Steppin' Out; Jack" },
+  { img: "/images/RedILM", caption: "Prediction; Red" },
 ]
 
 const kittyImages = [
@@ -64,7 +73,7 @@ export default function HorsesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {horses.map((horse) => (
-              <Card key={horse.name} className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl">
+              <Card key={horse.name} className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-4 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl">
                 <Image src={horse.img} alt={horse.name} width={250} height={183} className="rounded-lg mb-4 object-contain" />
                 <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">{horse.name}</h3>
                 <p className="font-lexend text-gray-700 text-center text-base">{horse.desc}</p>
