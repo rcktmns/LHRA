@@ -124,34 +124,6 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-
-{/* Our Lesson Program Section */}
-     <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-       
-          </div>
-          <div className="flex justify-end">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-6xl ml-auto">
-            <div>
-              <h3 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">Lesson Details</h3>
-              <div className="space-y-4 font-lexend text-base">
-                <p>We teach Saddleseat riding on American Saddlebred horses and Hackney ponies. Our lesson program is designed to build confidence and skill in riders of all ages and experience levels.</p>
-                <Link href="/lessons/classes" className="inline-block bg-lhra-blue text-white text-base font-lexend px-8 py-4 rounded-lg shadow hover:bg-lhra-yellow hover:text-lhra-blue transition-colors">
-                  Learn More
-            </Link>
-               </div>
-            </div>
-            <div className="flex flex-col space-y-1 mx-auto">
-  <Image
-    src="/images/Website Pics/Website Pics/Home Page/LessonDetails.jpg"
-    alt="Riding Lesson"
-    width={850}
-    height={450}
-    className="rounded-lg"
-          />
-
-
               </div>
             </div>
           </div>
