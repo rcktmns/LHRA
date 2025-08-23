@@ -21,17 +21,17 @@ const horses = [
 ]
 
 const memoryImages = [
-  { img: "/images/RalfILM", caption: "A Lucky Town; Ralf" },
-  { img: "/images/SkyILM", caption: "Scarlet Sky" },
-  { img: "/images/BoILM", caption: "Heartland's Double Trouble; Bo" },
-  { img: "/images/MojoILM", caption: "CH Mojo" },
-  { img: "/images/PeepersILM", caption: "Hot for Blue; Peepers" },
-  { img: "/images/DoraILM", caption: "Dora" },
-  { img: "/images/ArchieILM", caption: "Archie" },
-  { img: "/images/MarissaILM", caption: "Magikal Marissa" },
-  { img: "/images/AdamILM", caption: "Callaway's Adam" },
-  { img: "/images/JackILM", caption: "CH Redann's Steppin' Out; Jack" },
-  { img: "/images/RedILM", caption: "Prediction; Red" },
+  { img: "/images/RalfILM.jpg", caption: "A Lucky Town; Ralf" },
+  { img: "/images/SkyILM.jpg", caption: "Scarlet Sky" },
+  { img: "/images/BoILM.jpg", caption: "Heartland's Double Trouble; Bo" },
+  { img: "/images/MojoILM.jpg", caption: "CH Mojo" },
+  { img: "/images/PeepersILM.jpg", caption: "Hot for Blue; Peepers" },
+  { img: "/images/DoraILM.jpg", caption: "J'adore; Dora" },
+  { img: "/images/ArchieILM.jpg", caption: "Truly High Class; Archie" },
+  { img: "/images/MarissaILM.jpg", caption: "Magikal Marissa" },
+  { img: "/images/AdamILM.jpg", caption: "Callaway's Adam" },
+  { img: "/images/JackILM.jpg", caption: "CH Redann's Steppin' Out; Jack" },
+  { img: "/images/RedILM.jpg", caption: "Prediction; Red" },
 ]
 
 const kittyImages = [
