@@ -83,7 +83,7 @@ export default function HorsesPage() {
           </div>
         </div>
 
-        {/* Horse Popup - Improved Layout */}
+        {/* Horse Popup - Improved Layout with Smaller Images */}
         <Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
           <DialogContent className="max-w-4xl w-full max-h-[90vh] overflow-y-auto p-0">
             <div className="relative">
@@ -110,7 +110,7 @@ export default function HorsesPage() {
                         src={selectedHorse.img} 
                         alt={selectedHorse.name} 
                         width={350} 
-                        height={260} 
+                        height={260}
                         className="rounded-lg object-cover" 
                       />
                     </div>
@@ -127,13 +127,13 @@ export default function HorsesPage() {
                 {/* Mobile Layout - Stacked */}
                 <div className="md:hidden flex flex-col gap-4">
                   {selectedHorse?.img && (
-                    <div className="w-full">
+                    <div className="w-full flex justify-center">
                       <Image 
                         src={selectedHorse.img} 
                         alt={selectedHorse.name} 
-                        width={300} 
-                        height={220} 
-                        className="rounded-lg object-cover w-full" 
+                        width={150} 
+                        height={110} 
+                        className="rounded-lg object-cover" 
                       />
                     </div>
                   )}
