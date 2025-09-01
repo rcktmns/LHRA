@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { useState } from "react"
 import { Card } from "@/components/ui/card"
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 
 const horses = [
   { name: "The Painted Potato, aka Misty", img: "/images/misty.webp", desc: "Misty is a lovable, stubbon pony in her late 20s that often teaches young riders' first lessons!", details: "Misty is often the first pony ridden by Littles at LionHeart. She was born long, long ago in a galaxy far, far away- we think she is in her late twenties. She has been a lesson pony at LionHeart for several years and taught many lessons. She’s primarily motivated by food; in fact, she doesn’t seem to be motivated by much else at all. She’s a little ornery and more than a little stubborn, but we just can’t help but love her. Misty’s breed is a mystery to everyone- probably mostly Shetland pony but there’s definitely something else in there somewhere- and she has shown under the name “The Painted Potato” to a number of blue ribbons in Academy classes (seriously, she actually has won classes!)." },
@@ -40,40 +41,17 @@ const kittyImages = [
 ]
 
 export default function HorsesPage() {
+  const [selectedHorse, setSelectedHorse] = useState(null)
   const [showKitty, setShowKitty] = useState(false)
   const [carouselIdx, setCarouselIdx] = useState(0)
   const [kittyImgIndex, setKittyImgIndex] = useState(0)
-
+  
   return (
-    <div className="min-h-screen bg-gray-50">
-      <section className="elegant-gradient text-white py-20">
-        <div className=" mx-auto px-5 sm:px-6 lg:px-8 text-center">
-        <h1 className="font-papyrus text-4xl font-bold text-white text-center mb-4">Meet the Horses</h1>
-        <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
-
-          <p className="font-lexend text-xl max-w-3xl mx-auto">
-            We have an incredible roster of horses and ponies at LionHeart Riding Academy that all have something unique to offer our riders.
-          </p>
-        </div>
-      </section>
-
-
-   import { useState } from "react";
-import Image from "next/image";
-import { Card } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-
-export default function HorsesGrid({ horses }) {
-  const [selectedHorse, setSelectedHorse] = useState(null);
-
- return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="elegant-gradient text-white py-20">
         <div className="mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-papyrus text-4xl font-bold text-white text-center mb-4">
-            Meet the Horses
-          </h1>
+          <h1 className="font-papyrus text-4xl text-white mb-4">Meet the Horses</h1>
           <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
           <p className="font-lexend text-xl max-w-3xl mx-auto">
             We have an incredible roster of horses and ponies at LionHeart Riding Academy that all have something unique to offer our riders.
@@ -81,7 +59,7 @@ export default function HorsesGrid({ horses }) {
         </div>
       </section>
 
-      {/* Horses Grid */}
+   {/* Horses Grid */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -98,34 +76,22 @@ export default function HorsesGrid({ horses }) {
                   height={183}
                   className="rounded-lg mb-4 object-contain"
                 />
-                <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">
-                  {horse.name}
-                </h3>
-                <p className="font-lexend text-gray-700 text-center text-base">
-                  {horse.desc}
-                </p>
+                <h3 className="font-papyrus text-2xl text-lhra-blue mb-1">{horse.name}</h3>
+                <p className="font-lexend text-gray-700 text-center text-base">{horse.desc}</p>
               </Card>
             ))}
           </div>
         </div>
 
-        {/* Popup Modal */}
+        {/* Horse Popup */}
         <Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
           <DialogContent className="max-w-lg">
             <DialogHeader>
-              <DialogTitle className="font-papyrus text-2xl text-lhra-blue">
-                {selectedHorse?.name}
-              </DialogTitle>
+              <DialogTitle className="font-papyrus text-2xl text-lhra-blue">{selectedHorse?.name}</DialogTitle>
             </DialogHeader>
             <div className="flex flex-col items-center gap-4">
               {selectedHorse?.img && (
-                <Image
-                  src={selectedHorse.img}
-                  alt={selectedHorse.name}
-                  width={300}
-                  height={220}
-                  className="rounded-lg"
-                />
+                <Image src={selectedHorse.img} alt={selectedHorse.name} width={300} height={220} className="rounded-lg" />
               )}
               <p className="font-lexend text-gray-700 text-center">{selectedHorse?.desc}</p>
               {selectedHorse?.details && (
@@ -138,10 +104,10 @@ export default function HorsesGrid({ horses }) {
         </Dialog>
       </section>
 
-      {/* Memory Section */}
+       {/* Memory Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">In Loving Memory</h2>
+          <h2 className="font-papyrus text-3xl text-lhra-blue mb-6">In Loving Memory</h2>
           <div className="flex flex-col items-center">
             <div className="relative w-[300px] h-[220px] mx-auto mb-4">
               {memoryImages[carouselIdx]?.img && (
@@ -153,14 +119,10 @@ export default function HorsesGrid({ horses }) {
                 />
               )}
             </div>
-            <p className="font-florentia text-gray-700 mb-4">
-              {memoryImages[carouselIdx]?.caption}
-            </p>
+            <p className="font-florentia text-gray-700 mb-4">{memoryImages[carouselIdx]?.caption}</p>
             <div className="flex gap-4 justify-center">
               <button
-                onClick={() =>
-                  setCarouselIdx((carouselIdx - 1 + memoryImages.length) % memoryImages.length)
-                }
+                onClick={() => setCarouselIdx((carouselIdx - 1 + memoryImages.length) % memoryImages.length)}
                 className="px-4 py-2 bg-lhra-blue text-white rounded"
               >
                 Prev
@@ -176,20 +138,14 @@ export default function HorsesGrid({ horses }) {
         </div>
       </section>
 
-      {/* Kitty Popup */}
+
+  {/* Kitty Popup */}
       {showKitty && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100]">
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full relative">
-            <button
-              onClick={() => setShowKitty(false)}
-              className="absolute top-2 right-4 text-2xl"
-            >
-              ×
-            </button>
+            <button onClick={() => setShowKitty(false)} className="absolute top-2 right-4 text-2xl">×</button>
             <h3 className="font-florentia text-2xl text-lhra-blue mb-2">Meet Smith Kitty!</h3>
-            <p className="font-florentia text-gray-700 mb-4">
-              Smith (or, Smitty) is our very friendly barn cat. He loves laying in the middle of the arena or climbing into the hay loft. If you see him, feel free to pet him and give him some treats.
-            </p>
+            <p className="font-florentia text-gray-700 mb-4">Smith (or, Smitty) is our very friendly barn cat. He loves laying in the middle of the arena or climbing into the hay loft. If you see him, feel free to pet him and give him some treats.</p>
             <Image
               src={kittyImages[kittyImgIndex]}
               alt="Smith Kitty"
@@ -202,5 +158,5 @@ export default function HorsesGrid({ horses }) {
         </div>
       )}
     </div>
-  );
+  )
 }
