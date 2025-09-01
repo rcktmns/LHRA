@@ -83,26 +83,39 @@ export default function HorsesPage() {
           </div>
         </div>
 
-        {/* Horse Popup */}
-        <Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
-          <DialogContent className="max-w-lg">
-            <DialogHeader>
-              <DialogTitle className="font-papyrus text-2xl text-lhra-blue">{selectedHorse?.name}</DialogTitle>
-            </DialogHeader>
-            <div className="flex flex-col items-center gap-4">
-              {selectedHorse?.img && (
-                <Image src={selectedHorse.img} alt={selectedHorse.name} width={300} height={220} className="rounded-lg" />
-              )}
-              <p className="font-lexend text-gray-700 text-center">{selectedHorse?.desc}</p>
-              {selectedHorse?.details && (
-                <div className="mt-4 text-left w-full">
-                  <p className="font-lexend text-gray-600">{selectedHorse.details}</p>
-                </div>
-              )}
-            </div>
-          </DialogContent>
-        </Dialog>
-      </section>
+    {/* Horse Popup */}
+<Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
+  <DialogContent className="max-w-3xl">
+    <DialogHeader>
+      <DialogTitle className="font-papyrus text-2xl text-lhra-blue">
+        {selectedHorse?.name}
+      </DialogTitle>
+    </DialogHeader>
+
+    <div className="flex flex-col md:flex-row gap-6 items-start">
+      {/* Left: Image */}
+      {selectedHorse?.img && (
+        <div className="flex-shrink-0 w-full md:w-1/2">
+          <Image
+            src={selectedHorse.img}
+            alt={selectedHorse.name}
+            width={400}
+            height={300}
+            className="rounded-lg object-cover"
+          />
+        </div>
+      )}
+
+      {/* Right: Text */}
+      <div className="flex-1 text-left">
+        <p className="font-lexend text-gray-700 mb-4">{selectedHorse?.desc}</p>
+        {selectedHorse?.details && (
+          <p className="font-lexend text-gray-400">{selectedHorse.details}</p>
+        )}
+      </div>
+    </div>
+  </DialogContent>
+</Dialog>
 
        {/* Memory Section */}
       <section className="py-16 bg-gray-100">
