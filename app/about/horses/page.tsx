@@ -4,7 +4,6 @@ import Image from "next/image"
 import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { X } from "lucide-react"
 
 const horses = [
   { name: "The Painted Potato, aka Misty", img: "/images/misty.webp", desc: "Misty is a lovable, stubbon pony in her late 20s that often teaches young riders' first lessons!", details: "Misty is often the first pony ridden by Littles at LionHeart. She was born long, long ago in a galaxy far, far away- we think she is in her late twenties. She has been a lesson pony at LionHeart for several years and taught many lessons. She's primarily motivated by food; in fact, she doesn't seem to be motivated by much else at all. She's a little ornery and more than a little stubborn, but we just can't help but love her. Misty's breed is a mystery to everyone- probably mostly Shetland pony but there's definitely something else in there somewhere- and she has shown under the name "The Painted Potato" to a number of blue ribbons in Academy classes (seriously, she actually has won classes!)." },
@@ -91,9 +90,9 @@ export default function HorsesPage() {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedHorse(null)}
-                className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-all"
+                className="absolute top-4 right-4 z-10 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:shadow-xl transition-all text-gray-600 hover:text-gray-800"
               >
-                <X className="h-5 w-5 text-gray-600" />
+                ×
               </button>
               
               <DialogHeader className="p-6 pb-4">
@@ -192,9 +191,9 @@ export default function HorsesPage() {
           <div className="bg-white rounded-xl shadow-lg p-6 max-w-md w-full relative">
             <button 
               onClick={() => setShowKitty(false)} 
-              className="absolute top-4 right-4 bg-gray-100 rounded-full p-2 hover:bg-gray-200 transition-colors"
+              className="absolute top-4 right-4 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-200 transition-colors text-gray-600 hover:text-gray-800"
             >
-              <X className="h-5 w-5 text-gray-600" />
+              ×
             </button>
             <h3 className="font-florentia text-2xl text-lhra-blue mb-2 pr-8">Meet Smith Kitty!</h3>
             <p className="font-florentia text-gray-700 mb-4 text-sm">
