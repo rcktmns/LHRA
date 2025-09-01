@@ -66,89 +66,130 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 export default function HorsesGrid({ horses }) {
   const [selectedHorse, setSelectedHorse] = useState(null);
 
-  return (
-    <section className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {horses.map((horse) => (
-            <Card
-              key={horse.name}
-              onClick={() => setSelectedHorse(horse)}
-              className="cursor-pointer bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-4 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl"
-            >
-              <Image
-                src={horse.img}
-                alt={horse.name}
-                width={250}
-                height={183}
-                className="rounded-lg mb-4 object-contain"
-              />
-              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">
-                {horse.name}
-              </h3>
-              <p className="font-lexend text-gray-700 text-center text-base">
-                {horse.desc}
-              </p>
-            </Card>
-          ))}
+ return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="elegant-gradient text-white py-20">
+        <div className="mx-auto px-5 sm:px-6 lg:px-8 text-center">
+          <h1 className="font-papyrus text-4xl font-bold text-white text-center mb-4">
+            Meet the Horses
+          </h1>
+          <div className="h-1 bg-yellow-500 w-1/3 mx-auto mb-2"></div>
+          <p className="font-lexend text-xl max-w-3xl mx-auto">
+            We have an incredible roster of horses and ponies at LionHeart Riding Academy that all have something unique to offer our riders.
+          </p>
         </div>
-      </div>
+      </section>
 
-      {/* Popup Modal */}
-      <Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
-        <DialogContent className="max-w-lg">
-          <DialogHeader>
-            <DialogTitle className="font-papyrus text-2xl text-lhra-blue">
-              {selectedHorse?.name}
-            </DialogTitle>
-          </DialogHeader>
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={selectedHorse?.img || ""}
-              alt={selectedHorse?.name || ""}
-              width={300}
-              height={220}
-              className="rounded-lg"
-            />
-            <p className="font-lexend text-gray-700 text-center">
-              {selectedHorse?.desc}
-            </p>
-             {/* Extra details */}
-            <div className="mt-4 text-left w-full">
-              <p className="font-lexend text-gray-600">{selectedHorse?.details}</p>
-            </div>
+      {/* Horses Grid */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {horses.map((horse) => (
+              <Card
+                key={horse.name}
+                onClick={() => setSelectedHorse(horse)}
+                className="cursor-pointer bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-4 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl"
+              >
+                <Image
+                  src={horse.img}
+                  alt={horse.name}
+                  width={250}
+                  height={183}
+                  className="rounded-lg mb-4 object-contain"
+                />
+                <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">
+                  {horse.name}
+                </h3>
+                <p className="font-lexend text-gray-700 text-center text-base">
+                  {horse.desc}
+                </p>
+              </Card>
+            ))}
           </div>
-        </DialogContent>
-      </Dialog>
-    </section>
-  );
-}
+        </div>
 
+        {/* Popup Modal */}
+        <Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
+          <DialogContent className="max-w-lg">
+            <DialogHeader>
+              <DialogTitle className="font-papyrus text-2xl text-lhra-blue">
+                {selectedHorse?.name}
+              </DialogTitle>
+            </DialogHeader>
+            <div className="flex flex-col items-center gap-4">
+              {selectedHorse?.img && (
+                <Image
+                  src={selectedHorse.img}
+                  alt={selectedHorse.name}
+                  width={300}
+                  height={220}
+                  className="rounded-lg"
+                />
+              )}
+              <p className="font-lexend text-gray-700 text-center">{selectedHorse?.desc}</p>
+              {selectedHorse?.details && (
+                <div className="mt-4 text-left w-full">
+                  <p className="font-lexend text-gray-600">{selectedHorse.details}</p>
+                </div>
+              )}
+            </div>
+          </DialogContent>
+        </Dialog>
+      </section>
 
+      {/* Memory Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-papyrus text-3xl font-bold text-lhra-blue mb-6">In Loving Memory</h2>
           <div className="flex flex-col items-center">
             <div className="relative w-[300px] h-[220px] mx-auto mb-4">
-              <Image src={memoryImages[carouselIdx].img} alt={memoryImages[carouselIdx].caption} fill className="rounded-lg object-contain" />
+              {memoryImages[carouselIdx]?.img && (
+                <Image
+                  src={memoryImages[carouselIdx].img}
+                  alt={memoryImages[carouselIdx].caption}
+                  fill
+                  className="rounded-lg object-contain"
+                />
+              )}
             </div>
-            <p className="font-florentia text-gray-700 mb-4">{memoryImages[carouselIdx].caption}</p>
+            <p className="font-florentia text-gray-700 mb-4">
+              {memoryImages[carouselIdx]?.caption}
+            </p>
             <div className="flex gap-4 justify-center">
-              <button onClick={() => setCarouselIdx((carouselIdx - 1 + memoryImages.length) % memoryImages.length)} className="px-4 py-2 bg-lhra-blue text-white rounded">Prev</button>
-              <button onClick={() => setCarouselIdx((carouselIdx + 1) % memoryImages.length)} className="px-4 py-2 bg-lhra-blue text-white rounded">Next</button>
+              <button
+                onClick={() =>
+                  setCarouselIdx((carouselIdx - 1 + memoryImages.length) % memoryImages.length)
+                }
+                className="px-4 py-2 bg-lhra-blue text-white rounded"
+              >
+                Prev
+              </button>
+              <button
+                onClick={() => setCarouselIdx((carouselIdx + 1) % memoryImages.length)}
+                className="px-4 py-2 bg-lhra-blue text-white rounded"
+              >
+                Next
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-     
-
+      {/* Kitty Popup */}
       {showKitty && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100]">
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full relative">
-            <button onClick={() => setShowKitty(false)} className="absolute top-2 right-4 text-2xl">×</button>
-            <h3 className="font-florentia text-2xl font-bold text-lhra-blue mb-2">Meet Smith Kitty!</h3>
-            <p className="font-florentia text-gray-700 mb-4">Smith (or, Smitty) is our very friendly barn cat. He loves laying in the middle of the arena or climbing into the hay loft. If you see him, feel free to pet him and give him some treats.</p>
+            <button
+              onClick={() => setShowKitty(false)}
+              className="absolute top-2 right-4 text-2xl"
+            >
+              ×
+            </button>
+            <h3 className="font-florentia text-2xl text-lhra-blue mb-2">Meet Smith Kitty!</h3>
+            <p className="font-florentia text-gray-700 mb-4">
+              Smith (or, Smitty) is our very friendly barn cat. He loves laying in the middle of the arena or climbing into the hay loft. If you see him, feel free to pet him and give him some treats.
+            </p>
             <Image
               src={kittyImages[kittyImgIndex]}
               alt="Smith Kitty"
@@ -161,5 +202,5 @@ export default function HorsesGrid({ horses }) {
         </div>
       )}
     </div>
-  )
+  );
 }
