@@ -90,7 +90,7 @@ export default function HorsesPage() {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedHorse(null)}
-                className="absolute top-4 right-4 z-10 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:shadow-xl transition-all text-gray-600 hover:text-gray-800"
+                className="absolute top-4 right-4 z-10 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:shadow-xl transition-all text-gray-600 hover:text-gray-800 text-xl"
               >
                 ×
               </button>
@@ -191,7 +191,7 @@ export default function HorsesPage() {
           <div className="bg-white rounded-xl shadow-lg p-6 max-w-md w-full relative">
             <button 
               onClick={() => setShowKitty(false)} 
-              className="absolute top-4 right-4 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-200 transition-colors text-gray-600 hover:text-gray-800"
+              className="absolute top-4 right-4 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-200 transition-colors text-gray-600 hover:text-gray-800 text-xl"
             >
               ×
             </button>
