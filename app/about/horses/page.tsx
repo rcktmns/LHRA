@@ -46,6 +46,37 @@ export default function HorsesPage() {
   const [carouselIdx, setCarouselIdx] = useState(0)
   const [kittyImgIndex, setKittyImgIndex] = useState(0)
   
+ 'use client'
+
+import Image from "next/image"
+import { useState } from "react"
+import { Card } from "@/components/ui/card"
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+
+const horses = [
+  { name: "The Painted Potato, aka Misty", img: "/images/misty.webp", desc: "Misty is a lovable, stubbon pony in her late 20s that often teaches young riders' first lessons!", details: "Misty is often the first pony ridden by Littles at LionHeart. She was born long, long ago in a galaxy far, far away- we think she is in her late twenties. She has been a lesson pony at LionHeart for several years and taught many lessons. She’s primarily motivated by food; in fact, she doesn’t seem to be motivated by much else at all. She’s a little ornery and more than a little stubborn, but we just can’t help but love her. Misty’s breed is a mystery to everyone- probably mostly Shetland pony but there’s definitely something else in there somewhere- and she has shown under the name “The Painted Potato” to a number of blue ribbons in Academy classes (seriously, she actually has won classes!)." },
+  { name: "Legerdemain, aka Jake", img: "/images/Jake.jpg", desc: "Jake is a 24 year old American Saddlebred/Arabian cross who has been with LionHeart for over a decade giving countless lessons to beginner riders!", details: "Jake is often first up for the big kids. He is 24 years old, which is pretty old, actually, but he’s still trucking along great. He’s been a lesson horse at LionHeart for 17 years and has literally taught thousands of lessons and probably been ridden by every student who has come through the door in those 17 years. Jake’s a bit of a loner- he usually prefers to keep to himself, though he has recently found the love of his life. He has a great work ethic and seems to enjoy showing. He is a registered National Show Horse (a breed created by crossing Saddlebred and Arabian) under the show name “Legerdemain” (French for “slight of hand,” meaning “trickster,” which is funny because Jake is about as honest as they come). He has won dozens and dozens of blue ribbons in Academy classes." },
+  // ...rest of horses
+]
+
+const memoryImages = [
+  { img: "/images/RalfILM.JPG", caption: "A Lucky Town - Ralf" },
+  { img: "/images/SkyILM.JPG", caption: "Scarlet Sky" },
+  { img: "/images/BoILM.JPG", caption: "Heartland's Double Trouble - Bo" },
+  // ...rest of memoryImages
+]
+
+const kittyImages = [
+  "/images/smitty1.jpeg",
+  "/images/smitty2.jpeg",
+]
+
+export default function HorsesPage() {
+  const [selectedHorse, setSelectedHorse] = useState(null)
+  const [showKitty, setShowKitty] = useState(false)
+  const [carouselIdx, setCarouselIdx] = useState(0)
+  const [kittyImgIndex, setKittyImgIndex] = useState(0)
+  
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -59,7 +90,7 @@ export default function HorsesPage() {
         </div>
       </section>
 
-   {/* Horses Grid */}
+      {/* Horses Grid */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -82,42 +113,41 @@ export default function HorsesPage() {
             ))}
           </div>
         </div>
+      </section> {/* <-- Added closing tag */}
 
-    {/* Horse Popup */}
-<Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
-  <DialogContent className="max-w-3xl">
-    <DialogHeader>
-      <DialogTitle className="font-papyrus text-2xl text-lhra-blue">
-        {selectedHorse?.name}
-      </DialogTitle>
-    </DialogHeader>
+      {/* Horse Popup */}
+      <Dialog open={!!selectedHorse} onOpenChange={(open) => { if (!open) setSelectedHorse(null) }}>
+        <DialogContent className="max-w-3xl">
+          <DialogHeader>
+            <DialogTitle className="font-papyrus text-2xl text-lhra-blue">
+              {selectedHorse?.name}
+            </DialogTitle>
+          </DialogHeader>
 
-    <div className="flex flex-col md:flex-row gap-6 items-start">
-      {/* Left: Image */}
-      {selectedHorse?.img && (
-        <div className="flex-shrink-0 w-full md:w-1/2">
-          <Image
-            src={selectedHorse.img}
-            alt={selectedHorse.name}
-            width={400}
-            height={300}
-            className="rounded-lg object-cover"
-          />
-        </div>
-      )}
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+            {selectedHorse?.img && (
+              <div className="flex-shrink-0 w-full md:w-1/2">
+                <Image
+                  src={selectedHorse.img}
+                  alt={selectedHorse.name}
+                  width={400}
+                  height={300}
+                  className="rounded-lg object-cover"
+                />
+              </div>
+            )}
 
-      {/* Right: Text */}
-      <div className="flex-1 text-left">
-        <p className="font-lexend text-gray-700 mb-4">{selectedHorse?.desc}</p>
-        {selectedHorse?.details && (
-          <p className="font-lexend text-gray-400">{selectedHorse.details}</p>
-        )}
-      </div>
-    </div>
-  </DialogContent>
-</Dialog>
+            <div className="flex-1 text-left">
+              <p className="font-lexend text-gray-700 mb-4">{selectedHorse?.desc}</p>
+              {selectedHorse?.details && (
+                <p className="font-lexend text-gray-400">{selectedHorse.details}</p>
+              )}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
 
-       {/* Memory Section */}
+      {/* Memory Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-papyrus text-3xl text-lhra-blue mb-6">In Loving Memory</h2>
@@ -151,8 +181,7 @@ export default function HorsesPage() {
         </div>
       </section>
 
-
-  {/* Kitty Popup */}
+      {/* Kitty Popup */}
       {showKitty && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100]">
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full relative">
@@ -172,4 +201,5 @@ export default function HorsesPage() {
       )}
     </div>
   )
+}
 }
