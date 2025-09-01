@@ -93,10 +93,7 @@ export default function HorsesPage() {
               {selectedHorse?.img && (
                 <Image src={selectedHorse.img} alt={selectedHorse.name} width={300} height={220} className="rounded-lg" />
               )}
-              <p className="font-lexend text-gray-700 text-center">{selectedHorse?.desc}</p>
-              {selectedHorse?.details && (
-                <div className="mt-4 text-left w-full">
-                  <p className="font-lexend text-gray-600">{selectedHorse.details}</p>
+              <p className="font-lexend text-gray-500 text-center">{selectedHorse?.details}</p>
                 </div>
               )}
             </div>
