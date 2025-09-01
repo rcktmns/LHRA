@@ -83,32 +83,26 @@ export default function HorsesPage() {
           </div>
         </div>
 
-       {/* Horse Popup */}
-<Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
-  <DialogContent className="max-w-lg">
-    <DialogHeader>
-      <DialogTitle className="font-papyrus text-2xl text-lhra-blue">
-        {selectedHorse?.name}
-      </DialogTitle>
-    </DialogHeader>
+ {/* Horse Popup */}
+        <Dialog open={!!selectedHorse} onOpenChange={() => setSelectedHorse(null)}>
+          <DialogContent className="max-w-lg">
+            <DialogHeader>
+              <DialogTitle className="font-papyrus text-2xl text-lhra-blue">{selectedHorse?.name}</DialogTitle>
+            </DialogHeader>
+            <div className="flex flex-col items-center gap-4">
+              {selectedHorse?.img && (
+                <Image src={selectedHorse.img} alt={selectedHorse.name} width={300} height={220} className="rounded-lg" />
+              )}
+              {selectedHorse?.details && (
+                <div className="mt-4 text-left w-full">
+                  <p className="font-lexend text-gray-600">{selectedHorse.details}</p>
+                </div>
+              )}
+            </div>
+          </DialogContent>
+        </Dialog>
+      </section>
 
-    <div className="flex flex-col items-center gap-4">
-      {selectedHorse?.img && (
-        <Image
-          src={selectedHorse.img}
-          alt={selectedHorse.name}
-          width={300}
-          height={220}
-          className="rounded-lg"
-        />
-      )}
-      <p className="font-lexend text-gray-500 text-center">
-        {selectedHorse?.details}
-      </p>
-    </div>
-  </DialogContent>
-</Dialog>
-      
 
        {/* Memory Section */}
       <section className="py-16 bg-gray-100">
