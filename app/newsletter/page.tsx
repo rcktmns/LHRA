@@ -2,6 +2,11 @@ import Link from "next/link"
 
 export default function NewsletterPage() {
   const newsletters = [
+     {
+      month: "October 2025",
+      url: "/newsletters/HA-Oct25.pdf",
+      subtitle: "How to earn an extra lesson, Halloween Party announcement, & horse trivia."
+    },
     {
       month: "June 2025",
       url: "/newsletters/horsin-around-june25.pdf",
