@@ -24,7 +24,7 @@ const retirees = [
  ]
 
 const memoryImages = [
-  { img: "/images/Website Pics/Website Pics/Meet the Horses/JaneILM.jpg", caption: "Sweet Baby Jane" },
+  { img: "/images/JaneJane.jpg", caption: "Sweet Baby Jane" },
   { img: "/images/Website Pics/Website Pics/Meet the Horses/Mose.jpg", caption: "Mosette" },
   { img: "/images/RalfILM.JPG", caption: "A Lucky Town - Ralf" },
   { img: "/images/SkyILM.JPG", caption: "Scarlet Sky" },
@@ -40,9 +40,10 @@ const memoryImages = [
 ]
 
 const kittyData = [
-  {img:"/images/Website Pics/Website Pics/Meet the Horses/BlueKitty.jpg", name: "Meet Blue!"},
-  {img:"/images/smitty2.jpeg", name: "Meet Smith Kitty!"},
-  {img:"/images/Website Pics/Website Pics/Meet the Horses/LampeKitty.jpg", name: "Meet Miss Lampe!"},
+  {img: "/images/BlueBlue.jpeg", name: "Meet Blue!"},
+  {img: "/images/smitty2.jpeg", name: "Meet Smith Kitty!"},
+  {img: "/images/Website Pics/Website Pics/Meet the Horses/LampeKitty.jpg", name: "Meet Miss Lampe!"},
+  {img: "/images/SarahKitty.jpeg", name: "Meet Sarah!"},
 ]
 
 export default function HorsesPage() {
@@ -158,12 +159,12 @@ export default function HorsesPage() {
       </section>
 
     {/* Retirees & Rescues Section */}
-<section className="py-4 bg-white">
+<section className="py-0 bg-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
     <h2 className="font-papyrus text-3xl text-lhra-blue mb-2">
       Retirees & Rescues
     </h2>
-    <div className="h-[2px] bg-yellow-500 w-1/5 mx-auto mt-0 mb-0"></div>
+    <div className="h-1 bg-yellow-500 w-1/5 mx-auto mt-0 mb-0"></div>
   </div>
 </section>
       
