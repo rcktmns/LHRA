@@ -163,7 +163,7 @@ export default function HorsesPage() {
     <h2 className="font-papyrus text-3xl text-lhra-blue mb-2">
       Retirees & Rescues
     </h2>
-    <div className="h-1 bg-yellow-500 w-1/5 mx-auto"></div>
+    <div className="h-[2px] bg-yellow-500 w-1/5 mx-auto mt-0 mb-0"></div>
   </div>
 </section>
       
