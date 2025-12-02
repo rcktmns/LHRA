@@ -39,10 +39,10 @@ const memoryImages = [
   { img: "/images/RedILM.jpg", caption: "Prediction - Red" },
 ]
 
-const kittyImages = [
-  "/images/Website Pics/Website Pics/Meet the Horses/BlueKitty.jpg",
-  "/images/smitty2.jpeg",
-  "/images/Website Pics/Website Pics/Meet the Horses/LampeKitty.jpg",
+const kittyData = [
+  {img:"/images/Website Pics/Website Pics/Meet the Horses/BlueKitty.jpg", name: "Meet Blue!"},
+  {img:"/images/smitty2.jpeg", name: "Meet Smith Kitty!"},
+  {img:"/images/Website Pics/Website Pics/Meet the Horses/LampeKitty.jpg", name: "Meet Miss Lampe!"},
 ]
 
 export default function HorsesPage() {
