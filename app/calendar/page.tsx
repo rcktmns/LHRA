@@ -22,15 +22,15 @@ export default function CalendarPage() {
               <p className="text-gray-600 mt-1">View and plan for all upcoming academy activities</p>
             </div>
             <iframe
-              src="https://calendar.google.com/calendar/embed?src=lionheartridingacademy%40gmail.com&ctz=America%2FNew_York"
-              style={{ border: 0 }}
-              width="100%"
-              height="600"
-              frameBorder="0"
-              scrolling="no"
-              title="LHRA Calendar"
-              className="w-full"
-            />
+  src="https://calendar.google.com/calendar/embed?src=lionheartridingacademy%40gmail.com&ctz=America%2FChicago"
+  style={{ border: 0 }}
+  width="100%"
+  height="600"
+  frameBorder="0"
+  scrolling="no"
+  title="LHRA Calendar"
+  className="w-full"
+/>
           </div>
 
           <div className="mt-12 bg-white p-8 rounded-lg shadow-lg border border-gray-100">
