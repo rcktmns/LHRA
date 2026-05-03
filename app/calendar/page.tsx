@@ -12,7 +12,6 @@ export default function CalendarPage() {
           </p>
         </div>
       </section>
-
       {/* Calendar Embed */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,17 +21,16 @@ export default function CalendarPage() {
               <p className="text-gray-600 mt-1">View and plan for all upcoming academy activities</p>
             </div>
             <iframe
-  src="https://calendar.google.com/calendar/embed?src=lionheartridingacademy%40gmail.com&ctz=America%2FChicago"
-  style={{ border: 0 }}
-  width="100%"
-  height="600"
-  frameBorder="0"
-  scrolling="no"
-  title="LHRA Calendar"
-  className="w-full"
-/>
+              src="https://calendar.google.com/calendar/embed?src=lionheartridingacademy%40gmail.com&ctz=America%2FChicago"
+              style={{ border: 0 }}
+              width="100%"
+              height="600"
+              frameBorder="0"
+              scrolling="no"
+              title="LHRA Calendar"
+              className="w-full"
+            />
           </div>
-
           <div className="mt-12 bg-white p-8 rounded-lg shadow-lg border border-gray-100">
             <h3 className="font-lexend text-2xl font-semibold text-lhra-blue mb-4">Calendar Information</h3>
             <div className="h-0.5 bg-lhra-yellow w-16 mb-6"></div>
