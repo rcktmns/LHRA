@@ -34,17 +34,23 @@ export default function StaffPage() {
         {/* Staff Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+             {/* Nora Humfeld */}
+            <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
+              <Image src="/public/Nora.webp" alt="Nora Humfeld" width={220} height={180} className="rounded-lg mb-4 object-contain" />
+              <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Nora Humfeld</h3>
+              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom, Assistant Instructor</p>
+            </div>
             {/* Ahna Grant */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
               <Image src="/images/Ahna.jpg" alt="Ahna Grant" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Ahna Grant</h3>
-              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
+              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom, Assistant Instructor</p>
             </div>
             {/* Hailey Niles */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
               <Image src="/images/Hailey.jpg" alt="Hailey Niles" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Hailey Niles</h3>
-              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
+              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom, Assistant Instructor, Social Media Manager</p>
             </div>
             {/* Ava Gamble */}
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
@@ -62,7 +68,7 @@ export default function StaffPage() {
             <div className="bg-white rounded-xl shadow-lg border-2 border-lhra-yellow p-6 flex flex-col items-center">
               <Image src="/images/Caroline B.jpg" alt="Caroline Bruns" width={220} height={180} className="rounded-lg mb-4 object-contain" />
               <h3 className="font-papyrus text-2xl font-bold text-lhra-blue mb-1">Caroline Bruns</h3>
-              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom</p>
+              <p className="font-florentia text-lhra-red font-semibold mb-2">Groom, Assistant Instructor</p>
             </div>
             
           </div>
