@@ -1,3 +1,4 @@
+```tsx
 "use client"
 
 import Image from "next/image"
@@ -6,119 +7,286 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { Phone, Mail } from "lucide-react"
+import { Phone, Mail, ArrowUpRight } from "lucide-react"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <section className="elegant-gradient text-white py-24 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="elegant-heading text-4xl font-bold mb-4">Contact Us</h1>
-          <div className="h-1 bg-lhra-yellow w-32 mx-auto mb-2"></div>
-          <p className="font-lexend text-xl max-w-3xl mx-auto">
-            Ready to start your equestrian journey? Get in touch with us to schedule a visit, ask questions, or learn
-            more about our programs.
-          </p>
+    <div className="min-h-screen bg-[#f5f2eb] text-[#24352b]">
+
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-[#24352b] text-[#f5f2eb]">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute -top-32 -right-32 h-96 w-96 rounded-full border-[40px] border-[#d8c9a8]" />
+          <div className="absolute -bottom-48 -left-32 h-96 w-96 rounded-full border-[40px] border-[#d8c9a8]" />
+        </div>
+
+        <div className="relative max-w-6xl mx-auto px-6 lg:px-8 py-24 md:py-32">
+          <div className="max-w-3xl">
+            <p className="uppercase tracking-[0.25em] text-sm text-[#d8c9a8] mb-5">
+              LionHeart Riding Academy
+            </p>
+
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-tight">
+              Let&apos;s start
+              <br />
+              <span className="italic text-[#d8c9a8]">your journey.</span>
+            </h1>
+
+            <p className="mt-7 text-lg md:text-xl text-[#d8ded8] max-w-2xl leading-relaxed">
+              Have a question about lessons, training, or our facility?
+              We&apos;d love to hear from you and help you find the right
+              program.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Contact Info & Form */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Contact Info */}
-            <div>
-              <h2 className="elegant-heading text-3xl font-bold text-lhra-blue mb-6">Get In Touch</h2>
-              <div className="space-y-4">
+      {/* Main Content */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
+
+            {/* Contact Information */}
+            <div className="lg:col-span-2">
+
+              <p className="uppercase tracking-[0.2em] text-xs font-semibold text-[#8a7253] mb-3">
+                Contact
+              </p>
+
+              <h2 className="font-serif text-4xl md:text-5xl text-[#24352b] mb-6">
+                Come say hello.
+              </h2>
+
+              <p className="text-[#667067] leading-relaxed mb-10">
+                Whether you&apos;re interested in riding lessons, horse
+                training, or simply want to learn more about LionHeart,
+                reach out and we&apos;ll be happy to help.
+              </p>
+
+              <div className="space-y-7">
+
                 {/* Phone */}
-                <div className="flex items-start space-x-3">
-                  <div className="bg-lhra-red/10 p-2 rounded-full">
-                    <Phone className="h-5 w-5 text-lhra-red" />
+                <div className="flex items-start gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#e4dfd2]">
+                    <Phone className="h-5 w-5 text-[#24352b]" />
                   </div>
+
                   <div>
-                    <h3 className="font-lexend font-semibold text-lhra-red mb-1 text-base">Phone</h3>
-                    <p className="font-lexend text-gray-600 text-base">(573) 823-2173</p>
+                    <p className="text-xs uppercase tracking-widest font-semibold text-[#8a7253] mb-1">
+                      Phone
+                    </p>
+                    <p className="text-lg text-[#24352b]">
+                      (573) 823-2173
+                    </p>
                   </div>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start space-x-3">
-                  <div className="bg-lhra-yellow/20 p-2 rounded-full">
-                    <Mail className="h-5 w-5 text-lhra-blue" />
+                <div className="flex items-start gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#e4dfd2]">
+                    <Mail className="h-5 w-5 text-[#24352b]" />
                   </div>
+
                   <div>
-                    <h3 className="font-lexend font-semibold text-lhra-blue mb-1 text-base">Email</h3>
-                    <p className="font-lexend text-gray-600 text-base">lionheartridingacademy@gmail.com</p>
+                    <p className="text-xs uppercase tracking-widest font-semibold text-[#8a7253] mb-1">
+                      Email
+                    </p>
+                    <p className="text-lg text-[#24352b] break-all">
+                      lionheartridingacademy@gmail.com
+                    </p>
                   </div>
                 </div>
+
               </div>
 
-              <div className="mt-6">
+              {/* Image */}
+              <div className="mt-12 relative">
                 <Image
                   src="/images/Website Pics/Website Pics/About Us Page/About Us.jpeg"
-                  alt="LHRA Facility"
-                  width={480}
-                  height={300}
-                  className="rounded-lg shadow-lg"
+                  alt="LionHeart Riding Academy"
+                  width={600}
+                  height={400}
+                  className="w-full h-[280px] object-cover rounded-2xl"
                 />
+
+                <div className="absolute bottom-4 left-4 bg-[#f5f2eb]/95 backdrop-blur-sm rounded-lg px-4 py-3">
+                  <p className="text-sm font-medium text-[#24352b]">
+                    LionHeart Riding Academy
+                  </p>
+                  <p className="text-xs text-[#667067] mt-0.5">
+                    Where riders grow with their horses
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Contact Form using Formsubmit */}
-            <div>
-              <Card className="shadow-lg border-none">
-                <CardHeader>
-                  <CardTitle className="font-lexend text-2xl text-lhra-blue">Send Us a Message</CardTitle>
+            {/* Form */}
+            <div className="lg:col-span-3">
+
+              <Card className="border-0 bg-white shadow-[0_20px_60px_rgba(36,53,43,0.08)] rounded-2xl overflow-hidden">
+
+                <CardHeader className="px-7 pt-8 md:px-10 md:pt-10">
+                  <CardTitle className="font-serif text-3xl text-[#24352b]">
+                    Send us a message
+                  </CardTitle>
+
+                  <p className="text-[#7a817b] mt-2">
+                    Fill out the form below and we&apos;ll get back to you.
+                  </p>
                 </CardHeader>
-                <CardContent>
+
+                <CardContent className="px-7 pb-8 md:px-10 md:pb-10">
+
                   <form
                     action="https://formsubmit.co/lionheartridingacademy@gmail.com"
                     method="POST"
                     className="space-y-6"
                   >
-                    {/* Hidden inputs for Formsubmit */}
+
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="hidden" name="_template" value="table" />
-                    <input type="hidden" name="_autoresponse" value="Thank you for contacting LionHeart Riding Academy!" />
-                    <input type="text" name="_honey" className="hidden" />
+                    <input
+                      type="hidden"
+                      name="_autoresponse"
+                      value="Thank you for contacting LionHeart Riding Academy!"
+                    />
+                    <input
+                      type="text"
+                      name="_honey"
+                      className="hidden"
+                    />
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {/* Name + Phone */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
                       <div>
-                        <Label htmlFor="name" className="font-lexend text-lhra-blue">Name *</Label>
-                        <Input id="name" name="name" required className="mt-1" />
+                        <Label
+                          htmlFor="name"
+                          className="text-sm font-medium text-[#34443a]"
+                        >
+                          Name *
+                        </Label>
+
+                        <Input
+                          id="name"
+                          name="name"
+                          required
+                          className="mt-2 h-12 border-[#ddd9cf] bg-[#faf9f6] rounded-lg focus-visible:ring-[#24352b]"
+                        />
                       </div>
+
                       <div>
-                        <Label htmlFor="phone" className="font-lexend text-lhra-blue">Phone</Label>
-                        <Input id="phone" name="phone" className="mt-1" />
+                        <Label
+                          htmlFor="phone"
+                          className="text-sm font-medium text-[#34443a]"
+                        >
+                          Phone
+                        </Label>
+
+                        <Input
+                          id="phone"
+                          name="phone"
+                          className="mt-2 h-12 border-[#ddd9cf] bg-[#faf9f6] rounded-lg focus-visible:ring-[#24352b]"
+                        />
                       </div>
+
                     </div>
 
+                    {/* Email */}
                     <div>
-                      <Label htmlFor="email" className="font-lexend text-lhra-blue">Email *</Label>
-                      <Input id="email" name="email" type="email" required className="mt-1" />
+                      <Label
+                        htmlFor="email"
+                        className="text-sm font-medium text-[#34443a]"
+                      >
+                        Email *
+                      </Label>
+
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        required
+                        className="mt-2 h-12 border-[#ddd9cf] bg-[#faf9f6] rounded-lg focus-visible:ring-[#24352b]"
+                      />
                     </div>
 
+                    {/* Subject */}
                     <div>
-                      <Label htmlFor="subject" className="font-lexend text-lhra-blue">Subject</Label>
-                      <Input id="subject" name="subject" className="mt-1" />
+                      <Label
+                        htmlFor="subject"
+                        className="text-sm font-medium text-[#34443a]"
+                      >
+                        What can we help with?
+                      </Label>
+
+                      <Input
+                        id="subject"
+                        name="subject"
+                        placeholder="Riding lessons, horse training, general question..."
+                        className="mt-2 h-12 border-[#ddd9cf] bg-[#faf9f6] rounded-lg focus-visible:ring-[#24352b]"
+                      />
                     </div>
 
+                    {/* Message */}
                     <div>
-                      <Label htmlFor="message" className="font-lexend text-lhra-blue">Message *</Label>
-                      <Textarea id="message" name="message" required rows={5} className="mt-1" />
+                      <Label
+                        htmlFor="message"
+                        className="text-sm font-medium text-[#34443a]"
+                      >
+                        Message *
+                      </Label>
+
+                      <Textarea
+                        id="message"
+                        name="message"
+                        required
+                        rows={6}
+                        placeholder="Tell us a little about what you're looking for..."
+                        className="mt-2 resize-none border-[#ddd9cf] bg-[#faf9f6] rounded-lg focus-visible:ring-[#24352b]"
+                      />
                     </div>
 
-                    <Button type="submit" className="w-full bg-lhra-red hover:bg-lhra-red/90 font-lexend font-semibold py-3 elegant-button">
+                    {/* Button */}
+                    <Button
+                      type="submit"
+                      className="group w-full h-13 bg-[#24352b] hover:bg-[#344b3d] text-white rounded-lg font-medium transition-all"
+                    >
                       Send Message
+
+                      <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </Button>
+
+                    <p className="text-center text-xs text-[#8a918b]">
+                      We&apos;ll get back to you as soon as possible.
+                    </p>
+
                   </form>
+
                 </CardContent>
               </Card>
+
             </div>
           </div>
         </div>
       </section>
+
+      {/* Bottom CTA */}
+      <section className="bg-[#e4dfd2] py-16">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+
+          <p className="uppercase tracking-[0.2em] text-xs font-semibold text-[#8a7253] mb-4">
+            LionHeart Riding Academy
+          </p>
+
+          <h2 className="font-serif text-3xl md:text-4xl text-[#24352b]">
+            Every great partnership starts with a conversation.
+          </h2>
+
+        </div>
+      </section>
+
     </div>
   )
 }
+```
